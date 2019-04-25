@@ -1,0 +1,151 @@
+EESchema Schematic File Version 4
+LIBS:Miniscope-v4-Ser-Pow-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L .SERDES:DS90UB933-Q1 U?
+U 1 1 5C9C800D
+P 2625 4025
+F 0 "U?" H 3700 2200 50  0000 C CNN
+F 1 "DS90UB933-Q1" H 2200 2200 50  0000 C CNN
+F 2 ".Package_QFN:QFN_33_P50_500X500X80L40X24T310L" H 1625 2175 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ds90ub933-q1.pdf" H 2625 4025 50  0001 C CNN
+	1    2625 4025
+	1    0    0    -1  
+$EndComp
+Text Notes 1900 6325 0    50   ~ 0
+Can be swapped out with the DS90UB913 variant
+$Comp
+L .Regulator_Linear:TLV7103318DSER U?
+U 1 1 5C9C8E9A
+P 4725 2900
+F 0 "U?" H 4825 3242 50  0000 C CNN
+F 1 "TLV7103318DSER" H 4825 3151 50  0000 C CNN
+F 2 ".Package_SON:SON_6_P50_150X150X80L50X25L" H 4725 3200 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv711.pdf" H 4725 2900 50  0001 C CNN
+	1    4725 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L .Inductor:ADL3225V-470MT-TL000 L?
+U 1 1 5C9C9416
+P 7025 3100
+F 0 "L?" V 7210 3100 50  0000 C CNN
+F 1 "ADL3225V-470MT-TL000" H 7075 2950 50  0001 L CNN
+F 2 ".Inductor:L_1210_3225Metric_L" H 6955 3040 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/inductor_automotive_decoupling_adl3225v_en.pdf" H 7025 3100 50  0001 C CNN
+F 4 "47uH" V 7119 3100 50  0000 C CNN "Note"
+F 5 "1210" H 7175 2850 50  0001 C CNN "Size"
+	1    7025 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L .Inductor:BLM18PG471SN1D L?
+U 1 1 5C9EF998
+P 6550 3100
+F 0 "L?" V 6735 3100 50  0000 C CNN
+F 1 "BLM18PG471SN1D" H 6600 2950 50  0001 L CNN
+F 2 ".Inductor:L_0603_1608Metric_L" H 6600 3400 50  0001 C CNN
+F 3 "https://www.murata.com/en-us/products/productdata/8796738650142/ENFA0003.pdf" H 6550 3100 50  0001 C CNN
+F 4 "470 Ohms @ 100MHz" V 6644 3100 50  0000 C CNN "Note"
+F 5 "0603" H 6700 2850 50  0001 C CNN "Size"
+	1    6550 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L .Device:R_Small_US R?
+U 1 1 5C9F09CA
+P 7025 3400
+F 0 "R?" V 6820 3400 50  0000 C CNN
+F 1 "2K" V 6911 3400 50  0000 C CNN
+F 2 "" H 7025 3400 50  0001 C CNN
+F 3 "~" H 7025 3400 50  0001 C CNN
+	1    7025 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L .Capacitor:GRM155R60J106ME15D C?
+U 1 1 5C9F24DC
+P 7400 3200
+F 0 "C?" H 7492 3246 50  0000 L CNN
+F 1 "GRM155R60J106ME15D" H 7010 3370 50  0001 L CNN
+F 2 ".Capacitor:C_0402_1005Metric_L" H 7510 3470 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J106ME15-01.pdf" H 7410 3270 50  0001 C CNN
+F 4 "10uF" H 7492 3155 50  0000 L CNN "Note"
+F 5 "0402" H 7510 3020 50  0001 C CNN "Size"
+	1    7400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L .Capacitor:GRM155R60J106ME15D C?
+U 1 1 5C9F29F6
+P 7800 3200
+F 0 "C?" H 7892 3246 50  0000 L CNN
+F 1 "GRM155R60J106ME15D" H 7410 3370 50  0001 L CNN
+F 2 ".Capacitor:C_0402_1005Metric_L" H 7910 3470 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J106ME15-01.pdf" H 7810 3270 50  0001 C CNN
+F 4 "10uF" H 7892 3155 50  0000 L CNN "Note"
+F 5 "0402" H 7910 3020 50  0001 C CNN "Size"
+	1    7800 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3100 7400 3100
+Connection ~ 7400 3100
+Wire Wire Line
+	7125 3100 7225 3100
+Connection ~ 7225 3100
+Wire Wire Line
+	7225 3100 7400 3100
+Wire Wire Line
+	7225 3400 7125 3400
+Wire Wire Line
+	7225 3100 7225 3400
+Wire Wire Line
+	6925 3100 6800 3100
+Wire Wire Line
+	6925 3400 6800 3400
+Wire Wire Line
+	6800 3400 6800 3100
+Connection ~ 6800 3100
+Wire Wire Line
+	6800 3100 6650 3100
+Wire Wire Line
+	7400 3300 7800 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5C9F5735
+P 7800 3300
+F 0 "#PWR?" H 7800 3050 50  0001 C CNN
+F 1 "GND" H 7805 3127 50  0000 C CNN
+F 2 "" H 7800 3300 50  0001 C CNN
+F 3 "" H 7800 3300 50  0001 C CNN
+	1    7800 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 7800 3300
+$Comp
+L power:+5V #PWR?
+U 1 1 5C9F61A7
+P 7800 3100
+F 0 "#PWR?" H 7800 2950 50  0001 C CNN
+F 1 "+5V" H 7815 3273 50  0000 C CNN
+F 2 "" H 7800 3100 50  0001 C CNN
+F 3 "" H 7800 3100 50  0001 C CNN
+	1    7800 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 7800 3100
+$EndSCHEMATC
