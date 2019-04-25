@@ -37,10 +37,10 @@ F 3 "~" H 2250 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x14 J?
+L Connector_Generic:Conn_01x14 J6
 U 1 1 5CC82349
 P 4200 2100
-F 0 "J?" H 4350 2150 50  0000 L CNN
+F 0 "J6" H 4350 2150 50  0000 L CNN
 F 1 "Conn_01x14" H 4325 2050 50  0000 L CNN
 F 2 ".Connector:B2B_Flex_14_Dual_Row_38milx24mil_Hole_10milx20mil" H 4200 2100 50  0001 C CNN
 F 3 "~" H 4200 2100 50  0001 C CNN
@@ -48,10 +48,10 @@ F 3 "~" H 4200 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x14 J?
+L Connector_Generic:Conn_01x14 J5
 U 1 1 5CC847F7
 P 3550 2100
-F 0 "J?" H 3750 2200 50  0000 C CNN
+F 0 "J5" H 3750 2200 50  0000 C CNN
 F 1 "Conn_01x14" H 3875 2075 50  0000 C CNN
 F 2 ".Connector:B2B_Flex_14_Dual_Row_38milx24mil_Hole_10milx20mil" H 3550 2100 50  0001 C CNN
 F 3 "~" H 3550 2100 50  0001 C CNN
@@ -127,10 +127,10 @@ Wire Wire Line
 Wire Wire Line
 	1800 1400 2050 1400
 $Comp
-L Connector_Generic:Conn_01x05 J?
+L Connector_Generic:Conn_01x05 J4
 U 1 1 5CC945E9
 P 6250 2050
-F 0 "J?" H 6475 2100 50  0000 L CNN
+F 0 "J4" H 6475 2100 50  0000 L CNN
 F 1 "Conn_01x05" H 6330 2001 50  0000 L CNN
 F 2 ".Connector:B2B_Flex_05_Dual_Row_38milx24mil_Hole_20mil" H 6250 2050 50  0001 C CNN
 F 3 "~" H 6250 2050 50  0001 C CNN
@@ -138,10 +138,10 @@ F 3 "~" H 6250 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x05 J?
+L Connector_Generic:Conn_01x05 J3
 U 1 1 5CC950E2
 P 5600 2050
-F 0 "J?" H 5925 2075 50  0000 C CNN
+F 0 "J3" H 5925 2075 50  0000 C CNN
 F 1 "Conn_01x05" H 5900 1975 50  0000 C CNN
 F 2 ".Connector:B2B_Flex_05_Dual_Row_38milx24mil_Hole_20mil" H 5600 2050 50  0001 C CNN
 F 3 "~" H 5600 2050 50  0001 C CNN
