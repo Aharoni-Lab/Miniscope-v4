@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Miniscope-v4-MCU-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -31,7 +31,7 @@ U 1 1 5C2C7B11
 P 5150 4450
 F 0 "J1" H 5230 4442 50  0000 L CNN
 F 1 "Conn_01x14" H 5230 4351 50  0000 L CNN
-F 2 ".Connector:B2B_Flex_14_Single_Row_200x1000_Pad_400P" H 5150 4450 50  0001 C CNN
+F 2 ".Connector:B2B_Flex_14_Dual_Row_38milx24mil_Pad_20mil" H 5150 4450 50  0001 C CNN
 F 3 "~" H 5150 4450 50  0001 C CNN
 	1    5150 4450
 	1    0    0    -1  
