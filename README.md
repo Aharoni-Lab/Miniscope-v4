@@ -31,8 +31,8 @@ Quantity | Vendor | Part Number | Description
 
 ### SMA coax cable connectorization
 This is the same as the v3 Miniscope.
-[SMA2Coax PCB from OSHPack or similar](https://oshpark.com/shared_projects/xtQGQ32E)
-[Edge mounted SMA connector](https://www.digikey.com/product-detail/en/CONSMA013.062/CONSMA013.062-ND/1577228)
+* [SMA2Coax PCB from OSHPack or similar](https://oshpark.com/shared_projects/xtQGQ32E)
+* [Edge mounted SMA connector](https://www.digikey.com/product-detail/en/CONSMA013.062/CONSMA013.062-ND/1577228)
 
 ### Housing
 * Objective module
