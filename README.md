@@ -11,6 +11,7 @@ Quantity | Vendor | Part Number | Description
 
 ### Optical filters
 Quantity | Vendor | Part Number | Description
+--- | --- | --- | --- 
 1 | Chroma | ET470/40x | Excitation filter diced to 4mm x 4mm
 1 | Chroma | T495lpxr | Dichroic diced to 4mm x 6mm
 1 | Chroma | ET525/50m | Emission filter diced to 4mm x 4mm
@@ -30,8 +31,8 @@ Quantity | Vendor | Part Number | Description
 
 ### SMA coax cable connectorization
 This is the same as the v3 Miniscope.
-[SMA2Coax PCB from OSHPack or similar](https://oshpark.com/shared_projects/xtQGQ32E)
-[Edge mounted SMA connector](https://www.digikey.com/product-detail/en/CONSMA013.062/CONSMA013.062-ND/1577228)
+* [SMA2Coax PCB from OSHPack or similar](https://oshpark.com/shared_projects/xtQGQ32E)
+* [Edge mounted SMA connector](https://www.digikey.com/product-detail/en/CONSMA013.062/CONSMA013.062-ND/1577228)
 
 ### Housing
 * Objective module
