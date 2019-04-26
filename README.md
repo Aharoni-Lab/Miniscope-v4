@@ -54,6 +54,7 @@ These parts are located in the Miniscope-v4-Machined-Parts folder. Currently, al
 * Excitation module
 * Emission module
 * Baseplate
+
 Contact person for CNC machined parts is
   * Shylo Stiteler
   * shylostiteler@gmail.com
