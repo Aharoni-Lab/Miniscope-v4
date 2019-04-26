@@ -17,6 +17,7 @@ Quantity | Vendor | Part Number | Description
 1 | Chroma | ET525/50m | Emission filter diced to 4mm x 4mm
 
 ### PCB and electronics
+The v4 Miniscope consists of 4 rigid PCBs, 3 flexPCs to connect them, and 1 flexPC for connecting to the electrowetting lens. Each of the 4 rigid PCBs can be found in their corresponding folder in this repo. The 3 flexPCs (currently we are testing a configuration of these that comes as 1 interconnected flexPC) for connecting the boards together and the EWL flexPC can be found in the corresponding folder. These designs have undergone minor changes since the last fabrication run so they need to be tested and validated.
 * Serial and Power PCB
 * PYTHON480 PCB
 * MCU PCB
@@ -34,7 +35,8 @@ This is the same as the v3 Miniscope.
 * [SMA2Coax PCB from OSHPack or similar](https://oshpark.com/shared_projects/xtQGQ32E)
 * [Edge mounted SMA connector](https://www.digikey.com/product-detail/en/CONSMA013.062/CONSMA013.062-ND/1577228)
 
-### Housing
+### CNC Machined Miniscope parts
+These parts are located in the Miniscope-v4-Machined-Parts folder. Currently, all these designs need to be doubled checked one last time before sending out for machining.
 * Objective module
 * Excitation module
 * Emission module
