@@ -1,7 +1,7 @@
 # Miniscope-v4
 The Miniscope v4 is our next generation Miniscope that incorporates an electrowetting lens, is ~2g, ~20mm tall, fully achromatic, has an FOV of 1mm, and a working distance of 1mm. This repository holds all the source code, PCBs, and 3d models to build the system.
 
-![Miniscope v4 Overview](img/Miniscope-v4-overview)
+![Miniscope v4 Overview](img\Miniscope-v4-overview)
 
 ## Parts for the head mounted Miniscope v4
 ### Lenses
