@@ -64,5 +64,4 @@ Contact person for CNC machined parts is
 ### Other parts
 Quantity | Vendor | Part Number | Description
 --- | --- | --- | --- 
-3 | McMaster Carr or similar | [96817a704](https://www.mcmaster.com/96817a704) | Thread-Forming Screws for Thin Plastic
-18-8 Stainless Steel, M1 Size, 3 mm Long
+3 | McMaster Carr or similar | [96817a704](https://www.mcmaster.com/96817a704) | Thread-Forming Screws for Thin Plastic 18-8 Stainless Steel, M1 Size, 3 mm Long
