@@ -9,6 +9,15 @@ Quantity | Vendor | Part Number | Description
 1 | Edmund Optics | [63-691](https://www.edmundoptics.com/p/4mm-dia-x-10mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/18408/)| 4mm diameter, 10mm FL achromat used in the emission module
 1 | Varioptics/Corning | [A-25H0](https://www.corning.com/worldwide/en/innovation/corning-emerging-innovations/corning-varioptic-lenses/variable-focus-lenses-a-series/varioptic-A-25H.html) | 2.5mm clear aperture electrowetting lens
 
+* Contact person for Varioptics EWL is:
+  * Wayne Saxton
+  * Sales Manager
+  * Innovation Sales SC
+  * wsaxton@innovationsales.com
+  * www.innovationsc.com
+  * (858) 924-9300 office
+  * (858) 212-6375 cell
+
 ### Optical filters
 Quantity | Vendor | Part Number | Description
 --- | --- | --- | --- 
@@ -16,6 +25,10 @@ Quantity | Vendor | Part Number | Description
 1 | Chroma | T495lpxr | Dichroic diced to 4mm x 6mm
 1 | Chroma | ET525/50m | Emission filter diced to 4mm x 4mm
 
+* Contact person for Varioptics EWL is:
+  * Dick Stewart
+  * dstewart@chroma.com
+  
 ### PCB and electronics
 The v4 Miniscope consists of 4 rigid PCBs, 3 flexPCs to connect them, and 1 flexPC for connecting to the electrowetting lens. Each of the 4 rigid PCBs can be found in their corresponding folder in this repo. The 3 flexPCs (currently we are testing a configuration of these that comes as 1 interconnected flexPC) for connecting the boards together and the EWL flexPC can be found in the corresponding folder. These designs have undergone minor changes since the last fabrication run so they need to be tested and validated.
 * Serial and Power PCB
@@ -41,3 +54,6 @@ These parts are located in the Miniscope-v4-Machined-Parts folder. Currently, al
 * Excitation module
 * Emission module
 * Baseplate
+Contact person for CNC machined parts is
+  * Shylo Stiteler
+  * shylostiteler@gmail.com
