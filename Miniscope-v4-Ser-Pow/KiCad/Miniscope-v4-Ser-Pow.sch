@@ -1262,4 +1262,148 @@ Text GLabel 1875 3400 0    50   Input ~ 0
 CLK_OUT
 Wire Wire Line
 	1875 3400 2000 3400
+Text GLabel 4300 4825 0    50   Input ~ 0
+DIN10
+Text GLabel 4300 4925 0    50   Input ~ 0
+DIN11
+$Comp
+L power:+3.3V #PWR0131
+U 1 1 5CCBC440
+P 4300 5125
+F 0 "#PWR0131" H 4300 4975 50  0001 C CNN
+F 1 "+3.3V" V 4315 5253 50  0000 L CNN
+F 2 "" H 4300 5125 50  0001 C CNN
+F 3 "" H 4300 5125 50  0001 C CNN
+	1    4300 5125
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 5025 4425 5025
+Wire Wire Line
+	4300 4925 4425 4925
+Wire Wire Line
+	4300 4825 4425 4825
+Text GLabel 4300 5025 0    50   Input ~ 0
+CLK_OUT
+Wire Wire Line
+	4300 5125 4425 5125
+Text GLabel 4300 5425 0    50   Input ~ 0
+I2C_SDA
+Text GLabel 4300 5325 0    50   Input ~ 0
+I2C_SCL
+Wire Wire Line
+	4300 5225 4425 5225
+Wire Wire Line
+	4300 5325 4425 5325
+$Comp
+L power:+5V #PWR0132
+U 1 1 5CCEB202
+P 4300 5525
+F 0 "#PWR0132" H 4300 5375 50  0001 C CNN
+F 1 "+5V" V 4315 5653 50  0000 L CNN
+F 2 "" H 4300 5525 50  0001 C CNN
+F 3 "" H 4300 5525 50  0001 C CNN
+	1    4300 5525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+1V8 #PWR0133
+U 1 1 5CCF35E3
+P 4300 5725
+F 0 "#PWR0133" H 4300 5575 50  0001 C CNN
+F 1 "+1V8" V 4315 5853 50  0000 L CNN
+F 2 "" H 4300 5725 50  0001 C CNN
+F 3 "" H 4300 5725 50  0001 C CNN
+	1    4300 5725
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0134
+U 1 1 5CD133E2
+P 4300 5225
+F 0 "#PWR0134" H 4300 4975 50  0001 C CNN
+F 1 "GND" V 4305 5097 50  0000 R CNN
+F 2 "" H 4300 5225 50  0001 C CNN
+F 3 "" H 4300 5225 50  0001 C CNN
+	1    4300 5225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 5425 4425 5425
+$Comp
+L power:GND #PWR0135
+U 1 1 5CD1BF03
+P 4300 5625
+F 0 "#PWR0135" H 4300 5375 50  0001 C CNN
+F 1 "GND" V 4305 5497 50  0000 R CNN
+F 2 "" H 4300 5625 50  0001 C CNN
+F 3 "" H 4300 5625 50  0001 C CNN
+	1    4300 5625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 5625 4425 5625
+Wire Wire Line
+	4300 5525 4425 5525
+Wire Wire Line
+	4300 5725 4425 5725
+$Comp
+L Connector_Generic:Conn_01x05 J_extra1
+U 1 1 5CD3BA19
+P 4625 5025
+F 0 "J_extra1" H 4705 5067 50  0000 L CNN
+F 1 "Conn_01x05" H 4705 4976 50  0000 L CNN
+F 2 ".Connector:B2B_Flex_05_Dual_Row_38milx24mil_Pad_20mil" H 4625 5025 50  0001 C CNN
+F 3 "~" H 4625 5025 50  0001 C CNN
+	1    4625 5025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J_extra2
+U 1 1 5CD3C6CC
+P 4625 5525
+F 0 "J_extra2" H 4705 5567 50  0000 L CNN
+F 1 "Conn_01x05" H 4705 5476 50  0000 L CNN
+F 2 ".Connector:B2B_Flex_05_Dual_Row_38milx24mil_Pad_20mil" H 4625 5525 50  0001 C CNN
+F 3 "~" H 4625 5525 50  0001 C CNN
+	1    4625 5525
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Coaxial-Connectors-RF:U_FL-R-SMT_10_ J_coax1
+U 1 1 5CCC55C5
+P 5700 1050
+F 0 "J_coax1" H 5778 1275 50  0000 C CNN
+F 1 "U_FL-R-SMT_10_" H 5778 1184 50  0000 C CNN
+F 2 "digikey-footprints:Coax_Conn_U.FL" H 5900 1250 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UFL%20Series.pdf" H 5900 1350 60  0001 L CNN
+F 4 "H9161CT-ND" H 5900 1450 60  0001 L CNN "Digi-Key_PN"
+F 5 "U.FL-R-SMT(10)" H 5900 1550 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 5900 1650 60  0001 L CNN "Category"
+F 7 "Coaxial Connectors (RF)" H 5900 1750 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UFL%20Series.pdf" H 5900 1850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/hirose-electric-co-ltd/U.FL-R-SMT(10)/H9161CT-ND/2135256" H 5900 1950 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN U.FL RCPT STR 50 OHM SMD" H 5900 2050 60  0001 L CNN "Description"
+F 11 "Hirose Electric Co Ltd" H 5900 2150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5900 2250 60  0001 L CNN "Status"
+	1    5700 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 5CCC6379
+P 5700 1300
+F 0 "#PWR0136" H 5700 1050 50  0001 C CNN
+F 1 "GND" H 5705 1127 50  0000 C CNN
+F 2 "" H 5700 1300 50  0001 C CNN
+F 3 "" H 5700 1300 50  0001 C CNN
+	1    5700 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1250 5700 1300
+Text GLabel 6025 1050 2    50   Input ~ 0
+DOUT_P
+Wire Wire Line
+	6025 1050 5900 1050
 $EndSCHEMATC
