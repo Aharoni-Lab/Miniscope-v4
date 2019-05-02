@@ -138,8 +138,6 @@ Wire Wire Line
 Wire Wire Line
 	2850 5300 3300 5300
 Wire Wire Line
-	2850 5500 3300 5500
-Wire Wire Line
 	2850 5600 3300 5600
 Wire Wire Line
 	4950 3850 4450 3850
@@ -430,4 +428,21 @@ F 5 "0402" H 1360 2370 50  0001 C CNN "Size"
 	1    0    0    -1  
 $EndComp
 Connection ~ 1250 2450
+$Comp
+L .Connector:Conn_01x01 J9
+U 1 1 5CCA17FE
+P 5150 6225
+F 0 "J9" H 5229 6221 50  0000 L CNN
+F 1 "Conn_01x01" H 5230 6176 50  0001 L CNN
+F 2 ".Connector:Conn_1x1_700_Circular_Pad" H 5150 6225 50  0001 C CNN
+F 3 "~" H 5150 6225 50  0001 C CNN
+	1    5150 6225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3975 5500 3975 6225
+Wire Wire Line
+	3975 6225 4950 6225
+Wire Wire Line
+	2850 5500 3975 5500
 $EndSCHEMATC
