@@ -1406,4 +1406,28 @@ Text GLabel 6025 1050 2    50   Input ~ 0
 DOUT_P
 Wire Wire Line
 	6025 1050 5900 1050
+$Comp
+L .Connector:Conn_01x01 J_coax_gnd
+U 1 1 5CD10A6F
+P 5625 3525
+F 0 "J_coax_gnd" H 5705 3567 50  0000 L CNN
+F 1 "Conn_01x01" H 5705 3476 50  0000 L CNN
+F 2 "" H 5625 3525 50  0001 C CNN
+F 3 "~" H 5625 3525 50  0001 C CNN
+	1    5625 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CD112FF
+P 5350 3525
+F 0 "#PWR?" H 5350 3275 50  0001 C CNN
+F 1 "GND" V 5355 3397 50  0000 R CNN
+F 2 "" H 5350 3525 50  0001 C CNN
+F 3 "" H 5350 3525 50  0001 C CNN
+	1    5350 3525
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 3525 5425 3525
 $EndSCHEMATC
