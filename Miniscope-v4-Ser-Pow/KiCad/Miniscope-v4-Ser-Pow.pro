@@ -1,4 +1,4 @@
-update=5/2/2019 2:52:30 PM
+update=5/3/2019 10:33:09 AM
 version=1
 last_client=kicad
 [general]
@@ -72,20 +72,14 @@ SolderMaskMinWidth=0.25
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
-Name=Top_Signal1
+Name=F.Cu
 Type=3
 [pcbnew/Layer.In1.Cu]
-Name=GND
+Name=In1.Cu
 Type=1
-[pcbnew/Layer.In2.Cu]
-Name=Signal2
-Type=0
 [pcbnew/Layer.In3.Cu]
-Name=VDDD
+Name=In3.Cu
 Type=1
-[pcbnew/Layer.In4.Cu]
-Name=Signal3
-Type=0
 [pcbnew/Layer.B.Cu]
-Name=Back_Signal4
+Name=B.Cu
 Type=3
