@@ -1,4 +1,4 @@
-update=5/3/2019 10:33:09 AM
+update=5/3/2019 3:26:28 PM
 version=1
 last_client=kicad
 [general]
@@ -27,21 +27,27 @@ version=1
 PageLayoutDescrFile=
 LastNetListRead=Miniscope-v4-Ser-Pow.net
 CopperLayerCount=6
-BoardThickness=1.6
+BoardThickness=0.7874
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
 MinTrackWidth=0.07619999999999999
-MinViaDiameter=0.254
+MinViaDiameter=0.3556
 MinViaDrill=0.1016
-MinMicroViaDiameter=0.254
+MinMicroViaDiameter=0.3556
 MinMicroViaDrill=0.1016
 MinHoleToHole=0.25
 TrackWidth1=0.0762
-TrackWidth2=0.127
-ViaDiameter1=0.8
-ViaDrill1=0.4
+TrackWidth2=0.0762
+TrackWidth3=0.127
+TrackWidth4=0.1524
+TrackWidth5=0.1778
+TrackWidth6=0.2032
+TrackWidth7=0.3048
+TrackWidth8=0.508
+ViaDiameter1=0.3556
+ViaDrill1=0.1016
 ViaDiameter2=0.3556
 ViaDrill2=0.1016
 dPairWidth1=0.2
@@ -67,8 +73,8 @@ OthersTextSizeH=1
 OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
-SolderMaskClearance=0.051
-SolderMaskMinWidth=0.25
+SolderMaskClearance=0.0254
+SolderMaskMinWidth=0.1016
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
@@ -77,8 +83,8 @@ Type=3
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
 Type=1
-[pcbnew/Layer.In3.Cu]
-Name=In3.Cu
+[pcbnew/Layer.In4.Cu]
+Name=In4.Cu
 Type=1
 [pcbnew/Layer.B.Cu]
 Name=B.Cu
