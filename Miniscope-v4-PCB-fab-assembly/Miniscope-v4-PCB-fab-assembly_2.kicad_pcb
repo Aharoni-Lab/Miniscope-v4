@@ -143,7 +143,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "Output/"))
+      (outputdirectory "Output/PnP/"))
   )
 
   (net 0 "")
@@ -391,6 +391,7 @@
 
   (module .Logo:Miniscope_Logo2 (layer F.Cu) (tedit 0) (tstamp 5CCD67AD)
     (at 93.83376 91.31452)
+    (attr smd)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
@@ -815,8 +816,8 @@
     (at 113.22634 129.41798)
     (descr "Circular Fiducial, 0.75mm bare copper top; 1.5mm keepout (Level B)")
     (tags marker)
-    (attr virtual)
-    (fp_text reference REF** (at 0 -2) (layer F.SilkS) hide
+    (attr smd)
+    (fp_text reference REF_BR (at 0 -2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Fiducial_0.75mm_Dia_1.5mm_Outer (at 0 2) (layer F.Fab)
@@ -835,8 +836,8 @@
     (at 80.72634 129.41798)
     (descr "Circular Fiducial, 0.75mm bare copper top; 1.5mm keepout (Level B)")
     (tags marker)
-    (attr virtual)
-    (fp_text reference REF** (at 0 -2) (layer F.SilkS) hide
+    (attr smd)
+    (fp_text reference REF_BL (at 0 -2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Fiducial_0.75mm_Dia_1.5mm_Outer (at 0 2) (layer F.Fab)
@@ -855,8 +856,8 @@
     (at 80.72634 87.41798)
     (descr "Circular Fiducial, 0.75mm bare copper top; 1.5mm keepout (Level B)")
     (tags marker)
-    (attr virtual)
-    (fp_text reference REF** (at 0 -2) (layer F.SilkS) hide
+    (attr smd)
+    (fp_text reference REF_TL (at 0 -2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Fiducial_0.75mm_Dia_1.5mm_Outer (at 0 2) (layer F.Fab)
@@ -1160,6 +1161,7 @@
   (module .Connector:B2B_Flex_14_Dual_Row_38milx24mil_Pad_20mil (layer F.Cu) (tedit 5C2C5AF6) (tstamp 5CA1E821)
     (at 93.22634 104.91798 270)
     (path /5CA2700B)
+    (attr smd)
     (fp_text reference J2 (at -1.5838 -0.033) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -2400,6 +2402,7 @@
   (module .Connector:B2B_Flex_20_Dual_Row_38milx24mil_Pad_20mil (layer F.Cu) (tedit 5C2C5AC0) (tstamp 5CBF7909)
     (at 93.02634 112.91798 180)
     (path /5C89EF9C)
+    (attr smd)
     (fp_text reference J1 (at -1.9856 0.2874 180) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -2693,6 +2696,7 @@
   (module .Connector:Conn_1x1_250x750_Pad (layer F.Cu) (tedit 5C6F1B27) (tstamp 5C6F41C8)
     (at 110.04096 90.61492 90)
     (path /5C6FD752)
+    (attr smd)
     (fp_text reference J1 (at 1.6002 0.381 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -2850,6 +2854,7 @@
   (module .Connector:B2B_Flex_05_Dual_Row_38milx24mil_Pad_20mil (layer F.Cu) (tedit 5C2DBA66) (tstamp 5C6E3B9A)
     (at 104.076056 94.854434)
     (path /5C6E2114)
+    (attr smd)
     (fp_text reference J10 (at 1.164304 2.186686) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -3273,6 +3278,7 @@
   (module .Connector:Conn_1x1_250x750_Pad (layer F.Cu) (tedit 5C6F1475) (tstamp 5C6F27E3)
     (at 109.91396 92.98372 90)
     (path /5C1BE5C6)
+    (attr smd)
     (fp_text reference J7 (at -0.2 1.9 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -3286,6 +3292,7 @@
   (module .Connector:Conn_1x1_250x750_Pad (layer F.Cu) (tedit 5C6F1485) (tstamp 5C19CFC4)
     (at 109.91396 91.98372 90)
     (path /5C1BE586)
+    (attr smd)
     (fp_text reference J6 (at 0.3 2 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -3744,6 +3751,7 @@
   (module .Connector:Conn_1x1_700_Circular_Pad (layer F.Cu) (tedit 5CC914F4) (tstamp 5CC9183E)
     (at 103.57752 105.48704 270)
     (path /5CCA17FE)
+    (attr smd)
     (fp_text reference J9 (at -2.1684 0.7298 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -3757,6 +3765,7 @@
   (module .Connector:B2B_Flex_14_Dual_Row_38milx24mil_Pad_20mil (layer F.Cu) (tedit 5C2C5AF6) (tstamp 5CC24194)
     (at 101.24072 104.94564 270)
     (path /5C2C7B11)
+    (attr smd)
     (fp_text reference J1 (at -1.627 0.393 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -3844,6 +3853,7 @@
   (module .Connector:B2B_Flex_05_Dual_Row_38milx24mil_Pad_20mil (layer F.Cu) (tedit 5C2DBA66) (tstamp 5C2DE2A5)
     (at 104.06012 104.87744)
     (path /5C2E8093)
+    (attr smd)
     (fp_text reference J8 (at 0.0376 -1.5588 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -3865,6 +3875,7 @@
   (module .Connector:Conn_1x1_700_Circular_Pad (layer F.Cu) (tedit 5C2DB783) (tstamp 5C30EA6C)
     (at 105.73232 110.00184 270)
     (path /5C2E36BD)
+    (attr smd)
     (fp_text reference J7 (at 2.8168 0.1346 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -3878,6 +3889,7 @@
   (module .Connector:Conn_1x1_700_Circular_Pad (layer F.Cu) (tedit 5C2DB783) (tstamp 5C30EA78)
     (at 107.00232 110.00184 270)
     (path /5C2E369B)
+    (attr smd)
     (fp_text reference J6 (at 1.0668 -2.0954 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -3891,6 +3903,7 @@
   (module .Connector:Conn_1x1_700_Circular_Pad (layer F.Cu) (tedit 5C2DB783) (tstamp 5C30EA60)
     (at 105.73232 108.73184 270)
     (path /5C2E364B)
+    (attr smd)
     (fp_text reference J5 (at 4.0868 -1.413 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -3904,6 +3917,7 @@
   (module .Connector:Conn_1x1_700_Circular_Pad (layer F.Cu) (tedit 5C2DB783) (tstamp 5C30EA3C)
     (at 107.00232 108.73184 270)
     (path /5C2E357E)
+    (attr smd)
     (fp_text reference J4 (at 0.5868 -2.0954 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -3917,6 +3931,7 @@
   (module .Connector:Conn_1x1_700_Circular_Pad (layer F.Cu) (tedit 5C2DB783) (tstamp 5C30EA54)
     (at 105.73232 107.46184 270)
     (path /5C2E360D)
+    (attr smd)
     (fp_text reference J3 (at -4.1432 -1.1154 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -3930,6 +3945,7 @@
   (module .Connector:Conn_1x1_700_Circular_Pad (layer F.Cu) (tedit 5C2DB783) (tstamp 5C30EA48)
     (at 107.00232 107.46184 270)
     (path /5C2E362D)
+    (attr smd)
     (fp_text reference J2 (at 0.1068 -2.0954 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -4350,6 +4366,7 @@
   (module .Connector:Conn_1x1_100x100_Pad (layer F.Cu) (tedit 5CCB23E7) (tstamp 5CCCC8A8)
     (at 93.31596 121.06572 270)
     (path /5CD10A6F)
+    (attr smd)
     (fp_text reference J_coax_gnd1 (at 0.2488 -5.5178 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -4364,6 +4381,7 @@
     (at 93.41756 123.60318)
     (descr https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UFL%20Series.pdf)
     (path /5CCC55C5)
+    (attr smd)
     (fp_text reference J_coax1 (at 1.4162 -9.28866) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -4544,6 +4562,7 @@
   (module .Connector:B2B_Flex_05_Dual_Row_38milx24mil_Pad_20mil (layer F.Cu) (tedit 5C2DBA66) (tstamp 5CCA3C2C)
     (at 84.48946 123.349182 270)
     (path /5CD3C6CC)
+    (attr smd)
     (fp_text reference J_extra2 (at 1.965338 2.1557 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -4565,6 +4584,7 @@
   (module .Connector:B2B_Flex_05_Dual_Row_38milx24mil_Pad_20mil (layer F.Cu) (tedit 5C2DBA66) (tstamp 5CCA40A6)
     (at 84.52502 120.230062 270)
     (path /5CD3BA19)
+    (attr smd)
     (fp_text reference J_extra1 (at -1.915542 2.69126 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -5498,6 +5518,7 @@
   (module .Connector:B2B_Flex_20_Dual_Row_38milx24mil_Pad_20mil (layer F.Cu) (tedit 5C2C5AC0) (tstamp 5CC6CC74)
     (at 93.028936 118.92958 180)
     (path /5CC13A76)
+    (attr smd)
     (fp_text reference J16 (at 0.195176 2.61506 180) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
