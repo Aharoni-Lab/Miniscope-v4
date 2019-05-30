@@ -100,7 +100,7 @@ spi_BB_Write(197, 0x0380); // Num black lines spi_BB_Write(197, 0x030A);
 	spi_BB_Write(200, 3000); // Frame length, spi_BB_Write(200, 0x0350);
 	spi_BB_Write(201, 2900); // spi_BB_Write(201, 2900); // Exposure time spi_BB_Write(201, 0x01F4);
 #endif
-spi_BB_Write(204, 0x0024); 	// (gain 1x : 0x00E1 // gain 2x : 0x00E4 // gain 3.5x : 0x0024)
+spi_BB_Write(204, 0x00E4); 	// (gain 1x : 0x00E1 // gain 2x : 0x00E4 // gain 3.5x : 0x0024)
 spi_BB_Write(207, 0x0014);
 spi_BB_Write(214, 0x0100);
 spi_BB_Write(215, 0x101F);

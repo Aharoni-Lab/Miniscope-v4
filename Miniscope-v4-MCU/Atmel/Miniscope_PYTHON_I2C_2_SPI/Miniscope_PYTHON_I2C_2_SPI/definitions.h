@@ -51,6 +51,12 @@
 // No 0x00 values
 #define SET_LED1_VALUE	0x01
 #define SET_LED2_VALUE	0x02
+#define SET_GAIN_VALUE	0x03
+
+// ======= I2C GAIN VALUES ====
+#define GAIN_1			0x01
+#define GAIN_2			0x02
+#define GAIN_3_5		0x03
 
 
 #endif /* DEFINITIONS_H_ */

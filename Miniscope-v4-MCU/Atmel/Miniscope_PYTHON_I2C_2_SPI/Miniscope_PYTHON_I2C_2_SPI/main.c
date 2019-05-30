@@ -23,6 +23,8 @@ volatile uint8_t data;
 
 void I2C_received(uint8_t received_data)
 {
+// The switch function below becomes effective once 2 bytes have been received over I2C
+// pastI2CWord acts as the "write reg" and received_data act as the value being written
 	switch (pastI2CWord) {
 		case (SET_LED1_VALUE):
 			OCR0A = received_data;
@@ -36,6 +38,20 @@ void I2C_received(uint8_t received_data)
 			LED_ENT_PORT |= (1<<LED_ENT2_PIN); //Make sure ENT pin is on
 			if (received_data == 0) 
 				LED_ENT_PORT &= ~(1<<LED_ENT2_PIN); //Set ENT pin to off
+			pastI2CWord = 0; //Idle state
+			break;
+		case (SET_GAIN_VALUE):
+			switch (received_data) {
+				case (GAIN_1):
+					spi_BB_Write(204, 0x00E1);
+					break;
+				case (GAIN_2):
+					spi_BB_Write(204, 0x00E4);
+					break;
+				case (GAIN_3_5):
+					spi_BB_Write(204, 0x0024);
+					break;
+			}
 			pastI2CWord = 0; //Idle state
 			break;
 		default:
