@@ -1,4 +1,4 @@
-update=6/12/2019 9:13:19 AM
+update=6/13/2019 3:29:20 PM
 version=1
 last_client=kicad
 [general]
@@ -20,7 +20,7 @@ CopperLayerCount=6
 BoardThickness=0.8
 AllowMicroVias=0
 AllowBlindVias=0
-RequireCourtyardDefinitions=0
+RequireCourtyardDefinitions=1
 ProhibitOverlappingCourtyards=1
 MinTrackWidth=0.08889999999999999
 MinViaDiameter=0.45
@@ -71,7 +71,7 @@ Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
-Type=1
+Type=0
 Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
@@ -79,7 +79,7 @@ Type=0
 Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
-Type=0
+Type=1
 Enabled=1
 [pcbnew/Layer.In4.Cu]
 Name=In4.Cu
