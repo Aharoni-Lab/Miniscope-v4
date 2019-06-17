@@ -313,17 +313,6 @@ F 3 "" H 950 1725 50  0001 C CNN
 	1    950  1725
 	1    0    0    -1  
 $EndComp
-$Comp
-L .LED:LXZ1-PR01 D2
-U 1 1 5C198A03
-P 2550 1925
-F 0 "D2" V 2600 1875 50  0000 R CNN
-F 1 "LXZ1-PR01 (Blue)" V 2450 1925 50  0000 R CNN
-F 2 ".LED:LED_LXZ1_PR01_L" V 2550 1925 50  0001 C CNN
-F 3 "https://www.lumileds.com/uploads/415/DS105-pdf" V 2550 1925 50  0001 C CNN
-	1    2550 1925
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2350 1725 2550 1725
 Wire Wire Line
@@ -823,7 +812,7 @@ Connection ~ 4550 4975
 Wire Wire Line
 	6000 5375 8400 5375
 $Comp
-L Device:R_US R5
+L .Resistor:ERJ-1GEF1022C R5
 U 1 1 5D0314EF
 P 9100 1100
 F 0 "R5" H 9168 1146 50  0000 L CNN
@@ -834,18 +823,7 @@ F 3 "~" H 9100 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R6
-U 1 1 5D031D7C
-P 9100 1525
-F 0 "R6" H 9168 1571 50  0000 L CNN
-F 1 "4k7" H 9168 1480 50  0000 L CNN
-F 2 ".Resistor:R_0201_0603Metric_ERJ_L" V 9140 1515 50  0001 C CNN
-F 3 "~" H 9100 1525 50  0001 C CNN
-	1    9100 1525
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R7
+L .Resistor:ERJ-1GEF1022C R7
 U 1 1 5D034890
 P 9950 1100
 F 0 "R7" H 10018 1146 50  0000 L CNN
@@ -866,12 +844,6 @@ F 3 "" H 9100 1775 50  0001 C CNN
 	1    9100 1775
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9100 1675 9100 1775
-Wire Wire Line
-	9100 1250 9100 1325
-Wire Wire Line
-	9950 1250 9950 1300
 $Comp
 L power:+3.3V #PWR0111
 U 1 1 5D04768A
@@ -894,24 +866,16 @@ F 3 "" H 9950 850 50  0001 C CNN
 	1    9950 850 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9100 850  9100 950 
-Wire Wire Line
-	9950 850  9950 950 
 Text Label 8750 1325 0    50   ~ 0
 Va
 Wire Wire Line
 	8750 1325 9100 1325
 Connection ~ 9100 1325
-Wire Wire Line
-	9100 1325 9100 1375
 Text Label 9650 1300 0    50   ~ 0
 Vb
 Wire Wire Line
 	9650 1300 9950 1300
 Connection ~ 9950 1300
-Wire Wire Line
-	9950 1300 9950 1375
 Wire Wire Line
 	5300 1575 5650 1575
 Wire Wire Line
@@ -956,7 +920,7 @@ _Wa
 Text Label 8400 5375 0    50   ~ 0
 _Wa
 $Comp
-L Device:R_US R8
+L .Resistor:ERJ-1GEF1022C R8
 U 1 1 5D07CC2E
 P 9950 1525
 F 0 "R8" H 10018 1571 50  0000 L CNN
@@ -977,8 +941,6 @@ F 3 "" H 9950 1775 50  0001 C CNN
 	1    9950 1775
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9950 1675 9950 1775
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5D08606C
@@ -996,4 +958,42 @@ Wire Wire Line
 	5700 6600 6075 6600
 Text Label 3925 2925 0    50   ~ 0
 _Wb
+$Comp
+L .LED:LXZ1-PR01 D2
+U 1 1 5D0BA34D
+P 2550 1925
+F 0 "D2" V 2596 1857 50  0000 R CNN
+F 1 "LXZ1-PR01 (Blue)" V 2505 1857 50  0000 R CNN
+F 2 ".LED:LED_LXZ1_PR01_L" H 2400 1950 50  0001 C CNN
+F 3 "https://www.lumileds.com/uploads/415/DS105-pdf" V 2550 1925 50  0001 C CNN
+	1    2550 1925
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9100 850  9100 1000
+Wire Wire Line
+	9100 1200 9100 1325
+$Comp
+L .Resistor:ERJ-1GEF1022C R6
+U 1 1 5D031D7C
+P 9100 1525
+F 0 "R6" H 9168 1571 50  0000 L CNN
+F 1 "4k7" H 9168 1480 50  0000 L CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" V 9140 1515 50  0001 C CNN
+F 3 "~" H 9100 1525 50  0001 C CNN
+	1    9100 1525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 1325 9100 1425
+Wire Wire Line
+	9100 1625 9100 1775
+Wire Wire Line
+	9950 1200 9950 1300
+Wire Wire Line
+	9950 850  9950 1000
+Wire Wire Line
+	9950 1300 9950 1425
+Wire Wire Line
+	9950 1625 9950 1775
 $EndSCHEMATC
