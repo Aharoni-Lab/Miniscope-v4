@@ -1,0 +1,3 @@
+- Machined parts for the two color LED miniscope. The difference between this one and the common v4 miniscope is the excitation module that now houses two filters. 
+- Tools needed: 2,5 and 15
+- Stock height: 36.5 mm
