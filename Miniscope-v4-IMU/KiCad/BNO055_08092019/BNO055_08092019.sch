@@ -1,0 +1,232 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BNO055_2:BNO055 U1
+U 1 1 5D4EA5F1
+P 5550 3550
+F 0 "U1" H 5550 2683 50  0000 C CNN
+F 1 "BNO055" H 5550 2774 50  0000 C CNN
+F 2 "LGA28R50P4X10_380X520X100" H 5550 3550 50  0001 L BNN
+F 3 "" H 5550 3550 50  0001 L BNN
+F 4 "BNO055" H 5550 3550 50  0001 L BNN "Field4"
+F 5 "Unavailable" H 5550 3550 50  0001 L BNN "Field5"
+F 6 "Bosch" H 5550 3550 50  0001 L BNN "Field6"
+F 7 "BNO055 9-axis Absolute Orientation Sensor _ SiP _ w/Sensors and Sensor Fusion" H 5550 3550 50  0001 L BNN "Field7"
+F 8 "None" H 5550 3550 50  0001 L BNN "Field8"
+	1    5550 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L .Device:C_Small C1
+U 1 1 5D4ED5C9
+P 4500 2950
+F 0 "C1" V 4271 2950 50  0000 C CNN
+F 1 "100nF" V 4362 2950 50  0000 C CNN
+F 2 "" H 4500 2950 50  0001 C CNN
+F 3 "~" H 4500 2950 50  0001 C CNN
+	1    4500 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 2950 4700 2950
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5D4EFA1C
+P 4150 2350
+F 0 "#PWR01" H 4150 2200 50  0001 C CNN
+F 1 "+3.3V" H 4165 2523 50  0000 C CNN
+F 2 "" H 4150 2350 50  0001 C CNN
+F 3 "" H 4150 2350 50  0001 C CNN
+	1    4150 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2950 4150 2950
+Wire Wire Line
+	4150 2950 4150 2450
+Wire Wire Line
+	4700 2950 4700 3050
+Wire Wire Line
+	4700 3050 4750 3050
+Connection ~ 4700 2950
+Wire Wire Line
+	4700 2950 4600 2950
+Wire Wire Line
+	4700 3050 4700 3150
+Wire Wire Line
+	4700 3150 4750 3150
+Connection ~ 4700 3050
+Wire Wire Line
+	4700 3150 4700 3250
+Wire Wire Line
+	4700 3250 4750 3250
+Connection ~ 4700 3150
+$Comp
+L power:GND #PWR02
+U 1 1 5D4F0669
+P 4450 3200
+F 0 "#PWR02" H 4450 2950 50  0001 C CNN
+F 1 "GND" H 4455 3027 50  0000 C CNN
+F 2 "" H 4450 3200 50  0001 C CNN
+F 3 "" H 4450 3200 50  0001 C CNN
+	1    4450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3150 4450 3150
+Wire Wire Line
+	4750 3950 4550 3950
+Wire Wire Line
+	4150 3950 4150 2950
+Connection ~ 4150 2950
+Wire Wire Line
+	4750 4050 4150 4050
+Wire Wire Line
+	4150 4050 4150 3950
+Connection ~ 4150 3950
+Wire Wire Line
+	6350 4050 6500 4050
+Wire Wire Line
+	6500 4050 6500 3950
+Wire Wire Line
+	6500 3950 6350 3950
+$Comp
+L power:GND #PWR04
+U 1 1 5D4F177B
+P 6500 4200
+F 0 "#PWR04" H 6500 3950 50  0001 C CNN
+F 1 "GND" H 6505 4027 50  0000 C CNN
+F 2 "" H 6500 4200 50  0001 C CNN
+F 3 "" H 6500 4200 50  0001 C CNN
+	1    6500 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4050 6500 4200
+Connection ~ 6500 4050
+Wire Wire Line
+	4450 3150 4450 3200
+Wire Wire Line
+	6350 3750 6500 3750
+Wire Wire Line
+	6500 3750 6500 2450
+Wire Wire Line
+	6500 2450 4150 2450
+Connection ~ 4150 2450
+Wire Wire Line
+	4150 2450 4150 2350
+$Comp
+L Device:R R1
+U 1 1 5D4F2D8D
+P 6800 3550
+F 0 "R1" V 6800 3550 50  0000 C CNN
+F 1 "R" V 6900 3550 50  0000 C CNN
+F 2 "" V 6730 3550 50  0001 C CNN
+F 3 "~" H 6800 3550 50  0001 C CNN
+	1    6800 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 3550 6650 3550
+Wire Wire Line
+	6950 3550 6950 2450
+Wire Wire Line
+	6950 2450 6500 2450
+Connection ~ 6500 2450
+Wire Wire Line
+	6350 3250 6600 3250
+Wire Wire Line
+	6600 3250 6600 3950
+Wire Wire Line
+	6600 3950 6500 3950
+Connection ~ 6500 3950
+$Comp
+L .Device:C_Small C4
+U 1 1 5D4F4F66
+P 6700 2950
+F 0 "C4" V 6471 2950 50  0000 C CNN
+F 1 "100nF" V 6562 2950 50  0000 C CNN
+F 2 "" H 6700 2950 50  0001 C CNN
+F 3 "~" H 6700 2950 50  0001 C CNN
+	1    6700 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 2950 6600 2950
+$Comp
+L power:GND #PWR05
+U 1 1 5D4F5CF6
+P 6800 3050
+F 0 "#PWR05" H 6800 2800 50  0001 C CNN
+F 1 "GND" H 6805 2877 50  0000 C CNN
+F 2 "" H 6800 3050 50  0001 C CNN
+F 3 "" H 6800 3050 50  0001 C CNN
+	1    6800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2950 6800 3050
+NoConn ~ 4750 3350
+NoConn ~ 4750 3650
+NoConn ~ 4750 3750
+NoConn ~ 6350 3850
+Wire Wire Line
+	4550 3950 4550 4350
+Connection ~ 4550 3950
+Wire Wire Line
+	4550 3950 4150 3950
+Wire Wire Line
+	4800 4350 4550 4350
+Connection ~ 4550 4350
+Wire Wire Line
+	4550 4550 4800 4550
+$Comp
+L power:GND #PWR03
+U 1 1 5D4F85F4
+P 4800 4650
+F 0 "#PWR03" H 4800 4400 50  0001 C CNN
+F 1 "GND" H 4805 4477 50  0000 C CNN
+F 2 "" H 4800 4650 50  0001 C CNN
+F 3 "" H 4800 4650 50  0001 C CNN
+	1    4800 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4650 4800 4550
+Connection ~ 4800 4550
+$Comp
+L .Device:C_Small C3
+U 1 1 5D4EDBF9
+P 4800 4450
+F 0 "C3" H 4900 4550 50  0000 L CNN
+F 1 "120nF" H 4900 4450 50  0000 L CNN
+F 2 "" H 4800 4450 50  0001 C CNN
+F 3 "~" H 4800 4450 50  0001 C CNN
+	1    4800 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L .Device:C_Small C2
+U 1 1 5D4ED91A
+P 4550 4450
+F 0 "C2" H 4350 4550 50  0000 L CNN
+F 1 "6.8nF" H 4250 4450 50  0000 L CNN
+F 2 "" H 4550 4450 50  0001 C CNN
+F 3 "~" H 4550 4450 50  0001 C CNN
+	1    4550 4450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
