@@ -227,7 +227,7 @@ F 3 "" H 2900 2975 50  0001 C CNN
 	1    2900 2975
 	1    0    0    -1  
 $EndComp
-Text Notes 1650 2625 0    50   ~ 0
+Text Notes 2425 2700 0    50   ~ 0
 Caps placed between pins 25 and 28
 Text Notes 4300 2650 0    50   ~ 0
 Cap placed between pins 2 and 3
@@ -239,7 +239,7 @@ Wire Wire Line
 	6900 2600 6900 2700
 Text Label 6250 2600 0    50   ~ 0
 CAP
-Text Label 6350 2950 0    50   ~ 0
+Text Label 6450 2950 0    50   ~ 0
 CAP
 $Comp
 L power:+3.3V #PWR05
@@ -298,9 +298,9 @@ Wire Wire Line
 	8050 3400 7650 3400
 Wire Wire Line
 	8050 3600 7650 3600
-Text Label 7675 3200 0    50   ~ 0
-SDA
 Text Label 7650 3300 0    50   ~ 0
+SDA
+Text Label 7675 3200 0    50   ~ 0
 SCL
 $Comp
 L power:GND #PWR0101
