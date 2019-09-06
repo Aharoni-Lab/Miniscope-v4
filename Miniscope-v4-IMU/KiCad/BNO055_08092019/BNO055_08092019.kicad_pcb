@@ -36,7 +36,7 @@
   )
 
   (setup
-    (last_trace_width 0.1524)
+    (last_trace_width 0.0889)
     (user_trace_width 0.09)
     (user_trace_width 0.1524)
     (user_trace_width 0.2032)
@@ -66,7 +66,7 @@
     (pad_to_mask_clearance 0.0254)
     (solder_mask_min_width 0.0508)
     (aux_axis_origin 0 0)
-    (grid_origin 188.323501 73.677401)
+    (grid_origin 188.120301 73.474201)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
@@ -92,9 +92,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "Output/"))
   )
 
   (net 0 "")
@@ -132,7 +132,7 @@
     (add_net "Net-(U1-Pad27)")
   )
 
-  (module LGA28R50P4X10_380X520X100 (layer F.Cu) (tedit 0) (tstamp 5D54E199)
+  (module LGA28R50P4X10_380X520X100 (layer F.Cu) (tedit 0) (tstamp 5D646C4F)
     (at 190.923501 75.577401)
     (path /5D4EA5F1)
     (attr smd)
@@ -552,10 +552,10 @@
     (arrow2a (pts (xy 195.7705 73.0885) (xy 195.184079 74.215004)))
     (arrow2b (pts (xy 195.7705 73.0885) (xy 196.356921 74.215004)))
   )
-  (gr_line (start 193.708301 77.665201) (end 188.120301 77.665201) (layer Edge.Cuts) (width 0.05) (tstamp 5D4E80C5))
+  (gr_line (start 193.708301 78.474201) (end 188.120301 78.474201) (layer Edge.Cuts) (width 0.05) (tstamp 5D4E80C5))
   (gr_line (start 188.120301 73.474201) (end 193.708301 73.474201) (layer Edge.Cuts) (width 0.05) (tstamp 5D54E129))
-  (gr_line (start 193.708301 77.665201) (end 193.708301 73.474201) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 188.120301 73.474201) (end 188.120301 77.665201) (layer Edge.Cuts) (width 0.05) (tstamp 5D4E80B3))
+  (gr_line (start 193.708301 78.474201) (end 193.708301 73.474201) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 188.120301 73.474201) (end 188.120301 78.474201) (layer Edge.Cuts) (width 0.05) (tstamp 5D4E80B3))
 
   (via (at 191.447701 74.668001) (size 0.45) (drill 0.2) (layers F.Cu B.Cu) (net 1))
   (segment (start 191.523899 74.591803) (end 191.447701 74.668001) (width 0.1524) (layer B.Cu) (net 1))
@@ -634,7 +634,7 @@
   (segment (start 191.214701 77.131801) (end 191.214701 76.450705) (width 0.1524) (layer B.Cu) (net 12))
   (via (at 191.216408 76.448998) (size 0.45) (drill 0.2) (layers F.Cu B.Cu) (net 12))
 
-  (zone (net 2) (net_name GND) (layer GND) (tstamp 0) (hatch full 0.508)
+  (zone (net 2) (net_name GND) (layer GND) (tstamp 5D55F450) (hatch full 0.508)
     (connect_pads yes (clearance 0.1524))
     (min_thickness 0.1016)
     (fill yes (arc_segments 32) (thermal_gap 0.127) (thermal_bridge_width 0.2794) (smoothing chamfer))
@@ -693,7 +693,7 @@
       )
     )
   )
-  (zone (net 1) (net_name +3V3) (layer 3V3) (tstamp 5D54F25A) (hatch full 0.508)
+  (zone (net 1) (net_name +3V3) (layer 3V3) (tstamp 5D55F44D) (hatch full 0.508)
     (connect_pads yes (clearance 0.1524))
     (min_thickness 0.1016)
     (fill yes (arc_segments 32) (thermal_gap 0.127) (thermal_bridge_width 0.2794) (smoothing chamfer))
