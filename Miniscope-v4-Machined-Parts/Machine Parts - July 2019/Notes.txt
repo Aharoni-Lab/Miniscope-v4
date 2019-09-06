@@ -3,6 +3,6 @@
 - Stock used: 0.75 inches
 - Suggested lenght of the stock for each part (please check) 
 	a) Emission: 42 mm
-	b) Objective: 35 mm
+	b) Objective: 40 mm
 	c) Excitation: 31 mm
 - The toolpaths uploaded are the working ones. It is strongly suggested to generate them again just in case
