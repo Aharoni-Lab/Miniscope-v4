@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:Miniscope-v4-Rigid-Flex-cache
-LIBS:BNO055_08092019-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L .Driver_ETL:MAX14574EWL+ U4
-U 1 1 5C189E9C
-P 3675 4275
-F 0 "U4" H 3575 4475 50  0000 C CNN
-F 1 "MAX14574EWL+" H 4175 4475 50  0000 C CNN
-F 2 ".Package_BGA:BGA_15_NP50_3X5_155X255X69B31N" H 3425 4575 50  0001 C CNN
-F 3 "" H 3675 4275 50  0001 C CNN
-	1    3675 4275
-	1    0    0    -1  
-$EndComp
 $Comp
 L .Potentiometer:TPL0102-100RUCR U3
 U 1 1 5C189F4C
@@ -177,9 +165,9 @@ F 3 "" H 2625 3875 50  0001 C CNN
 $EndComp
 Connection ~ 2625 3875
 Text Label 3025 4675 0    50   ~ 0
-SDA
+SDA_3V3
 Text Label 3025 4775 0    50   ~ 0
-SCL
+SCL_3V3
 Text Label 4325 4875 0    50   ~ 0
 EWL1
 Text Label 4325 5075 0    50   ~ 0
@@ -413,10 +401,6 @@ F 3 "" H 7425 2075 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3425 4675 3025 4675
-Text Label 5925 2575 0    50   ~ 0
-SDA
-Text Label 5925 2675 0    50   ~ 0
-SCL
 $Comp
 L power:GND #PWR0123
 U 1 1 5C1A9BFD
@@ -509,27 +493,12 @@ F 3 "~" H 4825 4325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4825 4225
-$Comp
-L Connector_Generic:Conn_01x05 J10
-U 1 1 5C6E2114
-P 8100 4650
-F 0 "J10" H 8180 4692 50  0000 L CNN
-F 1 "Conn_01x05" H 8180 4601 50  0000 L CNN
-F 2 ".Connector:B2B_Flex_05_Dual_Row_38milx24mil_Pad_20mil_copy" H 8100 4650 50  0001 C CNN
-F 3 "~" H 8100 4650 50  0001 C CNN
-	1    8100 4650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7500 4450 7900 4450
 Wire Wire Line
 	7500 4850 7900 4850
 Wire Wire Line
-	7500 4650 7900 4650
-Wire Wire Line
 	7150 4750 7900 4750
-Wire Wire Line
-	7350 4550 7900 4550
 $Comp
 L power:+3.3V #PWR0125
 U 1 1 5C6E2447
@@ -552,64 +521,6 @@ F 3 "" H 7150 4750 50  0001 C CNN
 	1    7150 4750
 	1    0    0    -1  
 $EndComp
-Text Label 7500 4650 0    50   ~ 0
-SDA
-Text Label 7500 4550 0    50   ~ 0
-SCL
-Text Label 7500 4450 0    50   ~ 0
-ENT
-$Comp
-L .Resistor:ERJ-1GEF1022C R3
-U 1 1 5C6EE01E
-P 4650 6075
-F 0 "R3" V 4445 6075 50  0000 C CNN
-F 1 "ERJ-1GEF1022C" H 4680 5885 50  0001 L CNN
-F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 4580 5995 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Resistors%20Thermistors%20PDFs/ERJ-G,R,E_Series_Rev_Oct_2014.pdf" H 4650 6075 50  0001 C CNN
-F 4 "DNL" V 4536 6075 50  0000 C CNN "Note"
-F 5 "0201" H 4880 6295 50  0001 C CNN "Size"
-	1    4650 6075
-	0    1    1    0   
-$EndComp
-$Comp
-L .Resistor:ERJ-1GEF1022C R2
-U 1 1 5C6EE157
-P 4650 5825
-F 0 "R2" V 4445 5825 50  0000 C CNN
-F 1 "ERJ-1GEF1022C" H 4680 5635 50  0001 L CNN
-F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 4580 5745 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Resistors%20Thermistors%20PDFs/ERJ-G,R,E_Series_Rev_Oct_2014.pdf" H 4650 5825 50  0001 C CNN
-F 4 "DNL" V 4536 5825 50  0000 C CNN "Note"
-F 5 "0201" H 4880 6045 50  0001 C CNN "Size"
-	1    4650 5825
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4550 6075 4550 5825
-Wire Wire Line
-	4350 5825 4550 5825
-Connection ~ 4550 5825
-Wire Wire Line
-	4750 5825 5125 5825
-Wire Wire Line
-	4750 6075 5125 6075
-Text Label 4925 5825 0    50   ~ 0
-SDA
-Text Label 4925 6075 0    50   ~ 0
-SCL
-$Comp
-L power:+3.3V #PWR0127
-U 1 1 5C6F2EE5
-P 4350 5825
-F 0 "#PWR0127" H 4350 5675 50  0001 C CNN
-F 1 "+3.3V" H 4365 5998 50  0000 C CNN
-F 2 "" H 4350 5825 50  0001 C CNN
-F 3 "" H 4350 5825 50  0001 C CNN
-	1    4350 5825
-	1    0    0    -1  
-$EndComp
-Text Notes 3925 6200 0    50   ~ 0
-These I2C pullup resistors replace those on the Serializer PCB. 
 $Comp
 L .Capacitor:GRM033R61A104ME15D C6
 U 1 1 5C6FB71E
@@ -661,9 +572,9 @@ F 3 "" H 5775 5675 50  0001 C CNN
 	1    5775 5675
 	1    0    0    -1  
 $EndComp
-Text HLabel 7500 4650 0    50   BiDi ~ 0
+Text HLabel 850  2575 0    50   BiDi ~ 0
 I2C_SDA
-Text HLabel 7350 4550 0    50   Input ~ 0
+Text HLabel 850  2675 0    50   Input ~ 0
 I2C_SCL
 Text HLabel 7500 4450 0    50   Input ~ 0
 ENT1
@@ -706,4 +617,148 @@ F 3 "" H 2500 5175 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2500 5350 2500 5175
+$Comp
+L .Driver_ETL:MAX14574EWL+ U4
+U 1 1 5C189E9C
+P 3675 4275
+F 0 "U4" H 3575 4475 50  0000 C CNN
+F 1 "MAX14574EWL+" H 4175 4475 50  0000 C CNN
+F 2 ".Package_BGA:BGA_15_NP50_3X5_155X255X69B31N" H 3425 4575 50  0001 C CNN
+F 3 "" H 3675 4275 50  0001 C CNN
+	1    3675 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L .Logic_Level_Translator:PCA9509AGM U11
+U 1 1 5D87E667
+P 1650 2625
+F 0 "U11" H 1650 3090 50  0000 C CNN
+F 1 "PCA9509AGM" H 1650 2999 50  0000 C CNN
+F 2 ".Package_QFN:XQFN8" H 1500 2825 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/PCA9509A.pdf" H 1500 2825 50  0001 C CNN
+	1    1650 2625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2975 1700 3075
+Wire Wire Line
+	1250 2425 1125 2425
+Wire Wire Line
+	1125 2425 1125 2200
+Wire Wire Line
+	2050 2425 2150 2425
+Wire Wire Line
+	2150 2425 2150 2200
+Wire Wire Line
+	1250 2825 1125 2825
+Wire Wire Line
+	1125 2825 1125 2425
+Connection ~ 1125 2425
+Wire Wire Line
+	1250 2575 850  2575
+Wire Wire Line
+	1250 2675 850  2675
+Wire Wire Line
+	2050 2575 2350 2575
+Wire Wire Line
+	2050 2675 2350 2675
+$Comp
+L power:+1V8 #PWR0190
+U 1 1 5D88F80C
+P 1125 2200
+F 0 "#PWR0190" H 1125 2050 50  0001 C CNN
+F 1 "+1V8" H 1140 2373 50  0000 C CNN
+F 2 "" H 1125 2200 50  0001 C CNN
+F 3 "" H 1125 2200 50  0001 C CNN
+	1    1125 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0213
+U 1 1 5D88FDD9
+P 2150 2200
+F 0 "#PWR0213" H 2150 2050 50  0001 C CNN
+F 1 "+3.3V" H 2165 2373 50  0000 C CNN
+F 2 "" H 2150 2200 50  0001 C CNN
+F 3 "" H 2150 2200 50  0001 C CNN
+	1    2150 2200
+	1    0    0    -1  
+$EndComp
+Text Label 2125 2575 0    50   ~ 0
+SDA_3V3
+Text Label 2125 2675 0    50   ~ 0
+SCL_3V3
+Text Label 5925 2675 0    50   ~ 0
+SCL_3V3
+Text Label 5925 2575 0    50   ~ 0
+SDA_3V3
+Text Label 7500 4450 0    50   ~ 0
+ENT
+$Comp
+L power:GND #PWR0214
+U 1 1 5D8918F0
+P 1700 3075
+F 0 "#PWR0214" H 1700 2825 50  0001 C CNN
+F 1 "GND" H 1705 2902 50  0000 C CNN
+F 2 "" H 1700 3075 50  0001 C CNN
+F 3 "" H 1700 3075 50  0001 C CNN
+	1    1700 3075
+	1    0    0    -1  
+$EndComp
+Text Label 1650 4075 0    50   ~ 0
+SDA_3V3
+Text Label 1650 3975 0    50   ~ 0
+SCL_3V3
+$Comp
+L .Resistor:ERJ-1GEF1022C R3
+U 1 1 5D894719
+P 1400 3875
+F 0 "R3" V 1195 3875 50  0000 C CNN
+F 1 "ERJ-1GEF1022C" H 1430 3685 50  0001 L CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 1330 3795 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Resistors%20Thermistors%20PDFs/ERJ-G,R,E_Series_Rev_Oct_2014.pdf" H 1400 3875 50  0001 C CNN
+F 4 "10.2K" V 1286 3875 50  0000 C CNN "Note"
+F 5 "0201" H 1630 4095 50  0001 C CNN "Size"
+	1    1400 3875
+	-1   0    0    1   
+$EndComp
+$Comp
+L .Resistor:ERJ-1GEF1022C R2
+U 1 1 5D895973
+P 1050 3875
+F 0 "R2" V 845 3875 50  0000 C CNN
+F 1 "ERJ-1GEF1022C" H 1080 3685 50  0001 L CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 980 3795 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Resistors%20Thermistors%20PDFs/ERJ-G,R,E_Series_Rev_Oct_2014.pdf" H 1050 3875 50  0001 C CNN
+F 4 "10.2K" V 936 3875 50  0000 C CNN "Note"
+F 5 "0201" H 1280 4095 50  0001 C CNN "Size"
+	1    1050 3875
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 3975 1875 3975
+Wire Wire Line
+	1050 4075 1050 3975
+Wire Wire Line
+	1050 4075 1875 4075
+Wire Wire Line
+	1400 3600 1225 3600
+Wire Wire Line
+	1050 3600 1050 3775
+Wire Wire Line
+	1400 3600 1400 3775
+$Comp
+L power:+3.3V #PWR0215
+U 1 1 5D89FD62
+P 1225 3600
+F 0 "#PWR0215" H 1225 3450 50  0001 C CNN
+F 1 "+3.3V" H 1240 3773 50  0000 C CNN
+F 2 "" H 1225 3600 50  0001 C CNN
+F 3 "" H 1225 3600 50  0001 C CNN
+	1    1225 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 1225 3600
+Wire Wire Line
+	1225 3600 1050 3600
 $EndSCHEMATC

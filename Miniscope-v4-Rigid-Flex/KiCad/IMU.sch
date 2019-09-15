@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:Miniscope-v4-Rigid-Flex-cache
-LIBS:BNO055_08092019-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -16,9 +15,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L BNO055_08092019-rescue:BNO055-BNO055_2 U10
+L Miniscope-v4-Rigid-Flex-rescue:BNO055-BNO055_2-BNO055_08092019-rescue U10
 U 1 1 5D4EA5F1
 P 5550 3550
+AR Path="/5D4EA5F1" Ref="U10"  Part="1" 
+AR Path="/5D826816/5D4EA5F1" Ref="U10"  Part="1" 
 F 0 "U10" H 5550 2683 50  0000 C CNN
 F 1 "BNO055" H 5550 2774 50  0000 C CNN
 F 2 "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm" H 5550 3550 50  0001 L BNN
@@ -87,14 +88,9 @@ F 3 "" H 4450 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4700 3150 4450 3150
-Wire Wire Line
-	4150 3950 4150 2950
 Connection ~ 4150 2950
 Wire Wire Line
 	4750 4050 4150 4050
-Wire Wire Line
-	4150 4050 4150 3950
-Connection ~ 4150 3950
 Wire Wire Line
 	6350 4050 6500 4050
 Wire Wire Line
@@ -203,30 +199,6 @@ F 2 ".Resistor:R_0201_0603Metric_ERJ_L" V 6887 3550 50  0001 C CNN
 F 3 "~" H 7000 3550 50  0001 C CNN
 	1    7000 3550
 	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x05 J18
-U 1 1 5D54B6AA
-P 8250 3400
-F 0 "J18" H 8330 3442 50  0000 L CNN
-F 1 "Conn_01x05" H 8330 3351 50  0000 L CNN
-F 2 ".Connector:B2B_Flex_05_Dual_Row_38milx24mil_Pad_20mil_copy" H 8250 3400 50  0001 C CNN
-F 3 "~" H 8250 3400 50  0001 C CNN
-	1    8250 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4150 3950 4750 3950
-$Comp
-L power:+3.3V #PWR0208
-U 1 1 5D54E0FD
-P 2900 2975
-F 0 "#PWR0208" H 2900 2825 50  0001 C CNN
-F 1 "+3.3V" H 2915 3148 50  0000 C CNN
-F 2 "" H 2900 2975 50  0001 C CNN
-F 3 "" H 2900 2975 50  0001 C CNN
-	1    2900 2975
-	1    0    0    -1  
 $EndComp
 Text Notes 2425 2700 0    50   ~ 0
 Caps placed between pins 25 and 28
@@ -342,4 +314,32 @@ Text HLabel 7675 3200 0    50   Input ~ 0
 I2C_SCL
 Text HLabel 7650 3300 0    50   BiDi ~ 0
 I2C_SDA
+Wire Wire Line
+	4150 2950 4150 4050
+Wire Wire Line
+	4750 3950 4400 3950
+Wire Wire Line
+	4400 3950 4400 3825
+$Comp
+L power:+1V8 #PWR0127
+U 1 1 5D879358
+P 4400 3825
+F 0 "#PWR0127" H 4400 3675 50  0001 C CNN
+F 1 "+1V8" H 4415 3998 50  0000 C CNN
+F 2 "" H 4400 3825 50  0001 C CNN
+F 3 "" H 4400 3825 50  0001 C CNN
+	1    4400 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR0208
+U 1 1 5D87A050
+P 2900 2975
+F 0 "#PWR0208" H 2900 2825 50  0001 C CNN
+F 1 "+1V8" H 2915 3148 50  0000 C CNN
+F 2 "" H 2900 2975 50  0001 C CNN
+F 3 "" H 2900 2975 50  0001 C CNN
+	1    2900 2975
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

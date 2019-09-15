@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:Miniscope-v4-Rigid-Flex-cache
-LIBS:BNO055_08092019-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -35,17 +34,6 @@ F 1 "SiT_2.5mmx2mm" H 9100 5784 50  0000 C CNN
 F 2 ".Oscillator:OSC_CC250X200X80L70X75L" H 9050 5800 50  0001 C CNN
 F 3 "https://www.sitime.com/datasheet/SiT8008" H 9050 5800 50  0001 C CNN
 	1    9100 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x20 J15
-U 1 1 5C89EF9C
-P 7575 2275
-F 0 "J15" H 7655 2267 50  0000 L CNN
-F 1 "Conn_01x20" H 7655 2176 50  0000 L CNN
-F 2 ".Connector:B2B_Flex_20_Dual_Row_38milx24mil_Pad_20mil" H 7575 2275 50  0001 C CNN
-F 3 "~" H 7575 2275 50  0001 C CNN
-	1    7575 2275
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1105,17 +1093,6 @@ Text Label 6925 2875 0    50   ~ 0
 I2C_SDA
 Text Label 6925 2975 0    50   ~ 0
 I2C_SCL
-$Comp
-L Connector_Generic:Conn_01x14 J14
-U 1 1 5CA2700B
-P 9300 1775
-F 0 "J14" H 9380 1767 50  0000 L CNN
-F 1 "Conn_01x14" H 9380 1676 50  0000 L CNN
-F 2 ".Connector:B2B_Flex_14_Dual_Row_38milx24mil_Pad_20mil" H 9300 1775 50  0001 C CNN
-F 3 "~" H 9300 1775 50  0001 C CNN
-	1    9300 1775
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8650 2475 9100 2475
 $Comp

@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:Miniscope-v4-Rigid-Flex-cache
-LIBS:BNO055_08092019-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268

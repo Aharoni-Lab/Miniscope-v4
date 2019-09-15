@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:Miniscope-v4-Rigid-Flex-cache
-LIBS:BNO055_08092019-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -26,19 +25,6 @@ F 1 "ATmega328-MU" H 4375 5350 50  0000 C CNN
 F 2 ".Package_QFN:QFN_33_P50_500X500X80L40X24T310L" H 3925 2050 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 3925 3900 50  0001 C CNN
 	1    3925 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x14 J?
-U 1 1 5D79A397
-P 6825 3850
-AR Path="/5D79A397" Ref="J?"  Part="1" 
-AR Path="/5D795553/5D79A397" Ref="J7"  Part="1" 
-F 0 "J7" H 6905 3842 50  0000 L CNN
-F 1 "Conn_01x14" H 6905 3751 50  0000 L CNN
-F 2 ".Connector:B2B_Flex_14_Dual_Row_38milx24mil_Pad_20mil" H 6825 3850 50  0001 C CNN
-F 3 "~" H 6825 3850 50  0001 C CNN
-	1    6825 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -402,19 +388,6 @@ Text Label 7275 2400 0    50   ~ 0
 SCLK
 Text Label 7275 2500 0    50   ~ 0
 RESET_N_ISP
-$Comp
-L Connector_Generic:Conn_01x05 J?
-U 1 1 5D79A44E
-P 6825 5150
-AR Path="/5D79A44E" Ref="J?"  Part="1" 
-AR Path="/5D795553/5D79A44E" Ref="J8"  Part="1" 
-F 0 "J8" H 6905 5192 50  0000 L CNN
-F 1 "Conn_01x05" H 6905 5101 50  0000 L CNN
-F 2 ".Connector:B2B_Flex_05_Dual_Row_38milx24mil_Pad_20mil_copy" H 6825 5150 50  0001 C CNN
-F 3 "~" H 6825 5150 50  0001 C CNN
-	1    6825 5150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6625 4950 6125 4950
 Wire Wire Line
