@@ -460,11 +460,7 @@ F 3 "~" H 6825 5625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 4900 5650 5625
-Wire Wire Line
 	5650 5625 6625 5625
-Wire Wire Line
-	4525 4900 5650 4900
 Text HLabel 6125 3550 0    50   Output ~ 0
 MOSI
 Text HLabel 6125 3650 0    50   Input ~ 0
@@ -483,10 +479,12 @@ Text HLabel 6125 3350 0    50   Output ~ 0
 LED
 Text HLabel 6125 5150 0    50   BiDi ~ 0
 I2C_SDA
-Text HLabel 6125 5050 0    50   Input ~ 0
-I2C_SCL
 Text HLabel 6125 4950 0    50   Output ~ 0
 ENT1
 Text HLabel 5650 5625 3    50   Output ~ 0
+ENT2
+Text HLabel 6125 5050 0    50   Input ~ 0
+I2C_SCL
+Text Label 5925 5625 0    50   ~ 0
 ENT2
 $EndSCHEMATC
