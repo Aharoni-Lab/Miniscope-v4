@@ -268,11 +268,11 @@ X Pin_5 5 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MS_v4_ETL_LED_Driver-rescue_LTC3218-.Driver_LED
+# MS_v4_ETL_LED_Driver-rescue_LTC3218-.Driver_LED-MS_v4_ETL_LED_Driver-rescue
 #
-DEF MS_v4_ETL_LED_Driver-rescue_LTC3218-.Driver_LED U 0 40 Y Y 1 F N
+DEF MS_v4_ETL_LED_Driver-rescue_LTC3218-.Driver_LED-MS_v4_ETL_LED_Driver-rescue U 0 40 Y Y 1 F N
 F0 "U" -350 350 50 H V C CNN
-F1 "MS_v4_ETL_LED_Driver-rescue_LTC3218-.Driver_LED" 300 350 50 H V C CNN
+F1 "MS_v4_ETL_LED_Driver-rescue_LTC3218-.Driver_LED-MS_v4_ETL_LED_Driver-rescue" 300 350 50 H V C CNN
 F2 ".Package_SON:SON_11_P50_300X200X80L40X25T239X64L" -450 250 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
