@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Miniscope-v4-Rigid-Flex-rescue)(type Legacy)(uri ${KIPRJMOD}/Miniscope-v4-Rigid-Flex-rescue.lib)(options "")(descr ""))
+)

@@ -1,0 +1,345 @@
+EESchema Schematic File Version 4
+LIBS:Miniscope-v4-Rigid-Flex-cache
+LIBS:BNO055_08092019-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BNO055_08092019-rescue:BNO055-BNO055_2 U10
+U 1 1 5D4EA5F1
+P 5550 3550
+F 0 "U10" H 5550 2683 50  0000 C CNN
+F 1 "BNO055" H 5550 2774 50  0000 C CNN
+F 2 "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm" H 5550 3550 50  0001 L BNN
+F 3 "" H 5550 3550 50  0001 L BNN
+F 4 "BNO055" H 5550 3550 50  0001 L BNN "Field4"
+F 5 "Unavailable" H 5550 3550 50  0001 L BNN "Field5"
+F 6 "Bosch" H 5550 3550 50  0001 L BNN "Field6"
+F 7 "BNO055 9-axis Absolute Orientation Sensor _ SiP _ w/Sensors and Sensor Fusion" H 5550 3550 50  0001 L BNN "Field7"
+F 8 "None" H 5550 3550 50  0001 L BNN "Field8"
+	1    5550 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L .Device:C_Small C52
+U 1 1 5D4ED5C9
+P 4500 2950
+F 0 "C52" V 4271 2950 50  0000 C CNN
+F 1 "100nF" V 4362 2950 50  0000 C CNN
+F 2 ".Capacitor:C_0201_0603Metric_L" H 4500 2950 50  0001 C CNN
+F 3 "~" H 4500 2950 50  0001 C CNN
+	1    4500 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 2950 4700 2950
+$Comp
+L power:+3.3V #PWR0203
+U 1 1 5D4EFA1C
+P 4150 2350
+F 0 "#PWR0203" H 4150 2200 50  0001 C CNN
+F 1 "+3.3V" H 4165 2523 50  0000 C CNN
+F 2 "" H 4150 2350 50  0001 C CNN
+F 3 "" H 4150 2350 50  0001 C CNN
+	1    4150 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2950 4150 2950
+Wire Wire Line
+	4700 2950 4700 3050
+Wire Wire Line
+	4700 3050 4750 3050
+Connection ~ 4700 2950
+Wire Wire Line
+	4700 2950 4600 2950
+Wire Wire Line
+	4700 3050 4700 3150
+Wire Wire Line
+	4700 3150 4750 3150
+Connection ~ 4700 3050
+Wire Wire Line
+	4700 3150 4700 3250
+Wire Wire Line
+	4700 3250 4750 3250
+Connection ~ 4700 3150
+$Comp
+L power:GND #PWR0204
+U 1 1 5D4F0669
+P 4450 3200
+F 0 "#PWR0204" H 4450 2950 50  0001 C CNN
+F 1 "GND" H 4455 3027 50  0000 C CNN
+F 2 "" H 4450 3200 50  0001 C CNN
+F 3 "" H 4450 3200 50  0001 C CNN
+	1    4450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3150 4450 3150
+Wire Wire Line
+	4150 3950 4150 2950
+Connection ~ 4150 2950
+Wire Wire Line
+	4750 4050 4150 4050
+Wire Wire Line
+	4150 4050 4150 3950
+Connection ~ 4150 3950
+Wire Wire Line
+	6350 4050 6500 4050
+Wire Wire Line
+	6500 4050 6500 3950
+Wire Wire Line
+	6500 3950 6350 3950
+$Comp
+L power:GND #PWR0205
+U 1 1 5D4F177B
+P 6500 4200
+F 0 "#PWR0205" H 6500 3950 50  0001 C CNN
+F 1 "GND" H 6505 4027 50  0000 C CNN
+F 2 "" H 6500 4200 50  0001 C CNN
+F 3 "" H 6500 4200 50  0001 C CNN
+	1    6500 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4050 6500 4200
+Connection ~ 6500 4050
+Wire Wire Line
+	4450 3150 4450 3200
+Wire Wire Line
+	6350 3250 6500 3250
+Wire Wire Line
+	6500 3250 6500 3950
+Connection ~ 6500 3950
+$Comp
+L .Device:C_Small C51
+U 1 1 5D4F4F66
+P 6675 2600
+F 0 "C51" V 6446 2600 50  0000 C CNN
+F 1 "100nF" V 6537 2600 50  0000 C CNN
+F 2 ".Capacitor:C_0201_0603Metric_L" H 6675 2600 50  0001 C CNN
+F 3 "~" H 6675 2600 50  0001 C CNN
+	1    6675 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 2950 6600 2950
+$Comp
+L power:GND #PWR0206
+U 1 1 5D4F5CF6
+P 6900 2700
+F 0 "#PWR0206" H 6900 2450 50  0001 C CNN
+F 1 "GND" H 6905 2527 50  0000 C CNN
+F 2 "" H 6900 2700 50  0001 C CNN
+F 3 "" H 6900 2700 50  0001 C CNN
+	1    6900 2700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4750 3350
+NoConn ~ 4750 3650
+NoConn ~ 4750 3750
+NoConn ~ 6350 3850
+Wire Wire Line
+	2900 2975 2900 3375
+Wire Wire Line
+	3150 3375 2900 3375
+Connection ~ 2900 3375
+Wire Wire Line
+	2900 3575 3150 3575
+$Comp
+L power:GND #PWR0207
+U 1 1 5D4F85F4
+P 3150 3675
+F 0 "#PWR0207" H 3150 3425 50  0001 C CNN
+F 1 "GND" H 3155 3502 50  0000 C CNN
+F 2 "" H 3150 3675 50  0001 C CNN
+F 3 "" H 3150 3675 50  0001 C CNN
+	1    3150 3675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3675 3150 3575
+Connection ~ 3150 3575
+$Comp
+L .Device:C_Small C54
+U 1 1 5D4EDBF9
+P 3150 3475
+F 0 "C54" H 3250 3575 50  0000 L CNN
+F 1 "120nF" H 3250 3475 50  0000 L CNN
+F 2 ".Capacitor:C_0201_0603Metric_L" H 3150 3475 50  0001 C CNN
+F 3 "~" H 3150 3475 50  0001 C CNN
+	1    3150 3475
+	1    0    0    -1  
+$EndComp
+$Comp
+L .Device:C_Small C53
+U 1 1 5D4ED91A
+P 2900 3475
+F 0 "C53" H 2700 3575 50  0000 L CNN
+F 1 "6.8nF" H 2600 3475 50  0000 L CNN
+F 2 ".Capacitor:C_0201_0603Metric_L" H 2900 3475 50  0001 C CNN
+F 3 "~" H 2900 3475 50  0001 C CNN
+	1    2900 3475
+	1    0    0    -1  
+$EndComp
+$Comp
+L .Device:R_Small_US R15
+U 1 1 5D548B18
+P 7000 3550
+F 0 "R15" V 6925 3550 50  0000 C CNN
+F 1 "10K" V 7100 3550 50  0000 C CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" V 6887 3550 50  0001 C CNN
+F 3 "~" H 7000 3550 50  0001 C CNN
+	1    7000 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J18
+U 1 1 5D54B6AA
+P 8250 3400
+F 0 "J18" H 8330 3442 50  0000 L CNN
+F 1 "Conn_01x05" H 8330 3351 50  0000 L CNN
+F 2 ".Connector:B2B_Flex_05_Dual_Row_38milx24mil_Pad_20mil_copy" H 8250 3400 50  0001 C CNN
+F 3 "~" H 8250 3400 50  0001 C CNN
+	1    8250 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3950 4750 3950
+$Comp
+L power:+3.3V #PWR0208
+U 1 1 5D54E0FD
+P 2900 2975
+F 0 "#PWR0208" H 2900 2825 50  0001 C CNN
+F 1 "+3.3V" H 2915 3148 50  0000 C CNN
+F 2 "" H 2900 2975 50  0001 C CNN
+F 3 "" H 2900 2975 50  0001 C CNN
+	1    2900 2975
+	1    0    0    -1  
+$EndComp
+Text Notes 2425 2700 0    50   ~ 0
+Caps placed between pins 25 and 28
+Text Notes 4300 2650 0    50   ~ 0
+Cap placed between pins 2 and 3
+Wire Wire Line
+	6575 2600 6250 2600
+Wire Wire Line
+	6775 2600 6900 2600
+Wire Wire Line
+	6900 2600 6900 2700
+Text Label 6250 2600 0    50   ~ 0
+CAP
+Text Label 6450 2950 0    50   ~ 0
+CAP
+$Comp
+L power:+3.3V #PWR0209
+U 1 1 5D555294
+P 7175 3300
+F 0 "#PWR0209" H 7175 3150 50  0001 C CNN
+F 1 "+3.3V" H 7190 3473 50  0000 C CNN
+F 2 "" H 7175 3300 50  0001 C CNN
+F 3 "" H 7175 3300 50  0001 C CNN
+	1    7175 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3150 6925 3150
+Text Label 6350 3150 0    50   ~ 0
+I2C_ADDR_SEL
+Text Label 6575 3450 0    50   ~ 0
+SDA
+Text Label 6575 3350 0    50   ~ 0
+SCL
+Wire Wire Line
+	6350 3550 6900 3550
+Wire Wire Line
+	7175 3550 7100 3550
+Wire Wire Line
+	6350 3350 6725 3350
+Wire Wire Line
+	6350 3450 6725 3450
+Wire Wire Line
+	7175 3300 7175 3550
+Wire Wire Line
+	4150 2350 4150 2950
+Wire Wire Line
+	7175 3750 7175 3550
+Connection ~ 7175 3550
+$Comp
+L .Device:R_Small_US R16
+U 1 1 5D565BFF
+P 6800 3750
+F 0 "R16" V 6725 3750 50  0000 C CNN
+F 1 "10K" V 6900 3750 50  0000 C CNN
+F 2 ".Resistor:R_0201_0603Metric_ERJ_L" V 6687 3750 50  0001 C CNN
+F 3 "~" H 6800 3750 50  0001 C CNN
+	1    6800 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 3750 6700 3750
+Wire Wire Line
+	6900 3750 7175 3750
+Wire Wire Line
+	8050 3200 7675 3200
+Wire Wire Line
+	8050 3300 7650 3300
+Wire Wire Line
+	8050 3400 7650 3400
+Wire Wire Line
+	8050 3600 7650 3600
+Text Label 7650 3300 0    50   ~ 0
+SDA
+Text Label 7675 3200 0    50   ~ 0
+SCL
+$Comp
+L power:GND #PWR0210
+U 1 1 5D57800E
+P 7650 3400
+F 0 "#PWR0210" H 7650 3150 50  0001 C CNN
+F 1 "GND" H 7655 3227 50  0000 C CNN
+F 2 "" H 7650 3400 50  0001 C CNN
+F 3 "" H 7650 3400 50  0001 C CNN
+	1    7650 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0211
+U 1 1 5D578736
+P 7650 3600
+F 0 "#PWR0211" H 7650 3450 50  0001 C CNN
+F 1 "+3.3V" H 7665 3773 50  0000 C CNN
+F 2 "" H 7650 3600 50  0001 C CNN
+F 3 "" H 7650 3600 50  0001 C CNN
+	1    7650 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0212
+U 1 1 5D57BB34
+P 6925 3150
+F 0 "#PWR0212" H 6925 2900 50  0001 C CNN
+F 1 "GND" H 6930 2977 50  0000 C CNN
+F 2 "" H 6925 3150 50  0001 C CNN
+F 3 "" H 6925 3150 50  0001 C CNN
+	1    6925 3150
+	1    0    0    -1  
+$EndComp
+Text Notes 6725 3025 0    50   ~ 0
+GNDing the I2C ADDRESS SELECT pin sets the I2C address to 0x28
+Text HLabel 7675 3200 0    50   Input ~ 0
+I2C_SCL
+Text HLabel 7650 3300 0    50   BiDi ~ 0
+I2C_SDA
+$EndSCHEMATC
