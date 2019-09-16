@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:Miniscope-v4-Rigid-Flex-cache
-LIBS:BNO055_08092019-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -142,17 +141,6 @@ Wire Wire Line
 	2000 2200 1875 2200
 Wire Wire Line
 	2000 2100 1875 2100
-$Comp
-L Connector:Conn_01x20_Female J16
-U 1 1 5CC13A76
-P 2625 5750
-F 0 "J16" H 2653 5726 50  0000 L CNN
-F 1 "Conn_01x20_Female" H 2653 5635 50  0000 L CNN
-F 2 ".Connector:B2B_Flex_20_Dual_Row_38milx24mil_Pad_20mil" H 2625 5750 50  0001 C CNN
-F 3 "~" H 2625 5750 50  0001 C CNN
-	1    2625 5750
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0165
 U 1 1 5CC147EE
@@ -690,56 +678,6 @@ Wire Wire Line
 	6775 3725 6775 3825
 Wire Wire Line
 	6775 4125 6775 4175
-$Comp
-L power:+3.3V #PWR0190
-U 1 1 5CE12F5A
-P 6775 4750
-F 0 "#PWR0190" H 6775 4600 50  0001 C CNN
-F 1 "+3.3V" H 6790 4923 50  0000 C CNN
-F 2 "" H 6775 4750 50  0001 C CNN
-F 3 "" H 6775 4750 50  0001 C CNN
-	1    6775 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R13
-U 1 1 5CE13D55
-P 6600 5125
-F 0 "R13" H 6670 5171 50  0000 L CNN
-F 1 "ERJ-1GEF3321C" H 6670 5080 50  0001 L CNN
-F 2 ".Resistor:R_0201_0603Metric_ERJ_L" V 6530 5125 50  0001 C CNN
-F 3 "~" H 6600 5125 50  0001 C CNN
-F 4 "3k3" H 6725 5100 50  0000 C CNN "Note"
-F 5 "0201" H 6600 5125 50  0001 C CNN "Size"
-	1    6600 5125
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R14
-U 1 1 5CE143F7
-P 7000 5125
-F 0 "R14" H 7070 5171 50  0000 L CNN
-F 1 "ERJ-1GEF3321C" H 7070 5080 50  0001 L CNN
-F 2 ".Resistor:R_0201_0603Metric_ERJ_L" V 6930 5125 50  0001 C CNN
-F 3 "~" H 7000 5125 50  0001 C CNN
-F 4 "3k3" H 7125 5100 50  0000 C CNN "Note"
-F 5 "0201" H 7000 5125 50  0001 C CNN "Size"
-	1    7000 5125
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6775 4750 6600 4750
-Wire Wire Line
-	6600 4750 6600 4975
-Wire Wire Line
-	6775 4750 7000 4750
-Wire Wire Line
-	7000 4750 7000 4975
-Connection ~ 6775 4750
-Wire Wire Line
-	6600 5275 6600 5450
-Wire Wire Line
-	7000 5275 7000 5450
 Wire Wire Line
 	10250 1700 10250 1750
 Wire Wire Line
@@ -1160,83 +1098,16 @@ Wire Wire Line
 	4300 4825 4425 4825
 Wire Wire Line
 	4300 5125 4425 5125
-Wire Wire Line
-	4300 5225 4425 5225
-Wire Wire Line
-	4300 5325 4425 5325
-$Comp
-L power:+5V #PWR0193
-U 1 1 5CCEB202
-P 4300 5625
-F 0 "#PWR0193" H 4300 5475 50  0001 C CNN
-F 1 "+5V" V 4315 5753 50  0000 L CNN
-F 2 "" H 4300 5625 50  0001 C CNN
-F 3 "" H 4300 5625 50  0001 C CNN
-	1    4300 5625
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+1V8 #PWR0194
-U 1 1 5CCF35E3
-P 4300 5725
-F 0 "#PWR0194" H 4300 5575 50  0001 C CNN
-F 1 "+1V8" V 4315 5853 50  0000 L CNN
-F 2 "" H 4300 5725 50  0001 C CNN
-F 3 "" H 4300 5725 50  0001 C CNN
-	1    4300 5725
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR0195
 U 1 1 5CD133E2
-P 4300 5225
-F 0 "#PWR0195" H 4300 4975 50  0001 C CNN
-F 1 "GND" V 4305 5097 50  0000 R CNN
-F 2 "" H 4300 5225 50  0001 C CNN
-F 3 "" H 4300 5225 50  0001 C CNN
-	1    4300 5225
+P 4300 5025
+F 0 "#PWR0195" H 4300 4775 50  0001 C CNN
+F 1 "GND" V 4305 4897 50  0000 R CNN
+F 2 "" H 4300 5025 50  0001 C CNN
+F 3 "" H 4300 5025 50  0001 C CNN
+	1    4300 5025
 	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4300 5425 4425 5425
-$Comp
-L power:GND #PWR0196
-U 1 1 5CD1BF03
-P 4300 5525
-F 0 "#PWR0196" H 4300 5275 50  0001 C CNN
-F 1 "GND" V 4305 5397 50  0000 R CNN
-F 2 "" H 4300 5525 50  0001 C CNN
-F 3 "" H 4300 5525 50  0001 C CNN
-	1    4300 5525
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4300 5625 4425 5625
-Wire Wire Line
-	4300 5525 4425 5525
-Wire Wire Line
-	4300 5725 4425 5725
-$Comp
-L Connector_Generic:Conn_01x05 J_extra1
-U 1 1 5CD3BA19
-P 4625 5025
-F 0 "J_extra1" H 4705 5067 50  0000 L CNN
-F 1 "Conn_01x05" H 4705 4976 50  0000 L CNN
-F 2 ".Connector:B2B_Flex_05_Dual_Row_38milx24mil_Pad_20mil_copy" H 4625 5025 50  0001 C CNN
-F 3 "~" H 4625 5025 50  0001 C CNN
-	1    4625 5025
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x05 J_extra2
-U 1 1 5CD3C6CC
-P 4625 5525
-F 0 "J_extra2" H 4705 5567 50  0000 L CNN
-F 1 "Conn_01x05" H 4705 5476 50  0000 L CNN
-F 2 ".Connector:B2B_Flex_05_Dual_Row_38milx24mil_Pad_20mil_copy" H 4625 5525 50  0001 C CNN
-F 3 "~" H 4625 5525 50  0001 C CNN
-	1    4625 5525
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0197
@@ -1317,14 +1188,6 @@ Text Label 6850 2175 0    50   ~ 0
 MODE
 Text Label 6900 3725 0    50   ~ 0
 PDB
-Text Label 7000 5450 0    50   ~ 0
-I2C_SDA
-Text Label 6600 5450 0    50   ~ 0
-I2C_SCL
-Wire Wire Line
-	6600 5450 6875 5450
-Wire Wire Line
-	7000 5450 7300 5450
 Text Label 4300 3000 0    50   ~ 0
 MODE
 Wire Wire Line
@@ -1409,12 +1272,8 @@ Text Label 2175 6150 0    50   ~ 0
 FV
 Text Label 2175 6250 0    50   ~ 0
 LV
-Text Label 4300 5025 0    50   ~ 0
+Text Label 4175 5225 0    50   ~ 0
 CLK_OUT
-Text Label 4300 5425 0    50   ~ 0
-I2C_SDA
-Text Label 4300 5325 0    50   ~ 0
-I2C_SCL
 Text HLabel 2125 5050 0    50   Input ~ 0
 D0
 Text HLabel 2125 5150 0    50   Input ~ 0
@@ -1464,4 +1323,17 @@ F 3 "http://suddendocs.samtec.com/catalog_english/sma.pdf" H 7600 950 50  0001 C
 	1    7600 950 
 	-1   0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J_extra1
+U 1 1 5CD3BA19
+P 4625 5025
+F 0 "J_extra1" H 4705 5067 50  0000 L CNN
+F 1 "Conn_01x05" H 4705 4976 50  0000 L CNN
+F 2 ".Connector:B2B_Flex_05_Dual_Row_38milx24mil_Pad_20mil_copy" H 4625 5025 50  0001 C CNN
+F 3 "~" H 4625 5025 50  0001 C CNN
+	1    4625 5025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4175 5225 4425 5225
 $EndSCHEMATC
