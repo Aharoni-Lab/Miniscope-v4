@@ -6,8 +6,8 @@
  */ 
 
 // ----- USER DEFINED CONFIG (SELECT ONE) ------
-#define DUAL_LED_MINISCOPE
-//#define V4_MINISCOPE
+//#define DUAL_LED_MINISCOPE
+#define V4_MINISCOPE
 // ---------------------------------------------
 #define F_CPU 1000000UL
 
@@ -159,7 +159,7 @@ void initExtInt() {
 int main(void)
 {
 	initBoard();
-	initPWM();
+	// initPWM();
     setup_I2C();
 	initExtInt(); // For Monitor0 pin
 	sei(); // This is also called in setup_I2C but putting this here as well just in case setup_I2C gets removed at some point
@@ -167,7 +167,7 @@ int main(void)
 	//_delay_us(20); // Min delay of 10us
 	_delay_ms(1); // Min delay of 10us
 	init_PYTHON480();
-	updatePWM1(50);
+	//updatePWM1(50);
 	enableLED(1);
 	LED_PORT |= (1<<LED_PIN);
     while (1) 
@@ -178,7 +178,7 @@ int main(void)
 ISR(PCINT1_vect) //Interrupt for PCINT[14:8]. Will be triggered when a pin toggles
 {
 	// If more than 1 pin can trigger this interrupt then we need to save previous state and make a more complex if/else statement below
-	if ((MONITOR_PORT>>MONITOR0_PIN) & 0x01) {
+	if ((MONITOR_PIN>>MONITOR0_PIN) & 0x01) {
 		// Monitor0 went high which is the start of frame integration
 		#ifdef DUAL_LED_MINISCOPE
 			if (previousLED == 1) {
@@ -196,7 +196,7 @@ ISR(PCINT1_vect) //Interrupt for PCINT[14:8]. Will be triggered when a pin toggl
 		#endif
 		#ifdef V4_MINISCOPE
 			if (ledValue1 != 0)
-				LED_ENT_PORT |= (1<<LED_ENT1_PIN)
+				LED_ENT_PORT |= (1<<LED_ENT1_PIN);
 		#endif
 		
 	}
