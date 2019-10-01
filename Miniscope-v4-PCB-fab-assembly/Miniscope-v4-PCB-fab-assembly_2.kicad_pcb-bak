@@ -1,11 +1,11 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.0)-1")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.2)-1")
 
   (general
     (thickness 0.7874)
     (drawings 150)
     (tracks 1130)
     (zones 0)
-    (modules 109)
+    (modules 108)
     (nets 117)
   )
 
@@ -31,8 +31,8 @@
     (43 Eco2.User user)
     (44 Edge.Cuts user)
     (45 Margin user)
-    (46 B.CrtYd user)
-    (47 F.CrtYd user)
+    (46 B.CrtYd user hide)
+    (47 F.CrtYd user hide)
     (48 B.Fab user hide)
     (49 F.Fab user hide)
   )
@@ -817,7 +817,7 @@
     (descr "Circular Fiducial, 0.75mm bare copper top; 1.5mm keepout (Level B)")
     (tags marker)
     (attr smd)
-    (fp_text reference REF_BR (at 0 -2) (layer F.SilkS) hide
+    (fp_text reference REF_BR (at 4.925 0.45) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Fiducial_0.75mm_Dia_1.5mm_Outer (at 0 2) (layer F.Fab)
@@ -837,7 +837,7 @@
     (descr "Circular Fiducial, 0.75mm bare copper top; 1.5mm keepout (Level B)")
     (tags marker)
     (attr smd)
-    (fp_text reference REF_BL (at 0 -2) (layer F.SilkS) hide
+    (fp_text reference REF_BL (at -1.3 3.4) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Fiducial_0.75mm_Dia_1.5mm_Outer (at 0 2) (layer F.Fab)
@@ -1254,7 +1254,7 @@
     (fp_text reference R3 (at 0 0 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.1)))
     )
-    (fp_text value 47.7K (at 0 0 180) (layer F.Fab)
+    (fp_text value ERJ-1GNF4752C (at 0 0 180) (layer F.Fab)
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_line (start 0 -0.135) (end 0 0.135) (layer F.CrtYd) (width 0.05))
@@ -1294,54 +1294,6 @@
     )
   )
 
-  (module .Resistor:R_0201_0603Metric_ERJ_L (layer F.Cu) (tedit 5C1959FC) (tstamp 5CA20CC1)
-    (at 83.96294 109.68418 180)
-    (descr "Resistor, Chip; 0.60 mm L X 0.30 mm W X 0.26 mm H body")
-    (path /5C8ACDEF)
-    (attr smd)
-    (fp_text reference R2 (at 0 0 180) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.1)))
-    )
-    (fp_text value DNL (at 0 0 180) (layer F.Fab)
-      (effects (font (size 1.2 1.2) (thickness 0.12)))
-    )
-    (fp_line (start 0 -0.135) (end 0 0.135) (layer F.CrtYd) (width 0.05))
-    (fp_line (start 0.135 0) (end -0.135 0) (layer F.CrtYd) (width 0.05))
-    (fp_circle (center 0 0) (end 0 0.1013) (layer F.CrtYd) (width 0.05))
-    (fp_line (start 0.53 0.27) (end -0.53 0.27) (layer F.CrtYd) (width 0.05))
-    (fp_line (start 0.53 -0.27) (end 0.53 0.27) (layer F.CrtYd) (width 0.05))
-    (fp_line (start -0.53 -0.27) (end 0.53 -0.27) (layer F.CrtYd) (width 0.05))
-    (fp_line (start -0.53 0.27) (end -0.53 -0.27) (layer F.CrtYd) (width 0.05))
-    (fp_line (start 0.32 0.17) (end -0.32 0.17) (layer F.Fab) (width 0.12))
-    (fp_line (start 0.32 -0.17) (end 0.32 0.17) (layer F.Fab) (width 0.12))
-    (fp_line (start -0.32 -0.17) (end 0.32 -0.17) (layer F.Fab) (width 0.12))
-    (fp_line (start -0.32 0.17) (end -0.32 -0.17) (layer F.Fab) (width 0.12))
-    (fp_line (start 0.3 0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
-    (fp_line (start 0.3 -0.15) (end 0.3 0.15) (layer Dwgs.User) (width 0.025))
-    (fp_line (start -0.3 -0.15) (end 0.3 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_line (start -0.3 0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_line (start 0.3 0.15) (end 0.15 0.15) (layer Dwgs.User) (width 0.025))
-    (fp_line (start 0.3 -0.15) (end 0.3 0.15) (layer Dwgs.User) (width 0.025))
-    (fp_line (start 0.15 -0.15) (end 0.3 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_line (start 0.15 0.15) (end 0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_line (start -0.3 -0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_line (start -0.3 0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_line (start -0.15 0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
-    (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 1.905 -1.1684 180) (layer F.SilkS) hide
-      (effects (font (size 0.5 0.5) (thickness 0.05)))
-    )
-    (pad 2 smd rect (at 0.275 0 180) (size 0.31 0.34) (layers F.Cu F.Paste F.Mask)
-      (net 6 +3V3))
-    (pad 1 smd rect (at -0.275 0 180) (size 0.31 0.34) (layers F.Cu F.Paste F.Mask)
-      (net 13 "Net-(R2-Pad1)"))
-    (model ${KICAD_AHARONI_LAB}/Modules/Resistor.pretty/R_0201_0603Metric_ERJ_L.STEP
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz -90 0 0))
-    )
-  )
-
   (module .Resistor:R_0201_0603Metric_ERJ_L (layer F.Cu) (tedit 5C1959FC) (tstamp 5CCC9380)
     (at 86.75694 105.16298 270)
     (descr "Resistor, Chip; 0.60 mm L X 0.30 mm W X 0.26 mm H body")
@@ -1350,7 +1302,7 @@
     (fp_text reference R1 (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.1)))
     )
-    (fp_text value 1.8K (at 0 0 270) (layer F.Fab)
+    (fp_text value ERJ-1GNF1801C (at 0 0 270) (layer F.Fab)
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_line (start 0 -0.135) (end 0 0.135) (layer F.CrtYd) (width 0.05))
@@ -1399,7 +1351,7 @@
     (fp_text reference D1 (at 0.6096 2.1844 180) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value LED_Small_ALT (at 0 1.17 180) (layer F.Fab)
+    (fp_text value VLMS1500-GS08 (at 0 1.17 180) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0 0 180) (layer F.Fab) hide
@@ -2763,7 +2715,7 @@
     (fp_text reference R2 (at 0 0) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.1)))
     )
-    (fp_text value ERJ-1GEF1022C (at 0 0) (layer F.Fab)
+    (fp_text value DNL (at 0 0) (layer F.Fab)
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_text user %R (at -2.032 2.6924) (layer F.SilkS) hide
@@ -2811,7 +2763,7 @@
     (fp_text reference R3 (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.1)))
     )
-    (fp_text value ERJ-1GEF1022C (at 0 0 270) (layer F.Fab)
+    (fp_text value DNL (at 0 0 270) (layer F.Fab)
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_line (start 0 -0.135) (end 0 0.135) (layer F.CrtYd) (width 0.05))
@@ -4423,7 +4375,7 @@
     (fp_text reference R3 (at 0 0 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value ERJ-1GEF1002C (at 0 0 90) (layer B.Fab)
+    (fp_text value ERJ-1GEF1022C (at 0 0 90) (layer B.Fab)
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_text user %R (at -8.14094 -0.37198 90) (layer B.SilkS) hide
@@ -4947,7 +4899,7 @@
     (fp_text reference C18 (at 0 0 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value GRM155R60J475ME47D (at 0 0 90) (layer B.Fab)
+    (fp_text value GRM155R60J475ME87D (at 0 0 90) (layer B.Fab)
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_text user %R (at 7.25768 -0.63258 90) (layer B.SilkS) hide
@@ -5187,7 +5139,7 @@
     (fp_text reference C23 (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value GRM155R60J475ME47D (at 0 0 180) (layer B.Fab)
+    (fp_text value GRM155R60J475ME87D (at 0 0 180) (layer B.Fab)
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_text user %R (at -2.17502 -5.81764 180) (layer B.SilkS) hide
@@ -5727,7 +5679,7 @@
     (fp_text reference R1 (at 0 0 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value MMBT3904LP-7B (at 0 0 270) (layer B.Fab)
+    (fp_text value ERJ-1GEF2001C (at 0 0 270) (layer B.Fab)
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_text user %R (at 5.96714 0.32258 270) (layer B.SilkS) hide
@@ -5823,7 +5775,7 @@
     (fp_text reference R4 (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.1)) (justify mirror))
     )
-    (fp_text value ERJ-1GEF1002C (at 0 0 180) (layer B.Fab)
+    (fp_text value ERJ-1GEF1022C (at 0 0 180) (layer B.Fab)
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_line (start 0 0.135) (end 0 -0.135) (layer B.CrtYd) (width 0.05))
