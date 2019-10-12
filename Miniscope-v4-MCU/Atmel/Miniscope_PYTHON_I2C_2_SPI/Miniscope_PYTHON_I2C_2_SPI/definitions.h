@@ -24,10 +24,12 @@
 #define LED_DDR			DDRB
 #define LED_PIN			PB7
 
-#define LED_ENT_PORT	PORTB
-#define LED_ENT_DDR		DDRB
+#define LED_ENT1_PORT	PORTB
+#define LED_ENT1_DDR	DDRB
 #define LED_ENT1_PIN	PB0
-#define LED_ENT2_PIN	PB1
+#define LED_ENT2_PORT	PORTD
+#define LED_ENT2_DDR	DDRD
+#define LED_ENT2_PIN	PD5
 
 #define PWM_PORT		PORTD
 #define PWM_DDR			DDRD
