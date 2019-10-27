@@ -7,7 +7,8 @@
 
 // ----- USER DEFINED CONFIG (SELECT ONE) ------
 //#define DUAL_LED_MINISCOPE
-#define V4_MINISCOPE
+#define DUAL_LED_MINISCOPE_DEMO
+//#define V4_MINISCOPE
 // ---------------------------------------------
 #define F_CPU 1000000UL
 
@@ -36,17 +37,17 @@ void I2C_received(uint8_t received_data)
 		case (SET_LED1_VALUE):
 			OCR0A = received_data;
 			ledValue1 = received_data;
-			LED_ENT_PORT |= (1<<LED_ENT1_PIN); //Make sure ENT pin is on
+			LED_ENT1_PORT |= (1<<LED_ENT1_PIN); //Make sure ENT pin is on
 			if (received_data == 0) 
-				LED_ENT_PORT &= ~(1<<LED_ENT1_PIN); //Set ENT pin to off
+				LED_ENT1_PORT &= ~(1<<LED_ENT1_PIN); //Set ENT pin to off
 			pastI2CWord = 0; //Idle state
 			break;
 		case (SET_LED2_VALUE):
 			OCR0B = received_data;
 			ledValue2 = received_data;
-			LED_ENT_PORT |= (1<<LED_ENT2_PIN); //Make sure ENT pin is on
+			LED_ENT2_PORT |= (1<<LED_ENT2_PIN); //Make sure ENT pin is on
 			if (received_data == 0) 
-				LED_ENT_PORT &= ~(1<<LED_ENT2_PIN); //Set ENT pin to off
+				LED_ENT2_PORT &= ~(1<<LED_ENT2_PIN); //Set ENT pin to off
 			pastI2CWord = 0; //Idle state
 			break;
 		case (SET_GAIN_VALUE):
@@ -101,15 +102,15 @@ void updatePWM2(uint8_t newValue) {
 
 void enableLED(uint8_t LEDNum) {
 	if (LEDNum&0x01)
-		LED_ENT_PORT |= (1<<LED_ENT1_PIN);
+		LED_ENT1_PORT |= (1<<LED_ENT1_PIN);
 	if (LEDNum&0x02)
-		LED_ENT_PORT |= (1<<LED_ENT2_PIN);
+		LED_ENT2_PORT |= (1<<LED_ENT2_PIN);
 }
 void disableLED(uint8_t LEDNum) {
 	if (LEDNum&0x01)
-		LED_ENT_PORT &= ~(1<<LED_ENT1_PIN);
+		LED_ENT1_PORT &= ~(1<<LED_ENT1_PIN);
 	if (LEDNum&0x02)
-		LED_ENT_PORT &= ~(1<<LED_ENT2_PIN);
+		LED_ENT2_PORT &= ~(1<<LED_ENT2_PIN);
 }
 
 void init_PYTHON480() {
@@ -138,8 +139,11 @@ void initBoard() {
 	LED_PORT &= ~(1<<LED_PIN);
 	
 	// Setup excitation LED
-	LED_ENT_DDR |= (1<<LED_ENT1_PIN)|(1<<LED_ENT2_PIN);
-	LED_ENT_PORT |= (0<<LED_ENT1_PIN)|(0<<LED_ENT2_PIN);
+	LED_ENT1_DDR |= (1<<LED_ENT1_PIN);
+	LED_ENT1_PORT |= (0<<LED_ENT1_PIN);
+	
+	LED_ENT2_DDR |= (1<<LED_ENT2_PIN);
+	LED_ENT2_PORT |= (0<<LED_ENT2_PIN);
 	
 	
 	// Setup pins connecting to PYTHON480
@@ -158,6 +162,9 @@ void initExtInt() {
 
 int main(void)
 {
+	#ifdef DUAL_LED_MINISCOPE_DEMO
+		double flashDelay = 500;	
+	#endif
 	initBoard();
 	// initPWM();
     setup_I2C();
@@ -169,40 +176,58 @@ int main(void)
 	init_PYTHON480();
 	//updatePWM1(50);
 	enableLED(1);
+	#ifdef DUAL_LED_MINISCOPE_DEMO
+		disableLED(0x03);
+	#endif
+	
 	LED_PORT |= (1<<LED_PIN);
     while (1) 
     {
-
+		#ifdef DUAL_LED_MINISCOPE_DEMO
+			enableLED(0x01);
+			_delay_ms(flashDelay);
+			disableLED(0x01);
+			enableLED(0x02);
+			_delay_ms(flashDelay);
+			disableLED(0x02);
+			_delay_ms(10);
+			enableLED(0x03);
+			_delay_ms(flashDelay);
+			disableLED(0x03);
+			_delay_ms(flashDelay/2);
+		#endif
     }
 }
 ISR(PCINT1_vect) //Interrupt for PCINT[14:8]. Will be triggered when a pin toggles
 {
-	// If more than 1 pin can trigger this interrupt then we need to save previous state and make a more complex if/else statement below
-	if ((MONITOR_PIN>>MONITOR0_PIN) & 0x01) {
-		// Monitor0 went high which is the start of frame integration
-		#ifdef DUAL_LED_MINISCOPE
-			if (previousLED == 1) {
-				// LED1 was previously one
-				if (ledValue2 != 0)
-					LED_ENT_PORT |= (1<<LED_ENT2_PIN);
-				previousLED = 2;
-			}
-			else {
-				// LED2 was previously one
+	#ifndef DUAL_LED_MINISCOPE_DEMO
+		// If more than 1 pin can trigger this interrupt then we need to save previous state and make a more complex if/else statement below
+		if ((MONITOR_PIN>>MONITOR0_PIN) & 0x01) {
+			// Monitor0 went high which is the start of frame integration
+			#ifdef DUAL_LED_MINISCOPE
+				if (previousLED == 1) {
+					// LED1 was previously one
+					if (ledValue2 != 0)
+						LED_ENT1_PORT |= (1<<LED_ENT2_PIN);
+					previousLED = 2;
+				}
+				else {
+					// LED2 was previously one
+					if (ledValue1 != 0)
+						LED_ENT1_PORT |= (1<<LED_ENT1_PIN);
+					previousLED = 1;
+				}
+			#endif
+			#ifdef V4_MINISCOPE
 				if (ledValue1 != 0)
-					LED_ENT_PORT |= (1<<LED_ENT1_PIN);
-				previousLED = 1;
-			}
-		#endif
-		#ifdef V4_MINISCOPE
-			if (ledValue1 != 0)
-				LED_ENT_PORT |= (1<<LED_ENT1_PIN);
-		#endif
+					LED_ENT1_PORT |= (1<<LED_ENT1_PIN);
+			#endif
 		
-	}
-	else {
-		// Monitor0 went low which is end of frame integration. Let's turn off all LEDs during this time
-		LED_ENT_PORT &= ~((1<<LED_ENT1_PIN)|(1<<LED_ENT2_PIN));
-	}
+		}
+		else {
+			// Monitor0 went low which is end of frame integration. Let's turn off all LEDs during this time
+			LED_ENT1_PORT &= ~((1<<LED_ENT1_PIN)|(1<<LED_ENT2_PIN));
+		}
+	#endif
 }
 
