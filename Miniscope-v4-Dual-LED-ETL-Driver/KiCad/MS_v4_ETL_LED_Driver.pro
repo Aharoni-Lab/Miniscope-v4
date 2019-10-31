@@ -1,6 +1,6 @@
-update=6/16/2019 10:38:12 PM
+update=10/29/2019 7:51:11 PM
 version=1
-last_client=kicad
+last_client=eeschema
 [general]
 version=1
 RootSch=
@@ -71,3 +71,13 @@ Type=1
 [pcbnew/Layer.In4.Cu]
 Name=In4.Cu
 Type=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
