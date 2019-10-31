@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:MS_v4_ETL_LED_Driver-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -37,7 +36,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tpl0102-100.pdf" H 5000 1025 50  0001 C CN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MS_v4_ETL_LED_Driver-rescue:LTC3218-.Driver_LED-MS_v4_ETL_LED_Driver-rescue U3
+L MS_v4_ETL_LED_Driver-rescue:LTC3218-.Driver_LED-MS_v4_ETL_LED_Driver-rescue-MS_v4_ETL_LED_Driver-rescue U3
 U 1 1 5C18A1DE
 P 1850 1675
 F 0 "U3" H 1550 2025 50  0000 C CNN
@@ -623,7 +622,7 @@ F 3 "" H 3975 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MS_v4_ETL_LED_Driver-rescue:LTC3218-.Driver_LED-MS_v4_ETL_LED_Driver-rescue U4
+L MS_v4_ETL_LED_Driver-rescue:LTC3218-.Driver_LED-MS_v4_ETL_LED_Driver-rescue-MS_v4_ETL_LED_Driver-rescue U4
 U 1 1 5D02BC5D
 P 4450 4125
 F 0 "U4" H 4150 4475 50  0000 C CNN
@@ -949,17 +948,6 @@ Wire Wire Line
 	5700 6600 6075 6600
 Text Label 3925 2925 0    50   ~ 0
 _Wb
-$Comp
-L .LED:LXZ1-PR01 D2
-U 1 1 5D0BA34D
-P 2550 1925
-F 0 "D2" V 2596 1857 50  0000 R CNN
-F 1 "LXZ1-PR01 (Blue)" V 2505 1857 50  0000 R CNN
-F 2 ".LED:LED_LXZ1_PR01_L" H 2400 1950 50  0001 C CNN
-F 3 "https://www.lumileds.com/uploads/415/DS105-pdf" V 2550 1925 50  0001 C CNN
-	1    2550 1925
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	9100 850  9100 1000
 Wire Wire Line
@@ -999,5 +987,16 @@ F 3 "~" H 9100 1100 50  0001 C CNN
 F 4 "6.2k" H 8975 1100 50  0000 C CNN "Note"
 	1    9100 1100
 	1    0    0    -1  
+$EndComp
+$Comp
+L .LED:LXZ1-PR01 D2
+U 1 1 5DBAF281
+P 2550 1925
+F 0 "D2" V 2596 1857 50  0000 R CNN
+F 1 "LXZ1-PR01" V 2505 1857 50  0000 R CNN
+F 2 ".LED:LED_LXZ1_PR01_L" H 2400 1950 50  0001 C CNN
+F 3 "https://www.lumileds.com/uploads/415/DS105-pdf" V 2550 1925 50  0001 C CNN
+	1    2550 1925
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
