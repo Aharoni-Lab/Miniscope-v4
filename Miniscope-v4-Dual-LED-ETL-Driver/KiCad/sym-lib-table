@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name MS_v4_ETL_LED_Driver-rescue)(type Legacy)(uri ${KIPRJMOD}/MS_v4_ETL_LED_Driver-rescue.lib)(options "")(descr ""))
-)
