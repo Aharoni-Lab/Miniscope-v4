@@ -15,7 +15,7 @@
     (1 In1.Cu signal)
     (2 In2.Cu signal)
     (3 In3.Cu power)
-    (4 In4.Cu power)
+    (4 In4.Cu power hide)
     (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
@@ -38,7 +38,7 @@
   )
 
   (setup
-    (last_trace_width 0.0889)
+    (last_trace_width 0.254)
     (user_trace_width 0.09)
     (user_trace_width 0.1016)
     (user_trace_width 0.152)
@@ -65,8 +65,8 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 2 2)
-    (pad_drill 1)
+    (pad_size 0.45 1.5)
+    (pad_drill 0)
     (pad_to_mask_clearance 0.0254)
     (solder_mask_min_width 0.0762)
     (aux_axis_origin 13.2842 13.2842)
