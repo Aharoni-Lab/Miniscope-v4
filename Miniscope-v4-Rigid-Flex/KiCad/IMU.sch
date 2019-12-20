@@ -214,17 +214,6 @@ Text Label 6250 2600 0    50   ~ 0
 CAP
 Text Label 6450 2950 0    50   ~ 0
 CAP
-$Comp
-L power:+3.3V #PWR0209
-U 1 1 5D555294
-P 7175 3300
-F 0 "#PWR0209" H 7175 3150 50  0001 C CNN
-F 1 "+3.3V" H 7190 3473 50  0000 C CNN
-F 2 "" H 7175 3300 50  0001 C CNN
-F 3 "" H 7175 3300 50  0001 C CNN
-	1    7175 3300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6350 3150 6925 3150
 Text Label 6350 3150 0    50   ~ 0
@@ -342,4 +331,17 @@ F 3 "" H 2900 2975 50  0001 C CNN
 	1    2900 2975
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+1V8 #PWR0193
+U 1 1 5E007499
+P 7175 3300
+F 0 "#PWR0193" H 7175 3150 50  0001 C CNN
+F 1 "+1V8" H 7190 3473 50  0000 C CNN
+F 2 "" H 7175 3300 50  0001 C CNN
+F 3 "" H 7175 3300 50  0001 C CNN
+	1    7175 3300
+	1    0    0    -1  
+$EndComp
+Text Notes 7025 4150 0    50   ~ 0
+Pin 4 and 11 connections were corrected \nto run to VDDIO instead of VDD. This \nchange was done after the first rigid-flex PCB fab.
 $EndSCHEMATC
