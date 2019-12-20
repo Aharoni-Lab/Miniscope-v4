@@ -138,106 +138,6 @@ Wire Wire Line
 	4525 4700 4975 4700
 Wire Wire Line
 	4525 5000 4975 5000
-Wire Wire Line
-	6625 3250 6125 3250
-Wire Wire Line
-	6625 3350 6125 3350
-Wire Wire Line
-	6625 3450 6125 3450
-Wire Wire Line
-	6625 3550 6125 3550
-Wire Wire Line
-	6625 3650 6125 3650
-Wire Wire Line
-	6625 3750 6125 3750
-Wire Wire Line
-	6625 3850 6125 3850
-Wire Wire Line
-	6625 3950 6125 3950
-Wire Wire Line
-	6625 4050 6125 4050
-Wire Wire Line
-	6625 4150 6125 4150
-Wire Wire Line
-	6625 4250 6125 4250
-Wire Wire Line
-	6625 4350 6125 4350
-Wire Wire Line
-	6625 4450 6125 4450
-Wire Wire Line
-	6625 4550 6125 4550
-Text Label 6125 3350 0    50   ~ 0
-LED
-Text Label 6125 3550 0    50   ~ 0
-MOSI
-Text Label 6125 3650 0    50   ~ 0
-MISO
-Text Label 6125 3750 0    50   ~ 0
-MONITOR0
-Text Label 6125 3850 0    50   ~ 0
-TRIGGER0
-Text Label 6125 3950 0    50   ~ 0
-RESET_N
-Text Label 6125 4050 0    50   ~ 0
-SCLK
-Text Label 6125 4150 0    50   ~ 0
-SCL
-Text Label 6125 4250 0    50   ~ 0
-SDA
-Text Label 6125 4350 0    50   ~ 0
-SS_N
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5D79A3EF
-P 6125 4450
-AR Path="/5D79A3EF" Ref="#PWR?"  Part="1" 
-AR Path="/5D795553/5D79A3EF" Ref="#PWR0104"  Part="1" 
-F 0 "#PWR0104" H 6125 4300 50  0001 C CNN
-F 1 "+1V8" V 6140 4578 50  0000 L CNN
-F 2 "" H 6125 4450 50  0001 C CNN
-F 3 "" H 6125 4450 50  0001 C CNN
-	1    6125 4450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D79A3F5
-P 6125 4550
-AR Path="/5D79A3F5" Ref="#PWR?"  Part="1" 
-AR Path="/5D795553/5D79A3F5" Ref="#PWR0105"  Part="1" 
-F 0 "#PWR0105" H 6125 4300 50  0001 C CNN
-F 1 "GND" V 6130 4422 50  0000 R CNN
-F 2 "" H 6125 4550 50  0001 C CNN
-F 3 "" H 6125 4550 50  0001 C CNN
-	1    6125 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5D79A3FB
-P 6125 3450
-AR Path="/5D79A3FB" Ref="#PWR?"  Part="1" 
-AR Path="/5D795553/5D79A3FB" Ref="#PWR0106"  Part="1" 
-F 0 "#PWR0106" H 6125 3300 50  0001 C CNN
-F 1 "+3.3V" V 6140 3578 50  0000 L CNN
-F 2 "" H 6125 3450 50  0001 C CNN
-F 3 "" H 6125 3450 50  0001 C CNN
-	1    6125 3450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5D79A401
-P 6125 3250
-AR Path="/5D79A401" Ref="#PWR?"  Part="1" 
-AR Path="/5D795553/5D79A401" Ref="#PWR0107"  Part="1" 
-F 0 "#PWR0107" H 6125 3100 50  0001 C CNN
-F 1 "+5V" V 6140 3378 50  0000 L CNN
-F 2 "" H 6125 3250 50  0001 C CNN
-F 3 "" H 6125 3250 50  0001 C CNN
-	1    6125 3250
-	0    -1   -1   0   
-$EndComp
 Text Label 4675 3400 0    50   ~ 0
 LED
 Text Label 4675 3000 0    50   ~ 0
@@ -388,48 +288,6 @@ Text Label 7275 2400 0    50   ~ 0
 SCLK
 Text Label 7275 2500 0    50   ~ 0
 RESET_N_ISP
-Wire Wire Line
-	6625 4950 6125 4950
-Wire Wire Line
-	6625 5050 6125 5050
-Wire Wire Line
-	6625 5150 6125 5150
-Wire Wire Line
-	6625 5250 6125 5250
-Wire Wire Line
-	6625 5350 6125 5350
-Text Label 6125 4950 0    50   ~ 0
-ENT1
-Text Label 6125 5050 0    50   ~ 0
-SCL
-Text Label 6125 5150 0    50   ~ 0
-SDA
-$Comp
-L power:GND #PWR?
-U 1 1 5D79A45C
-P 6125 5250
-AR Path="/5D79A45C" Ref="#PWR?"  Part="1" 
-AR Path="/5D795553/5D79A45C" Ref="#PWR0110"  Part="1" 
-F 0 "#PWR0110" H 6125 5000 50  0001 C CNN
-F 1 "GND" V 6130 5122 50  0000 R CNN
-F 2 "" H 6125 5250 50  0001 C CNN
-F 3 "" H 6125 5250 50  0001 C CNN
-	1    6125 5250
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5D79A462
-P 6125 5350
-AR Path="/5D79A462" Ref="#PWR?"  Part="1" 
-AR Path="/5D795553/5D79A462" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 6125 5200 50  0001 C CNN
-F 1 "+3.3V" V 6140 5478 50  0000 L CNN
-F 2 "" H 6125 5350 50  0001 C CNN
-F 3 "" H 6125 5350 50  0001 C CNN
-	1    6125 5350
-	0    -1   -1   0   
-$EndComp
 $Comp
 L .Capacitor:GRM155R71A104JA01D C?
 U 1 1 5D79A46A
@@ -449,42 +307,62 @@ Connection ~ 2925 1850
 $Comp
 L .Connector:Conn_01x01 J?
 U 1 1 5D79A471
-P 6825 5625
+P 5225 1725
 AR Path="/5D79A471" Ref="J?"  Part="1" 
 AR Path="/5D795553/5D79A471" Ref="J9"  Part="1" 
-F 0 "J9" H 6904 5621 50  0000 L CNN
-F 1 "Conn_01x01" H 6905 5576 50  0001 L CNN
-F 2 ".Connector:Conn_1x1_700_Circular_Pad" H 6825 5625 50  0001 C CNN
-F 3 "~" H 6825 5625 50  0001 C CNN
-	1    6825 5625
+F 0 "J9" H 5304 1721 50  0000 L CNN
+F 1 "Conn_01x01" H 5305 1676 50  0001 L CNN
+F 2 ".Connector:Conn_1x1_700_Circular_Pad" H 5225 1725 50  0001 C CNN
+F 3 "~" H 5225 1725 50  0001 C CNN
+	1    5225 1725
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 5625 6625 5625
-Text HLabel 6125 3550 0    50   Output ~ 0
+	4050 1725 5025 1725
+Text HLabel 4975 3000 2    50   Output ~ 0
 MOSI
-Text HLabel 6125 3650 0    50   Input ~ 0
+Text HLabel 4975 3100 2    50   Input ~ 0
 MISO
-Text HLabel 6125 3750 0    50   Input ~ 0
+Text HLabel 4975 3700 2    50   Input ~ 0
 MONITOR0
-Text HLabel 6125 3850 0    50   Output ~ 0
+Text HLabel 4975 3800 2    50   Output ~ 0
 TRIGGER0
-Text HLabel 6125 3950 0    50   Output ~ 0
+Text HLabel 4975 3900 2    50   Output ~ 0
 RESET_N
-Text HLabel 6125 4050 0    50   Output ~ 0
+Text HLabel 4975 3200 2    50   Output ~ 0
 SCK
-Text HLabel 6125 4350 0    50   Output ~ 0
+Text HLabel 4975 4700 2    50   Output ~ 0
 SS_N
-Text HLabel 6125 3350 0    50   Output ~ 0
+Text HLabel 4975 3400 2    50   Output ~ 0
 LED
-Text HLabel 6125 5150 0    50   BiDi ~ 0
+Text HLabel 4975 4000 2    50   BiDi ~ 0
 I2C_SDA
-Text HLabel 6125 4950 0    50   Output ~ 0
+Text HLabel 4975 2700 2    50   Output ~ 0
 ENT1
-Text HLabel 5650 5625 3    50   Output ~ 0
+Text HLabel 4975 2800 2    50   Output ~ 0
 ENT2
-Text HLabel 6125 5050 0    50   Input ~ 0
+Text HLabel 4975 4100 2    50   Input ~ 0
 I2C_SCL
-Text Label 5925 5625 0    50   ~ 0
+Text Label 4325 1725 0    50   ~ 0
 ENT2
+Wire Notes Line
+	5850 1850 5850 2975
+Wire Notes Line
+	5850 2975 7925 2975
+Wire Notes Line
+	7925 2975 7925 1850
+Wire Notes Line
+	7925 1850 5850 1850
+Wire Notes Line
+	2600 1450 2600 5850
+Wire Notes Line
+	2600 5850 5450 5850
+Wire Notes Line
+	5450 5850 5450 1450
+Wire Notes Line
+	5450 1450 2600 1450
+Text Notes 2700 1500 0    50   ~ 0
+MCU
+Text Notes 5875 1925 0    50   ~ 0
+ISP Pogopin Pads
 $EndSCHEMATC
