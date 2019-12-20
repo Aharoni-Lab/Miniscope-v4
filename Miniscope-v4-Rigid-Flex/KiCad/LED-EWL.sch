@@ -548,30 +548,6 @@ F 3 "" H 7875 2475 50  0001 C CNN
 	1    7875 2475
 	1    0    0    -1  
 $EndComp
-$Comp
-L .Connector:Conn_01x01 J13
-U 1 1 5C6FD752
-P 6425 5675
-F 0 "J13" H 6505 5717 50  0000 L CNN
-F 1 "Conn_01x01" H 6505 5626 50  0000 L CNN
-F 2 ".Connector:Conn_1x1_250x750_Pad" H 6425 5675 50  0001 C CNN
-F 3 "~" H 6425 5675 50  0001 C CNN
-	1    6425 5675
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6225 5675 5775 5675
-$Comp
-L power:GND #PWR0129
-U 1 1 5C6FEDE6
-P 5775 5675
-F 0 "#PWR0129" H 5775 5425 50  0001 C CNN
-F 1 "GND" H 5780 5502 50  0000 C CNN
-F 2 "" H 5775 5675 50  0001 C CNN
-F 3 "" H 5775 5675 50  0001 C CNN
-	1    5775 5675
-	1    0    0    -1  
-$EndComp
 Text HLabel 850  2575 0    50   BiDi ~ 0
 I2C_SDA
 Text HLabel 850  2675 0    50   Input ~ 0
