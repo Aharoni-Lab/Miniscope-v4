@@ -52,14 +52,22 @@
 
 // ========= I2C COMMANDS ====
 // No 0x00 values
-#define SET_LED1_VALUE	0x01
-#define SET_LED2_VALUE	0x02
-#define SET_GAIN_VALUE	0x03
+
+#define NO_WORD						0x00
+#define SET_LED1_STATE				0x01
+#define SET_LED2_STATE				0x02
+#define SET_GAIN_VALUE				0x03
+#define SET_MODE					0x04
+#define I2C_PYTHON_PASSTHROUGH		0x05
 
 // ======= I2C GAIN VALUES ====
 #define GAIN_1			0x01
 #define GAIN_2			0x02
 #define GAIN_3_5		0x03
 
+// ======== I2C MODE VALUES ====
+#define MODE_V4_MINISCOPE	0x00
+#define MODE_DEMO_2_COLOR	0x01
+#define MODE_2_COLOR		0x02
 
 #endif /* DEFINITIONS_H_ */

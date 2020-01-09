@@ -22,6 +22,7 @@ F 0 "U5" H 5925 4950 50  0000 L CNN
 F 1 "LMV321IDCKR" H 5950 5250 50  0000 L CNN
 F 2 ".Package_SOT:SOT_23-5P65_210X110L36X22L" H 5775 5175 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmv324.pdf" H 5875 5275 50  0001 C CNN
+F 4 "Opamp" H 0   0   50  0001 C CNN "Note"
 	1    5875 5075
 	1    0    0    -1  
 $EndComp
@@ -30,9 +31,11 @@ L .Oscillator:SiT_2.5mmx2mm U7
 U 1 1 5C89EF32
 P 2575 7050
 F 0 "U7" H 2575 7375 50  0000 C CNN
-F 1 "SiT_2.5mmx2mm" H 2575 7284 50  0000 C CNN
+F 1 "SG-210STF 66.6670ML" H 2575 7284 50  0000 C CNN
 F 2 ".Oscillator:OSC_CC250X200X80L70X75L" H 2525 7300 50  0001 C CNN
 F 3 "https://www.sitime.com/datasheet/SiT8008" H 2525 7300 50  0001 C CNN
+F 4 "2.5mmx2mm" H 0   0   50  0001 C CNN "Size"
+F 5 "~66.7MHz Osc" H 0   0   50  0001 C CNN "Note"
 	1    2575 7050
 	1    0    0    -1  
 $EndComp
@@ -410,9 +413,11 @@ L .Device:R_Small_US R7
 U 1 1 5C8A9410
 P 1450 5075
 F 0 "R7" H 1518 5121 50  0000 L CNN
-F 1 "47.7K 1%" H 1518 5030 50  0000 L CNN
+F 1 "ERJ-1GNF4752C" H 1518 5030 50  0000 L CNN
 F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 1450 5075 50  0001 C CNN
 F 3 "~" H 1450 5075 50  0001 C CNN
+F 4 "47.7K 1%" H 0   0   50  0001 C CNN "Note"
+F 5 "0201" H 0   0   50  0001 C CNN "Size"
 	1    1450 5075
 	1    0    0    -1  
 $EndComp
@@ -488,6 +493,8 @@ F 0 "R6" V 1670 6950 50  0000 C CNN
 F 1 "DNL" V 1761 6950 50  0000 C CNN
 F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 1875 6950 50  0001 C CNN
 F 3 "~" H 1875 6950 50  0001 C CNN
+F 4 "DNL" H 0   0   50  0001 C CNN "Note"
+F 5 "0201" H 0   0   50  0001 C CNN "Size"
 	1    1875 6950
 	0    1    1    0   
 $EndComp
@@ -662,9 +669,11 @@ L .Device:R_Small_US R4
 U 1 1 5C8BA27D
 P 9875 3100
 F 0 "R4" H 9807 3054 50  0000 R CNN
-F 1 "1.8K" H 9807 3145 50  0000 R CNN
+F 1 "ERJ-1GNF1801C" H 9807 3145 50  0000 R CNN
 F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 9875 3100 50  0001 C CNN
 F 3 "~" H 9875 3100 50  0001 C CNN
+F 4 "1.8K" H 0   0   50  0001 C CNN "Note"
+F 5 "0201" H 0   0   50  0001 C CNN "Size"
 	1    9875 3100
 	-1   0    0    1   
 $EndComp
@@ -933,6 +942,8 @@ F 0 "Q1" H 9966 3896 50  0000 L CNN
 F 1 "MMBT3904LP-7B" H 9966 3805 50  0000 L CNN
 F 2 ".Transistor:TRXDFN3_101X61X53L25X15N" H 9975 3775 50  0001 L CIN
 F 3 "https://www.diodes.com/assets/Datasheets/ds31835.pdf" H 9775 3850 50  0001 L CNN
+F 4 "Trans NPN" H 0   0   50  0001 C CNN "Note"
+F 5 "3-UFDFN" H 0   0   50  0001 C CNN "Size"
 	1    9775 3850
 	1    0    0    -1  
 $EndComp
@@ -958,9 +969,11 @@ L .Device:R_Small_US R5
 U 1 1 5C962AF3
 P 9200 3850
 F 0 "R5" H 9132 3804 50  0000 R CNN
-F 1 "1K" H 9132 3895 50  0000 R CNN
+F 1 "ERJ-1GNF1001C" H 9132 3895 50  0000 R CNN
 F 2 ".Resistor:R_0201_0603Metric_ERJ_L" H 9200 3850 50  0001 C CNN
 F 3 "~" H 9200 3850 50  0001 C CNN
+F 4 "1K" H 0   0   50  0001 C CNN "Note"
+F 5 "0201" H 0   0   50  0001 C CNN "Size"
 	1    9200 3850
 	0    1    1    0   
 $EndComp

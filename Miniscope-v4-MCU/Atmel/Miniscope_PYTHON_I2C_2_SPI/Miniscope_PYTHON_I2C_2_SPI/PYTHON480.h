@@ -89,7 +89,7 @@ spi_BB_Write(129, 0x8001);
 
 spi_BB_Write(130, 0x0015);
 spi_BB_Write(192, 0x0801); // Monitor select function
-spi_BB_Write(194, 0x03E4);	// reverse x and y enabled for demo kit compatibility
+spi_BB_Write(194, 0x00E4);	// reverse x and y enabled for demo kit compatibility
 spi_BB_Write(197, 0x0380); // Num black lines spi_BB_Write(197, 0x030A);
 #ifdef DISABLE_PLL 
 	spi_BB_Write(199, 167); // Exposure/Frame rate config, spi_BB_Write(199, 0x0299);

@@ -7,8 +7,8 @@
 
 // ----- USER DEFINED CONFIG (SELECT ONE) ------
 //#define DUAL_LED_MINISCOPE
-#define DUAL_LED_MINISCOPE_DEMO
-//#define V4_MINISCOPE
+//#define DUAL_LED_MINISCOPE_DEMO
+#define V4_MINISCOPE
 // ---------------------------------------------
 #define F_CPU 1000000UL
 
@@ -29,26 +29,61 @@ volatile uint8_t previousLED = 1;
 volatile uint8_t ledValue1 = 0;
 volatile uint8_t ledValue2 = 0;
 
+volatile uint8_t ms_mode = 0;
+
+// for i2c passthrough to spi
+volatile uint16_t reg = 0;
+volatile uint16_t value = 0;
+volatile uint8_t bytesReceived;
+
+
 void I2C_received(uint8_t received_data)
 {
 // The switch function below becomes effective once 2 bytes have been received over I2C
 // pastI2CWord acts as the "write reg" and received_data act as the value being written
 	switch (pastI2CWord) {
-		case (SET_LED1_VALUE):
+		case (I2C_PYTHON_PASSTHROUGH):
+			switch (bytesReceived) {
+				case (0):
+					reg = ((uint16_t)received_data)<<8;
+					bytesReceived++;
+					break;
+				case (1):
+					reg |= ((uint16_t)received_data);
+					bytesReceived++;
+					break;
+				case (2):
+					value = ((uint16_t)received_data)<<8;
+					bytesReceived++;
+					break;
+				case (3):
+					value |= ((uint16_t)received_data);
+					spi_BB_Write(reg, value);
+					pastI2CWord = NO_WORD;
+					reg = 0;
+					value = 0;
+					bytesReceived = 0;
+					break;	
+			}
+				
+			break;
+		case (SET_LED1_STATE):
 			OCR0A = received_data;
 			ledValue1 = received_data;
-			LED_ENT1_PORT |= (1<<LED_ENT1_PIN); //Make sure ENT pin is on
-			if (received_data == 0) 
+			if (received_data < 255) // Changed for new QT sDAQ software
+				LED_ENT1_PORT |= (1<<LED_ENT1_PIN); //Make sure ENT pin is on
+			if (received_data == 0xFF)
 				LED_ENT1_PORT &= ~(1<<LED_ENT1_PIN); //Set ENT pin to off
-			pastI2CWord = 0; //Idle state
+			pastI2CWord = NO_WORD; //Idle state
 			break;
-		case (SET_LED2_VALUE):
+		case (SET_LED2_STATE):
 			OCR0B = received_data;
 			ledValue2 = received_data;
-			LED_ENT2_PORT |= (1<<LED_ENT2_PIN); //Make sure ENT pin is on
-			if (received_data == 0) 
+			if (received_data < 255) // Changed for new QT sDAQ software
+				LED_ENT2_PORT |= (1<<LED_ENT2_PIN); //Make sure ENT pin is on
+			if (received_data == 0xFF)
 				LED_ENT2_PORT &= ~(1<<LED_ENT2_PIN); //Set ENT pin to off
-			pastI2CWord = 0; //Idle state
+			pastI2CWord = NO_WORD; //Idle state
 			break;
 		case (SET_GAIN_VALUE):
 			switch (received_data) {
@@ -62,10 +97,26 @@ void I2C_received(uint8_t received_data)
 					spi_BB_Write(204, 0x0024);
 					break;
 			}
-			pastI2CWord = 0; //Idle state
+			pastI2CWord = NO_WORD; //Idle state
+			break;
+		case (SET_MODE):
+			switch (received_data) {
+				case (MODE_V4_MINISCOPE):
+					ms_mode = MODE_V4_MINISCOPE;
+					break;
+				case (MODE_2_COLOR):
+					ms_mode = MODE_2_COLOR;
+					break;
+				case (MODE_DEMO_2_COLOR):
+					ms_mode = MODE_DEMO_2_COLOR;
+					break;
+			}
+			pastI2CWord = NO_WORD; //Idle state
 			break;
 		default:
+			// This gets called and saves the byte after address into pastI2CWord
 			pastI2CWord = received_data;
+			bytesReceived = 0;
 			break;
 	}
 }
@@ -162,9 +213,14 @@ void initExtInt() {
 
 int main(void)
 {
-	#ifdef DUAL_LED_MINISCOPE_DEMO
-		double flashDelay = 500;	
+	#ifdef DUAL_LED_MINISCOPE
+	ms_mode = MODE_DEMO_2_COLOR;
+	#else
+	ms_mode = MODE_V4_MINISCOPE;
 	#endif
+	
+	double flashDelay = 500;	
+	
 	initBoard();
 	// initPWM();
     setup_I2C();
@@ -176,14 +232,12 @@ int main(void)
 	init_PYTHON480();
 	//updatePWM1(50);
 	enableLED(1);
-	#ifdef DUAL_LED_MINISCOPE_DEMO
-		disableLED(0x03);
-	#endif
+	disableLED(0x03);
 	
 	LED_PORT |= (1<<LED_PIN);
-    while (1) 
+    while (1)
     {
-		#ifdef DUAL_LED_MINISCOPE_DEMO
+		if (ms_mode == MODE_DEMO_2_COLOR) {
 			enableLED(0x01);
 			_delay_ms(flashDelay);
 			disableLED(0x01);
@@ -195,16 +249,16 @@ int main(void)
 			_delay_ms(flashDelay);
 			disableLED(0x03);
 			_delay_ms(flashDelay/2);
-		#endif
+		}
     }
 }
 ISR(PCINT1_vect) //Interrupt for PCINT[14:8]. Will be triggered when a pin toggles
 {
-	#ifndef DUAL_LED_MINISCOPE_DEMO
+	if (ms_mode != MODE_DEMO_2_COLOR) {
 		// If more than 1 pin can trigger this interrupt then we need to save previous state and make a more complex if/else statement below
 		if ((MONITOR_PIN>>MONITOR0_PIN) & 0x01) {
 			// Monitor0 went high which is the start of frame integration
-			#ifdef DUAL_LED_MINISCOPE
+			if (ms_mode == MODE_2_COLOR) {
 				if (previousLED == 1) {
 					// LED1 was previously one
 					if (ledValue2 != 0)
@@ -217,17 +271,16 @@ ISR(PCINT1_vect) //Interrupt for PCINT[14:8]. Will be triggered when a pin toggl
 						LED_ENT1_PORT |= (1<<LED_ENT1_PIN);
 					previousLED = 1;
 				}
-			#endif
-			#ifdef V4_MINISCOPE
+			}
+			if (ms_mode == MODE_V4_MINISCOPE) {
 				if (ledValue1 != 0)
 					LED_ENT1_PORT |= (1<<LED_ENT1_PIN);
-			#endif
-		
+			}
 		}
 		else {
 			// Monitor0 went low which is end of frame integration. Let's turn off all LEDs during this time
 			LED_ENT1_PORT &= ~((1<<LED_ENT1_PIN)|(1<<LED_ENT2_PIN));
 		}
-	#endif
+	}
 }
 
