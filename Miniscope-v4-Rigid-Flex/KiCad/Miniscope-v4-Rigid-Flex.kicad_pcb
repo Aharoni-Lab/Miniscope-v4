@@ -32,13 +32,13 @@
     (44 Edge.Cuts user)
     (45 Margin user)
     (46 B.CrtYd user)
-    (47 F.CrtYd user)
-    (48 B.Fab user hide)
-    (49 F.Fab user hide)
+    (47 F.CrtYd user hide)
+    (48 B.Fab user)
+    (49 F.Fab user)
   )
 
   (setup
-    (last_trace_width 0.2032)
+    (last_trace_width 0.1016)
     (user_trace_width 0.1016)
     (user_trace_width 0.127)
     (user_trace_width 0.1524)
@@ -74,7 +74,7 @@
     (solder_mask_min_width 0.1016)
     (aux_axis_origin 100.25 130.5)
     (grid_origin 100.25 130.5)
-    (visible_elements 7FFFFFFF)
+    (visible_elements 7FFFEFFF)
     (pcbplotparams
       (layerselection 0x314fc_ffffffff)
       (usegerberextensions false)
@@ -92,7 +92,7 @@
       (hpglpendiameter 15.000000)
       (psnegative false)
       (psa4output false)
-      (plotreference false)
+      (plotreference true)
       (plotvalue true)
       (plotinvisibletext false)
       (padsonsilk false)
@@ -338,7 +338,7 @@
     (fp_text reference HOLE (at 0 1.27) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_1x1_250x750_Pad (at 0 -1.27) (layer F.Fab)
+    (fp_text value Conn_1x1_250x750_Pad (at 0 -1.27) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad "" np_thru_hole circle (at 0 0) (size 1 1) (drill 1) (layers *.Cu *.Mask))
@@ -349,7 +349,7 @@
     (fp_text reference HOLE (at 0 1.27) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value Conn_1x1_250x750_Pad (at 0 -1.27) (layer F.Fab)
+    (fp_text value Conn_1x1_250x750_Pad (at 0 -1.27) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad "" np_thru_hole circle (at 0 0) (size 1 1) (drill 1) (layers *.Cu *.Mask))
@@ -389,7 +389,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -414,7 +414,7 @@
     (fp_text value ERJ-1GEF49R9C (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -485,7 +485,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -533,7 +533,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180) (layer B.Fab)
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0 180) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -581,7 +581,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -629,7 +629,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180) (layer B.Fab)
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0 180) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -679,7 +679,7 @@
     (fp_line (start -1.6 -1.25) (end -1.6 1.25) (layer Dwgs.User) (width 0.025))
     (fp_line (start -1.2 -1.25) (end -1.6 -1.25) (layer Dwgs.User) (width 0.025))
     (fp_line (start -1.2 1.25) (end -1.2 -1.25) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180) (layer B.Fab)
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 2 2) (thickness 0.2)) (justify mirror))
     )
     (pad 2 smd rect (at 1.525 0 180) (size 0.87 2.62) (layers B.Cu B.Paste B.Mask)
@@ -718,7 +718,7 @@
     (fp_text value BLM15HD102SN1D (at 0 -1.17) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
     (fp_line (start 0.93 -0.47) (end -0.93 -0.47) (layer B.CrtYd) (width 0.05))
@@ -923,7 +923,7 @@
     (fp_line (start -1.63 2.5) (end -1.87 2.5) (layer Dwgs.User) (width 0.025))
     (fp_line (start -1.63 2.1) (end -1.63 2.5) (layer Dwgs.User) (width 0.025))
     (fp_line (start -1.87 2.1) (end -1.63 2.1) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at -0.1822 -0.0852 270 unlocked) (layer F.Fab)
+    (fp_text user %R (at -0.1822 -0.0852 270 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (pad "" smd rect (at -0.775 -0.775) (size 1.35 1.35) (layers F.Paste))
@@ -1015,7 +1015,7 @@
     (fp_text value BLM15HD102SN1D (at 0 -1.17 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 180) (layer B.Fab)
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
     (fp_line (start 0.93 -0.47) (end -0.93 -0.47) (layer B.CrtYd) (width 0.05))
@@ -1097,7 +1097,7 @@
     (fp_line (start -0.375 -0.75) (end -0.625 -0.75) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.375 -0.15) (end -0.375 -0.75) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.625 -0.15) (end -0.375 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180) (layer B.Fab)
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 1.07 1.07) (thickness 0.11)) (justify mirror))
     )
     (pad 6 smd rect (at -0.5 0.53 90) (size 0.74 0.27) (layers B.Cu B.Paste B.Mask)
@@ -1153,7 +1153,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180) (layer B.Fab)
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0 180) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1201,7 +1201,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1249,7 +1249,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1275,7 +1275,7 @@
     (fp_text value BLM15HD102SN1D (at 0 -1.17) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
     (fp_line (start 0.93 -0.47) (end -0.93 -0.47) (layer B.CrtYd) (width 0.05))
@@ -1331,7 +1331,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1379,7 +1379,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180) (layer B.Fab)
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0 180) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1404,7 +1404,7 @@
     (fp_text value ERJ-1GEF1002C (at 0 0 270) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 270) (layer B.Fab)
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
@@ -1488,7 +1488,7 @@
     (fp_text value ERJ-1GEF1002C (at 0 0 270) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
-    (fp_text user %R (at 0 0 270) (layer B.Fab)
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
@@ -1615,7 +1615,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 270) (layer B.Fab)
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0 270) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1654,7 +1654,7 @@
     (fp_text value 100nF (at 0 0 180) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -1725,7 +1725,7 @@
     (fp_line (start -0.5 -0.25) (end -0.5 0.25) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.25 -0.25) (end -0.5 -0.25) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.25 0.25) (end -0.25 -0.25) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 270) (layer B.Fab)
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.445 0 270) (size 0.58 0.63) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -1750,7 +1750,7 @@
     (fp_text value 6.8nF (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -1798,7 +1798,7 @@
     (fp_text value 120nF (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -1859,7 +1859,7 @@
     (fp_text value 10K (at 0 0 180) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -1920,7 +1920,7 @@
     (fp_text value 10K (at 0 0 90) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 90 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 90 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -1968,7 +1968,7 @@
     (fp_text value 100nF (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -2030,7 +2030,7 @@
     (fp_text value BNO055 (at 0 3.3 270) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start 2.6 -1.9) (end -2.1 -1.9) (layer F.Fab) (width 0.1))
@@ -2114,7 +2114,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -2162,7 +2162,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -2210,7 +2210,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -2258,7 +2258,7 @@
     (fp_text value GRM155R60J106ME15D (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.25 -0.25) (end -0.25 0.25) (layer Dwgs.User) (width 0.025))
@@ -2306,7 +2306,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -2403,7 +2403,7 @@
     (fp_line (start -0.5375 1.05) (end -0.7625 1.05) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.5375 0.69) (end -0.5375 1.05) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.7625 0.69) (end -0.5375 0.69) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at -0.2098 -0.032 90 unlocked) (layer F.Fab)
+    (fp_text user %R (at -0.2098 -0.032 90 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (pad 5 smd rect (at -0.65 -0.91 180) (size 0.99 0.34) (layers F.Cu F.Paste F.Mask)
@@ -2434,7 +2434,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -2482,7 +2482,7 @@
     (fp_text value "47.7K 1%" (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -2530,7 +2530,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -2578,7 +2578,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -2626,7 +2626,7 @@
     (fp_text value 1.8K (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -2674,7 +2674,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0 90) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 90 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 90 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -2722,7 +2722,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -2770,7 +2770,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0 90) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 90 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 90 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -2818,7 +2818,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -2866,7 +2866,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -2914,7 +2914,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0 180) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -2985,7 +2985,7 @@
     (fp_line (start -0.5 0.25) (end -0.5 -0.25) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.25 0.25) (end -0.5 0.25) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.25 -0.25) (end -0.25 0.25) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (pad 2 smd roundrect (at 0.445 0) (size 0.58 0.63) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -3010,7 +3010,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -3058,7 +3058,7 @@
     (fp_text value SiT_2.5mmx2mm (at 0.425 3.625) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0.65 -2.325 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0.65 -2.325 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -1.25 0.3) (end -0.5 0.3) (layer Dwgs.User) (width 0.025))
@@ -3124,7 +3124,7 @@
     (fp_text value 1K (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -3173,7 +3173,7 @@
     (fp_text value NOIP1SN0480A (at -0.95 -3.675) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
-    (fp_text user %R (at 0.7066 0.3052) (layer B.Fab)
+    (fp_text user %R (at 0.7066 0.3052) (layer B.Fab) hide
       (effects (font (size 2 2) (thickness 0.2)) (justify mirror))
     )
     (fp_circle (center -2.5 1.75) (end -2.5 1.625) (layer Dwgs.User) (width 0.025))
@@ -3434,7 +3434,7 @@
     (fp_text value ATmega328-MU (at 0 0 90) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
-    (fp_text user %R (at -0.1844 0.142 90) (layer B.Fab)
+    (fp_text user %R (at -0.1844 0.142 90) (layer B.Fab) hide
       (effects (font (size 2 2) (thickness 0.2)) (justify mirror))
     )
     (fp_line (start -1.87 -2.1) (end -1.63 -2.1) (layer Dwgs.User) (width 0.025))
@@ -3720,7 +3720,7 @@
     (fp_line (start -0.5 -0.25) (end -0.5 0.25) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.25 -0.25) (end -0.5 -0.25) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.25 0.25) (end -0.25 -0.25) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180) (layer B.Fab)
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.445 0 180) (size 0.58 0.63) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -3781,7 +3781,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -3829,7 +3829,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -3877,7 +3877,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180) (layer B.Fab)
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0 180) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -3902,7 +3902,7 @@
     (fp_text value GRM033R61C473KE84D (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -3973,7 +3973,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180) (layer B.Fab)
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0 180) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4021,7 +4021,7 @@
     (fp_line (start -0.5 -0.25) (end -0.5 0.25) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.25 -0.25) (end -0.5 -0.25) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.25 0.25) (end -0.25 -0.25) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180) (layer B.Fab)
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.445 0 180) (size 0.58 0.63) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4069,7 +4069,7 @@
     (fp_line (start -0.5 -0.25) (end -0.5 0.25) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.25 -0.25) (end -0.5 -0.25) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.25 0.25) (end -0.25 -0.25) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180) (layer B.Fab)
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.445 0 180) (size 0.58 0.63) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4117,7 +4117,7 @@
     (fp_line (start -0.5 -0.25) (end -0.5 0.25) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.25 -0.25) (end -0.5 -0.25) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.25 0.25) (end -0.25 -0.25) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.445 0) (size 0.58 0.63) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4165,7 +4165,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180) (layer B.Fab)
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0 180) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4213,7 +4213,7 @@
     (fp_line (start -0.5 -0.25) (end -0.5 0.25) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.25 -0.25) (end -0.5 -0.25) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.25 0.25) (end -0.25 -0.25) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.445 0) (size 0.58 0.63) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4238,7 +4238,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0 180) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -4309,7 +4309,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4357,7 +4357,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180) (layer B.Fab)
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0 180) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4405,7 +4405,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180) (layer B.Fab)
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0 180) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4453,7 +4453,7 @@
     (fp_line (start -0.3 0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (pad 2 smd roundrect (at 0.275 0) (size 0.31 0.34) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -4478,7 +4478,7 @@
     (fp_text value BLM18PG471SN1D (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.4 -0.4) (end -0.4 0.4) (layer Dwgs.User) (width 0.025))
@@ -4549,7 +4549,7 @@
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.4 0.4) (end -0.8 0.4) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.4 -0.4) (end -0.4 0.4) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 90 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 90 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (pad 2 smd roundrect (at 0.665 0 90) (size 0.89 0.92) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -4599,7 +4599,7 @@
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.425 0.4) (end -0.8 0.4) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.425 -0.4) (end -0.425 0.4) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at -0.032 0.032 unlocked) (layer F.Fab)
+    (fp_text user %R (at -0.032 0.032 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (pad 2 smd roundrect (at 0.68 0) (size 0.81 0.87) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -4624,7 +4624,7 @@
     (fp_text value GRM155R60J106ME15D (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.25 -0.25) (end -0.25 0.25) (layer Dwgs.User) (width 0.025))
@@ -4672,7 +4672,7 @@
     (fp_text value DNL (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -4720,7 +4720,7 @@
     (fp_text value MMBT3904LP-7B (at 0.6 1.35 180) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 1.875 0.125 180 unlocked) (layer F.Fab)
+    (fp_text user %R (at 1.875 0.125 180 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.2 -0.25) (end -0.2 -0.1) (layer Dwgs.User) (width 0.025))
@@ -4790,7 +4790,7 @@
     (fp_line (start -0.93 -0.47) (end 0.93 -0.47) (layer F.CrtYd) (width 0.05))
     (fp_line (start 0.93 -0.47) (end 0.93 0.47) (layer F.CrtYd) (width 0.05))
     (fp_line (start 0.93 0.47) (end -0.93 0.47) (layer F.CrtYd) (width 0.05))
-    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (pad 1 smd roundrect (at -0.485 0 180) (size 0.59 0.64) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -4840,7 +4840,7 @@
     (fp_line (start -1 -0.625) (end -1 0.625) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.55 -0.625) (end -1 -0.625) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.55 0.625) (end -0.55 -0.625) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.92 0.92) (thickness 0.09)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.82 0) (size 0.93 1.32) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -4865,7 +4865,7 @@
     (fp_text value ERJ-1GEF1022C (at 0 0 90) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 90 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 90 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -5004,7 +5004,7 @@
     (fp_line (start -0.7 1) (end -0.9 1) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.7 0.6) (end -0.7 1) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.9 0.6) (end -0.7 0.6) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (pad 14 smd rect (at -0.845 0.2 180) (size 0.61 0.22) (layers F.Cu F.Paste F.Mask)
@@ -5053,7 +5053,7 @@
     (fp_text value LTC3218 (at 0 0 180) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.875 1) (end -0.875 0.725) (layer Dwgs.User) (width 0.025))
@@ -5196,7 +5196,7 @@
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.4 -0.4) (end -0.8 -0.4) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.4 0.4) (end -0.4 -0.4) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180) (layer B.Fab)
+    (fp_text user %R (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 0.52 0.52) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.665 0 180) (size 0.89 0.92) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5221,7 +5221,7 @@
     (fp_text value GRM033R61A225ME47D (at 0 0 90) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 90 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 90 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -5307,7 +5307,7 @@
     (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.425 -0.4) (end -0.8 -0.4) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.425 0.4) (end -0.425 -0.4) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0.1 0.95) (layer B.Fab)
+    (fp_text user %R (at 0.1 0.95) (layer B.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.05)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.68 0) (size 0.81 0.87) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -5370,7 +5370,7 @@
     (fp_line (start -1.25 -0.1625) (end -1.25 0.1625) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.95 -0.1625) (end -1.25 -0.1625) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.95 0.1625) (end -0.95 -0.1625) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 270) (layer B.Fab)
+    (fp_text user %R (at 0 0 270) (layer B.Fab) hide
       (effects (font (size 0.87 0.87) (thickness 0.09)) (justify mirror))
     )
     (pad A smd rect (at 1.03 0 270) (size 1.06 0.54) (layers B.Cu B.Paste B.Mask)
@@ -5395,7 +5395,7 @@
     (fp_text value GRM033R61A225ME47D (at 0 0 90) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 90 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 90 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -5467,7 +5467,7 @@
     (fp_line (start -0.65 -0.85) (end -0.65 0.85) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.35 -0.85) (end -0.65 -0.85) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.35 0.85) (end -0.35 -0.85) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 1.27) (layer B.Fab)
+    (fp_text user %R (at 0 1.27) (layer B.Fab) hide
       (effects (font (size 0.89 0.89) (thickness 0.09)) (justify mirror))
     )
     (pad A smd rect (at 0.35 0) (size 0.45 1.5) (layers B.Cu B.Paste B.Mask)
@@ -5492,7 +5492,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -5540,7 +5540,7 @@
     (fp_text value GRM155R60J475ME87D (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.25 -0.25) (end -0.25 0.25) (layer Dwgs.User) (width 0.025))
@@ -5588,7 +5588,7 @@
     (fp_text value GRM033R61A104ME15D (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
@@ -5687,7 +5687,7 @@
     (fp_circle (center 0 -0.5) (end 0 -0.345) (layer Dwgs.User) (width 0.025))
     (fp_circle (center -0.5 -0.5) (end -0.5 -0.345) (layer Dwgs.User) (width 0.025))
     (fp_circle (center -1 -0.5) (end -1 -0.345) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (pad C5 smd circle (at 1 0.5 180) (size 0.35 0.35) (layers F.Cu F.Paste F.Mask)
@@ -5738,7 +5738,7 @@
     (fp_text value GRM155R60J475ME87D (at 0 0 180) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
-    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab)
+    (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (fp_line (start -0.25 -0.25) (end -0.25 0.25) (layer Dwgs.User) (width 0.025))
@@ -5878,7 +5878,6 @@
   (gr_line (start 102.25 97.5) (end 105.25 97.5) (layer B.SilkS) (width 0.12) (tstamp 5D7DC0FE))
   (gr_line (start 106.25 98.5) (end 106.25 93) (layer Eco1.User) (width 0.15))
 
-  (via (at 116.1548 110.3788) (size 0.35) (drill 0.15) (layers F.Cu B.Cu) (net 2) (tstamp 5DFDC2DC))
   (segment (start 103.25 88) (end 104.25 89) (width 0.2032) (layer In2.Cu) (net 1))
   (segment (start 104.21473 95.82193) (end 104.21473 95.49647) (width 0.1524) (layer F.Cu) (net 1))
   (segment (start 101.837 97.179) (end 101.8248 97.1912) (width 0.1524) (layer F.Cu) (net 1))
@@ -6129,6 +6128,7 @@
   (segment (start 101.988455 95.3972) (end 101.774 95.611655) (width 0.1524) (layer F.Cu) (net 1))
   (segment (start 102.7552 95.456) (end 102.6964 95.3972) (width 0.1524) (layer F.Cu) (net 1))
   (segment (start 102.6964 95.3972) (end 101.988455 95.3972) (width 0.1524) (layer F.Cu) (net 1))
+  (via (at 116.1548 110.3788) (size 0.35) (drill 0.15) (layers F.Cu B.Cu) (net 2) (tstamp 5DFDC2DC))
   (segment (start 102.3916 127.3678) (end 102.9678 126.7916) (width 0.2032) (layer B.Cu) (net 2))
   (segment (start 104.9828 125.0564) (end 104.9828 124.4722) (width 0.1524) (layer B.Cu) (net 2))
   (segment (start 106.5996 124.036459) (end 106.512389 123.949248) (width 0.1524) (layer B.Cu) (net 2))
@@ -6239,6 +6239,10 @@
   (segment (start 101.1728 128.4092) (end 101.1728 128.7412) (width 0.1524) (layer B.Cu) (net 2))
   (segment (start 104.1016 128.1806) (end 104.1016 128.8078) (width 0.1524) (layer B.Cu) (net 2))
   (segment (start 104.0176 129.4506) (end 104.0176 128.8918) (width 0.1524) (layer B.Cu) (net 2))
+  (segment (start 114.384358 116.4698) (end 114.9566 116.4698) (width 0.1524) (layer F.Cu) (net 2))
+  (segment (start 113.6866 115.772042) (end 114.384358 116.4698) (width 0.1524) (layer F.Cu) (net 2))
+  (segment (start 113.6866 114.4108) (end 113.6866 115.772042) (width 0.1524) (layer F.Cu) (net 2))
+  (via (at 114.9566 116.4698) (size 0.35) (drill 0.15) (layers F.Cu B.Cu) (net 2))
   (segment (start 119.53121 112.012056) (end 119.5286 112.014666) (width 0.1524) (layer F.Cu) (net 3))
   (via (at 103.2344 112.1808) (size 0.35) (drill 0.15) (layers F.Cu B.Cu) (net 3))
   (segment (start 114.9566 111.077) (end 118.3936 111.077) (width 0.2032) (layer In2.Cu) (net 3))
@@ -6393,14 +6397,11 @@
   (segment (start 99.3904 125.697798) (end 100.653602 125.697798) (width 0.1524) (layer F.Cu) (net 10))
   (segment (start 107.8188 124.5738) (end 107.8188 124.0306) (width 0.3048) (layer In3.Cu) (net 10))
   (segment (start 111.5236 124.4756) (end 111.5236 123.8008) (width 0.3048) (layer B.Cu) (net 10))
-  (segment (start 114.384358 116.4698) (end 114.9566 116.4698) (width 0.1524) (layer F.Cu) (net 2))
   (segment (start 108.8606 128.214) (end 108.8606 124.9962) (width 0.3048) (layer In3.Cu) (net 10))
   (segment (start 100.70047 125.65093) (end 100.70047 129.24867) (width 0.3048) (layer In3.Cu) (net 10))
   (segment (start 107.8188 124.5738) (end 107.8188 124.3038) (width 0.3048) (layer In3.Cu) (net 10))
-  (segment (start 113.6866 115.772042) (end 114.384358 116.4698) (width 0.1524) (layer F.Cu) (net 2))
   (segment (start 108.2082 123.4134) (end 107.8188 123.8028) (width 0.3048) (layer B.Cu) (net 10))
   (segment (start 100.9104 125.441) (end 101.4946 125.441) (width 0.1524) (layer B.Cu) (net 10))
-  (segment (start 113.6866 114.4108) (end 113.6866 115.772042) (width 0.1524) (layer F.Cu) (net 2))
   (segment (start 115.1344 111.4072) (end 119.4778 111.4072) (width 0.254) (layer In2.Cu) (net 10))
   (segment (start 106.4392 125.9534) (end 107.60887 124.78373) (width 0.1524) (layer B.Cu) (net 10))
   (segment (start 104.1658 125.131) (end 104.9882 125.9534) (width 0.1524) (layer B.Cu) (net 10))
@@ -6444,7 +6445,6 @@
   (via (at 101.2344 114.6808) (size 0.35) (drill 0.15) (layers F.Cu B.Cu) (net 10))
   (via (at 105.7344 111.6808) (size 0.35) (drill 0.15) (layers F.Cu B.Cu) (net 10))
   (via (at 107.235 116.4872) (size 0.35) (drill 0.15) (layers F.Cu B.Cu) (net 10))
-  (via (at 114.9566 116.4698) (size 0.35) (drill 0.15) (layers F.Cu B.Cu) (net 2))
   (via (at 120.1128 110.0356) (size 0.35) (drill 0.15) (layers F.Cu B.Cu) (net 10))
   (via (at 99.7166 112.2454) (size 0.35) (drill 0.15) (layers F.Cu B.Cu) (net 10))
   (segment (start 116.633 110.434) (end 116.6882 110.3788) (width 0.1524) (layer F.Cu) (net 10))
@@ -7043,7 +7043,7 @@
   (segment (start 103.933 99.2232) (end 104.949 98.2072) (width 0.1524) (layer In2.Cu) (net 108))
   (segment (start 103.933 101.1536) (end 103.933 99.2232) (width 0.1524) (layer In2.Cu) (net 108))
 
-  (zone (net 1) (net_name GND) (layer In1.Cu) (tstamp 5D86544E) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer In1.Cu) (tstamp 5E17CA2A) (hatch edge 0.508)
     (connect_pads yes (clearance 0.1524))
     (min_thickness 0.1524)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -7132,7 +7132,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5D865448) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5E17CA27) (hatch edge 0.508)
     (connect_pads yes (clearance 0.1524))
     (min_thickness 0.1524)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -7154,7 +7154,7 @@
       )
     )
   )
-  (zone (net 10) (net_name +3V3) (layer In4.Cu) (tstamp 5D86544B) (hatch edge 0.508)
+  (zone (net 10) (net_name +3V3) (layer In4.Cu) (tstamp 5E17CA24) (hatch edge 0.508)
     (connect_pads yes (clearance 0.1524))
     (min_thickness 0.1524)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -7271,7 +7271,7 @@
       )
     )
   )
-  (zone (net 30) (net_name "Net-(D1-PadA)") (layer B.Cu) (tstamp 5D865445) (hatch edge 0.508)
+  (zone (net 30) (net_name "Net-(D1-PadA)") (layer B.Cu) (tstamp 5E17CA21) (hatch edge 0.508)
     (priority 1)
     (connect_pads yes (clearance 0.1524))
     (min_thickness 0.254)
@@ -7318,7 +7318,7 @@
       )
     )
   )
-  (zone (net 2) (net_name +1V8) (layer In4.Cu) (tstamp 5D865457) (hatch edge 0.508)
+  (zone (net 2) (net_name +1V8) (layer In4.Cu) (tstamp 5E17CA1E) (hatch edge 0.508)
     (connect_pads yes (clearance 0.1524))
     (min_thickness 0.1524)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -7560,7 +7560,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer In1.Cu) (tstamp 5D865454) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer In1.Cu) (tstamp 5E17CA1B) (hatch edge 0.508)
     (connect_pads yes (clearance 0.1524))
     (min_thickness 0.1524)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -7679,7 +7679,7 @@
       )
     )
   )
-  (zone (net 12) (net_name +5V) (layer B.Cu) (tstamp 5D86545D) (hatch edge 0.508)
+  (zone (net 12) (net_name +5V) (layer B.Cu) (tstamp 5E17CA18) (hatch edge 0.508)
     (connect_pads yes (clearance 0.1524))
     (min_thickness 0.1524)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -7709,7 +7709,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer In1.Cu) (tstamp 5D86545A) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer In1.Cu) (tstamp 5E17CA15) (hatch edge 0.508)
     (connect_pads yes (clearance 0.1524))
     (min_thickness 0.1524)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -7884,7 +7884,7 @@
       )
     )
   )
-  (zone (net 2) (net_name +1V8) (layer In4.Cu) (tstamp 5D865451) (hatch edge 0.508)
+  (zone (net 2) (net_name +1V8) (layer In4.Cu) (tstamp 5E17CA12) (hatch edge 0.508)
     (priority 1)
     (connect_pads yes (clearance 0.1524))
     (min_thickness 0.1524)
@@ -7978,7 +7978,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer In1.Cu) (tstamp 5D865463) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer In1.Cu) (tstamp 5E17CA0F) (hatch edge 0.508)
     (connect_pads yes (clearance 0.1524))
     (min_thickness 0.1524)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -8208,7 +8208,7 @@
       )
     )
   )
-  (zone (net 10) (net_name +3V3) (layer In4.Cu) (tstamp 5D865460) (hatch edge 0.508)
+  (zone (net 10) (net_name +3V3) (layer In4.Cu) (tstamp 5E17CA0C) (hatch edge 0.508)
     (connect_pads yes (clearance 0.1524))
     (min_thickness 0.1524)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -8428,7 +8428,7 @@
       )
     )
   )
-  (zone (net 10) (net_name +3V3) (layer In4.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 10) (net_name +3V3) (layer In4.Cu) (tstamp 5E17CA09) (hatch edge 0.508)
     (priority 2)
     (connect_pads yes (clearance 0.1524))
     (min_thickness 0.1524)
