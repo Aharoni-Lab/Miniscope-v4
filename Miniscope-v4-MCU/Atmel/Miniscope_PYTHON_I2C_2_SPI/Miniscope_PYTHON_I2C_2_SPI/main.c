@@ -85,6 +85,13 @@ void I2C_received(uint8_t received_data)
 				LED_ENT2_PORT &= ~(1<<LED_ENT2_PIN); //Set ENT pin to off
 			pastI2CWord = NO_WORD; //Idle state
 			break;
+		case (SET_STATUS_LED_STATE):
+			if (received_data == 0)
+				LED_PORT &= ~(1<<LED_PIN);
+			else
+				LED_PORT |= (1<<LED_PIN);
+			pastI2CWord = NO_WORD; //Idle state
+			break;
 		case (SET_GAIN_VALUE):
 			switch (received_data) {
 				case (GAIN_1):

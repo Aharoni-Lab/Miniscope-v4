@@ -59,6 +59,7 @@
 #define SET_GAIN_VALUE				0x03
 #define SET_MODE					0x04
 #define I2C_PYTHON_PASSTHROUGH		0x05
+#define SET_STATUS_LED_STATE		0x06
 
 // ======= I2C GAIN VALUES ====
 #define GAIN_1			0x01
