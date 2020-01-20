@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 6
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Miniscope-V4-Rigid-Flex"
+Date "2020-01-20"
+Rev "4.2"
+Comp "Aharoni Lab"
 Comment1 ""
 Comment2 ""
 Comment3 ""
