@@ -26,8 +26,8 @@
 volatile uint8_t pastI2CWord = 0;
 volatile uint8_t data;
 volatile uint8_t previousLED = 1;
-volatile uint8_t ledValue1 = 0;
-volatile uint8_t ledValue2 = 0;
+volatile uint8_t ledValue1 = 0xFF;
+volatile uint8_t ledValue2 = 255;
 
 volatile uint8_t ms_mode = 0;
 
@@ -70,10 +70,11 @@ void I2C_received(uint8_t received_data)
 		case (SET_LED1_STATE):
 			OCR0A = received_data;
 			ledValue1 = received_data;
-			if (received_data < 255) // Changed for new QT sDAQ software
-				LED_ENT1_PORT |= (1<<LED_ENT1_PIN); //Make sure ENT pin is on
+							
 			if (received_data == 0xFF)
 				LED_ENT1_PORT &= ~(1<<LED_ENT1_PIN); //Set ENT pin to off
+			else
+				LED_ENT1_PORT |= (1<<LED_ENT1_PIN); //Make sure ENT pin is on
 			pastI2CWord = NO_WORD; //Idle state
 			break;
 		case (SET_LED2_STATE):
@@ -198,10 +199,10 @@ void initBoard() {
 	
 	// Setup excitation LED
 	LED_ENT1_DDR |= (1<<LED_ENT1_PIN);
-	LED_ENT1_PORT |= (0<<LED_ENT1_PIN);
+	LED_ENT1_PORT &= ~(0<<LED_ENT1_PIN);
 	
 	LED_ENT2_DDR |= (1<<LED_ENT2_PIN);
-	LED_ENT2_PORT |= (0<<LED_ENT2_PIN);
+	LED_ENT2_PORT &= ~(0<<LED_ENT2_PIN);
 	
 	
 	// Setup pins connecting to PYTHON480
@@ -280,7 +281,7 @@ ISR(PCINT1_vect) //Interrupt for PCINT[14:8]. Will be triggered when a pin toggl
 				}
 			}
 			if (ms_mode == MODE_V4_MINISCOPE) {
-				if (ledValue1 != 0)
+				if (ledValue1 < 0xFF)
 					LED_ENT1_PORT |= (1<<LED_ENT1_PIN);
 			}
 		}
