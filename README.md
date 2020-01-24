@@ -6,9 +6,7 @@ The Miniscope v4 is our next generation Miniscope that incorporates an electrowe
 
 <br clear=all>
 
-<p style="text-align: center;"> **All information, guides, and tutorials can be found on the [Minsicope-v4 Wiki Page](https://github.com/Aharoni-Lab/Miniscope-v4/wiki).** </p>
-
-
+**All information, guides, and tutorials can be found on the [Minsicope-v4 Wiki Page](https://github.com/Aharoni-Lab/Miniscope-v4/wiki).**
 
 <p align="center">
   <img width="600" src="https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/img/Miniscope-logo-w-v4-layers.PNG">
