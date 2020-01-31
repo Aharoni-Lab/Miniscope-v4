@@ -1,4 +1,7 @@
-# Miniscope-v4
+<p align="center">
+  <img width="400" src="https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/img/V4.PNG">
+</p>
+
 Open-source neural imaging in freely behaving animals
 
 **All information, guides, and tutorials can be found on the [Minsicope-v4 Wiki Page](https://github.com/Aharoni-Lab/Miniscope-v4/wiki).**
