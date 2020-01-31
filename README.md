@@ -4,7 +4,7 @@
 
 Open-source neural imaging in freely behaving animals
 
-**All information, guides, and tutorials can be found on the [Minsicope-v4 Wiki Page](https://github.com/Aharoni-Lab/Miniscope-v4/wiki).**
+**All information, guides, and tutorials can be found on the [Miniscope-v4 Wiki Page](https://github.com/Aharoni-Lab/Miniscope-v4/wiki).**
 
 **Make sure to click Watch and Star in the upper right corner of this page to get updates on new features and releases.**
 
