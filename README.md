@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="400" src="https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/img/V4.PNG">
+</p>
+
 # Miniscope-v4
 Open-source neural imaging in freely behaving animals
 
