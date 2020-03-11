@@ -80,10 +80,10 @@ void I2C_received(uint8_t received_data)
 		case (SET_LED2_STATE):
 			OCR0B = received_data;
 			ledValue2 = received_data;
-			if (received_data < 255) // Changed for new QT sDAQ software
-				LED_ENT2_PORT |= (1<<LED_ENT2_PIN); //Make sure ENT pin is on
 			if (received_data == 0xFF)
 				LED_ENT2_PORT &= ~(1<<LED_ENT2_PIN); //Set ENT pin to off
+			else
+				LED_ENT2_PORT |= (1<<LED_ENT2_PIN); //Make sure ENT pin is on
 			pastI2CWord = NO_WORD; //Idle state
 			break;
 		case (SET_STATUS_LED_STATE):
@@ -283,11 +283,14 @@ ISR(PCINT1_vect) //Interrupt for PCINT[14:8]. Will be triggered when a pin toggl
 			if (ms_mode == MODE_V4_MINISCOPE) {
 				if (ledValue1 < 0xFF)
 					LED_ENT1_PORT |= (1<<LED_ENT1_PIN);
+				if (ledValue2 < 0xFF)
+					LED_ENT2_PORT |= (1<<LED_ENT2_PIN);
 			}
 		}
 		else {
 			// Monitor0 went low which is end of frame integration. Let's turn off all LEDs during this time
-			LED_ENT1_PORT &= ~((1<<LED_ENT1_PIN)|(1<<LED_ENT2_PIN));
+			LED_ENT1_PORT &= ~(1<<LED_ENT1_PIN);
+			LED_ENT2_PORT &= ~(1<<LED_ENT2_PIN);
 		}
 	}
 }
