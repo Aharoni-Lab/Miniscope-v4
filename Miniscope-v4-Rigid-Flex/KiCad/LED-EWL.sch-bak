@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:Miniscope-v4-Rigid-Flex-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -42,12 +43,11 @@ L .Inductor:LQM18PN3R3MGHD L1
 U 1 1 5C18B403
 P 8775 1750
 F 0 "L1" H 8823 1796 50  0000 L CNN
-F 1 "MBKK1608T3R3M" H 8825 1600 50  0001 L CNN
+F 1 "LQM18PN3R3MGHD" H 8825 1600 50  0001 L CNN
 F 2 ".Inductor:L_0603_1608Metric_L" H 8825 2050 50  0001 C CNN
 F 3 "http://search.murata.co.jp/Ceramy/image/img/P02/JELF243B-0047.pdf" H 8775 1750 50  0001 C CNN
 F 4 "3.3uH" H 8823 1705 50  0000 L CNN "Note"
 F 5 "0603" H 8925 1500 50  0001 C CNN "Size"
-F 6 "Needs low DCR and max saturation current of at least 270mA" H 8775 1750 50  0001 C CNN "Comment"
 	1    8775 1750
 	0    -1   -1   0   
 $EndComp

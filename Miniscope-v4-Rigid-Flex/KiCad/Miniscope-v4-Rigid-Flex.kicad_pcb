@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.0)-1")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.5)-3")
 
   (general
     (thickness 0.8)
@@ -363,7 +363,7 @@
     (fp_text reference R10 (at 0 0) (layer B.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
-    (fp_text value ERJ-1GEF1002C (at 0 0) (layer B.Fab) hide
+    (fp_text value ERJ-1GNF1002C (at 0 0) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_line (start 0 0.135) (end 0 -0.135) (layer B.CrtYd) (width 0.05))
@@ -411,7 +411,7 @@
     (fp_text reference R9 (at 0 0 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value ERJ-1GEF49R9C (at 0 0) (layer F.Fab) hide
+    (fp_text value ERJ-1GNF49R9C (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
@@ -459,7 +459,7 @@
     (fp_text reference R12 (at 0 0) (layer B.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
-    (fp_text value ERJ-1GEF1002C (at 0 0) (layer B.Fab) hide
+    (fp_text value ERJ-1GNF1002C (at 0 0) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_line (start 0 0.135) (end 0 -0.135) (layer B.CrtYd) (width 0.05))
@@ -507,7 +507,7 @@
     (fp_text reference R11 (at 0 0 180) (layer B.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
-    (fp_text value ERJ-1GEF1003C (at 0 0 180) (layer B.Fab) hide
+    (fp_text value ERJ-1GNF1003C (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_line (start 0 0.135) (end 0 -0.135) (layer B.CrtYd) (width 0.05))
@@ -555,7 +555,7 @@
     (fp_text reference R8 (at 0 0) (layer B.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
-    (fp_text value 2K (at 0 0) (layer B.Fab) hide
+    (fp_text value ERJ-1GNF1801C (at 0 0) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_line (start 0 0.135) (end 0 -0.135) (layer B.CrtYd) (width 0.05))
@@ -699,7 +699,7 @@
     (fp_text reference J_coax_gnd1 (at 4.0854 0.8462 90 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value Conn_01x01 (at 0 -1.27) (layer F.Fab) hide
+    (fp_text value DNL (at 0 -1.27) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 smd rect (at 0 0) (size 2.5 2.5) (layers F.Cu F.Paste F.Mask)
@@ -748,7 +748,7 @@
     (fp_text reference U9 (at 0 0 270 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value DS90UB933-Q1 (at 0 0 270) (layer F.Fab) hide
+    (fp_text value DS90UB913ATRTVTQ1 (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_line (start 1.98 2.68) (end 2.68 2.68) (layer F.CrtYd) (width 0.05))
@@ -1401,7 +1401,7 @@
     (fp_text reference R3 (at 0 0 270) (layer B.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
-    (fp_text value ERJ-1GEF1002C (at 0 0 270) (layer B.Fab) hide
+    (fp_text value ERJ-1GNF1002C (at 0 0 270) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_text user %R (at 0 0 270) (layer B.Fab) hide
@@ -1485,7 +1485,7 @@
     (fp_text reference R2 (at 0 0 270) (layer B.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
-    (fp_text value ERJ-1GEF1002C (at 0 0 270) (layer B.Fab) hide
+    (fp_text value ERJ-1GNF1002C (at 0 0 270) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_text user %R (at 0 0 270) (layer B.Fab) hide
@@ -1531,7 +1531,7 @@
     (fp_text reference J_extra1 (at 0.6112 3.3568 270 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value Conn_01x05 (at 0.3556 3.048 270) (layer F.Fab) hide
+    (fp_text value DNL (at 0.3556 3.048 270) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 5 smd circle (at 1.930398 0 270) (size 0.508 0.508) (layers F.Cu F.Paste F.Mask)
@@ -1552,7 +1552,7 @@
     (fp_text reference J17 (at -0.18 -2.08 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value SMA-J-P-H-RA-TH1 (at 0.16 -3.58) (layer F.Fab) hide
+    (fp_text value "U.FL-R-SMT-1(10)" (at 0.16 -3.58) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 smd roundrect (at 0 1.5025) (size 1 1.05) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -1574,7 +1574,7 @@
     (fp_text reference J4 (at 1.4478 0.8984 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value Conn_01x01 (at 0 -0.5) (layer F.Fab) hide
+    (fp_text value DNL (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 smd circle (at 0 0) (size 0.7 0.7) (layers F.Cu F.Paste F.Mask)
@@ -1589,7 +1589,7 @@
     (fp_text reference C1 (at 0 0 270) (layer B.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
-    (fp_text value 0.1uF (at 0 0 270) (layer B.Fab) hide
+    (fp_text value GRM033R61A104ME15D (at 0 0 270) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_line (start 0 0.135) (end 0 -0.135) (layer B.CrtYd) (width 0.05))
@@ -1636,7 +1636,7 @@
     (fp_text reference J1 (at 1.524 0.5428 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value Conn_01x01 (at 0 -0.5) (layer F.Fab) hide
+    (fp_text value DNL (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 smd circle (at 0 0) (size 0.7 0.7) (layers F.Cu F.Paste F.Mask)
@@ -1651,7 +1651,7 @@
     (fp_text reference C52 (at 0 0 180 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value 100nF (at 0 0 180) (layer F.Fab) hide
+    (fp_text value GRM033R61A104ME15D (at 0 0 180) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab) hide
@@ -1699,7 +1699,7 @@
     (fp_text reference C2 (at 0 0 270) (layer B.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
-    (fp_text value 4.7uF (at 0 0 270) (layer B.Fab) hide
+    (fp_text value GRM155R60J475ME47D (at 0 0 270) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_line (start 0 0.215) (end 0 -0.215) (layer Dwgs.User) (width 0.05))
@@ -1747,7 +1747,7 @@
     (fp_text reference C53 (at 0 0 270 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value 6.8nF (at 0 0 270) (layer F.Fab) hide
+    (fp_text value GRM033R71A103KA01D (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab) hide
@@ -1795,7 +1795,7 @@
     (fp_text reference C54 (at 0 0 270 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value 120nF (at 0 0 270) (layer F.Fab) hide
+    (fp_text value GRM033R61A104ME15D (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab) hide
@@ -1841,7 +1841,7 @@
     (fp_text reference J5 (at 1.5494 0.4412 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value Conn_01x01 (at 0 -0.5) (layer F.Fab) hide
+    (fp_text value DNL (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 smd circle (at 0 0) (size 0.7 0.7) (layers F.Cu F.Paste F.Mask)
@@ -1856,7 +1856,7 @@
     (fp_text reference R15 (at 0 0 180 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value 10K (at 0 0 180) (layer F.Fab) hide
+    (fp_text value ERJ-1GNF1002C (at 0 0 180) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab) hide
@@ -1902,7 +1902,7 @@
     (fp_text reference J2 (at 4.064 1.381 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value Conn_01x01 (at 0 -0.5) (layer F.Fab) hide
+    (fp_text value DNL (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 smd circle (at 0 0) (size 0.7 0.7) (layers F.Cu F.Paste F.Mask)
@@ -1917,7 +1917,7 @@
     (fp_text reference R16 (at 0 0 90 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value 10K (at 0 0 90) (layer F.Fab) hide
+    (fp_text value ERJ-1GNF1002C (at 0 0 90) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_text user %R (at 0 0 90 unlocked) (layer F.Fab) hide
@@ -1965,7 +1965,7 @@
     (fp_text reference C51 (at 0 0 270 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value 100nF (at 0 0 270) (layer F.Fab) hide
+    (fp_text value GRM033R61A104ME15D (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab) hide
@@ -2011,7 +2011,7 @@
     (fp_text reference J3 (at 2.7686 -0.9558 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value Conn_01x01 (at 0 -0.5) (layer F.Fab) hide
+    (fp_text value DNL (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 smd circle (at 0 0) (size 0.7 0.7) (layers F.Cu F.Paste F.Mask)
@@ -2479,7 +2479,7 @@
     (fp_text reference R7 (at 0 0 270 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value "47.7K 1%" (at 0 0 270) (layer F.Fab) hide
+    (fp_text value ERJ-1GNF4752C (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab) hide
@@ -2623,7 +2623,7 @@
     (fp_text reference R4 (at 0 0 270 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value 1.8K (at 0 0 270) (layer F.Fab) hide
+    (fp_text value ERJ-1GNF1801C (at 0 0 270) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_text user %R (at 0 0 270 unlocked) (layer F.Fab) hide
@@ -3055,7 +3055,7 @@
     (fp_text reference U7 (at 0.025 2.2 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value SiT_2.5mmx2mm (at 0.425 3.625) (layer F.Fab) hide
+    (fp_text value "SG-210STF 66.6667ML3" (at 0.425 3.625) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_text user %R (at 0.65 -2.325 unlocked) (layer F.Fab) hide
@@ -3121,7 +3121,7 @@
     (fp_text reference R5 (at 0 0 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value 1K (at 0 0) (layer F.Fab) hide
+    (fp_text value ERJ-1GNF1001C (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
@@ -3170,7 +3170,7 @@
     (fp_text reference U6 (at 0.7 -4.525) (layer B.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
-    (fp_text value NOIP1SN0480A (at -0.95 -3.675) (layer B.Fab) hide
+    (fp_text value NOIP1SP0480A (at -0.95 -3.675) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_text user %R (at 0.7066 0.3052) (layer B.Fab) hide
@@ -3416,7 +3416,7 @@
     (fp_text reference J6 (at 2.5654 2.016 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value Conn_01x01 (at 0 -0.5) (layer F.Fab) hide
+    (fp_text value DNL (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 smd circle (at 0 0) (size 0.7 0.7) (layers F.Cu F.Paste F.Mask)
@@ -3740,7 +3740,7 @@
     (fp_text reference J9 (at -0.1016 -1.4558 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value Conn_01x01 (at 0 -0.5) (layer F.Fab) hide
+    (fp_text value DNL (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 smd circle (at 0 0) (size 0.7 0.7) (layers F.Cu F.Paste F.Mask)
@@ -4091,7 +4091,7 @@
     (fp_text reference C43 (at 0 0) (layer B.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
-    (fp_text value GRJ155R60J106ME11D (at 0 0) (layer B.Fab) hide
+    (fp_text value GRM155R60J106ME15D (at 0 0) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_line (start 0 0.215) (end 0 -0.215) (layer Dwgs.User) (width 0.05))
@@ -4776,7 +4776,7 @@
     (fp_text reference D3 (at 0.0828 -0.0428 180 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value LED_Small_ALT (at 0 1.17 180) (layer F.Fab) hide
+    (fp_text value VLMS1500-GS08 (at 0 1.17 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center -1.09 0) (end -1.04 0) (layer F.SilkS) (width 0.1))
@@ -4812,7 +4812,7 @@
     (fp_text reference C50 (at 0 0) (layer B.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
-    (fp_text value 47uF (at 0 0) (layer B.Fab) hide
+    (fp_text value "GRM21BR61A476ME15L " (at 0 0) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_line (start 0 0.35) (end 0 -0.35) (layer Dwgs.User) (width 0.05))
@@ -4862,7 +4862,7 @@
     (fp_text reference R1 (at 0 0 90 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value ERJ-1GEF1022C (at 0 0 90) (layer F.Fab) hide
+    (fp_text value ERJ-1GNF1022C (at 0 0 90) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_text user %R (at 0 0 90 unlocked) (layer F.Fab) hide
@@ -5170,7 +5170,7 @@
     (fp_text reference L1 (at 0 0 180) (layer B.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
-    (fp_text value LQM18PN3R3MGHD (at 0 0 180) (layer B.Fab) hide
+    (fp_text value MBKK1608T3R3M (at 0 0 180) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_line (start 0 0.3) (end 0 -0.3) (layer Dwgs.User) (width 0.05))
@@ -5264,7 +5264,7 @@
     (fp_text reference J12 (at 0 0.5 180 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value Conn_01x01 (at 0 -0.5 180) (layer F.Fab) hide
+    (fp_text value DNL (at 0 -0.5 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 smd roundrect (at 0 0 180) (size 0.75 0.75) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -5279,7 +5279,7 @@
     (fp_text reference C9 (at 0 0) (layer B.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
-    (fp_text value "100nF 100V 0603" (at 0 0) (layer B.Fab) hide
+    (fp_text value GRJ188R72A104KE11D (at 0 0) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_line (start 0 0.29) (end 0 -0.29) (layer Dwgs.User) (width 0.05))
@@ -5329,7 +5329,7 @@
     (fp_text reference D2 (at 0 0 270) (layer B.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
-    (fp_text value BAS316 (at 0 0 270) (layer B.Fab) hide
+    (fp_text value BAS316-TP (at 0 0 270) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_line (start -1 -0.37) (end -1 -0.78) (layer B.CrtYd) (width 0.05))
@@ -5537,7 +5537,7 @@
     (fp_text reference C5 (at 0 0 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value GRM155R60J475ME87D (at 0 0) (layer F.Fab) hide
+    (fp_text value GRM155R60J475ME47D (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_text user %R (at 0 0 unlocked) (layer F.Fab) hide
@@ -5631,7 +5631,7 @@
     (fp_text reference J11 (at 0 0.5 180 unlocked) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value Conn_01x01 (at 0 -0.5 180) (layer F.Fab) hide
+    (fp_text value DNL (at 0 -0.5 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 smd roundrect (at 0 0 180) (size 0.75 0.75) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -5735,7 +5735,7 @@
     (fp_text reference C7 (at 0 0 180 unlocked) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value GRM155R60J475ME87D (at 0 0 180) (layer F.Fab) hide
+    (fp_text value GRM155R60J475ME47D (at 0 0 180) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_text user %R (at 0 0 180 unlocked) (layer F.Fab) hide
