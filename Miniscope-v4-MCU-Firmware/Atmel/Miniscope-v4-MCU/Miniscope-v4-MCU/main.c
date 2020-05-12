@@ -24,7 +24,7 @@
 #define I2C_ADDR 0x10
 
 volatile uint8_t pastI2CWord = 0;
-volatile uint8_t data;
+volatile uint8_t i2c_return_data;
 volatile uint8_t previousLED = 1;
 volatile uint8_t ledValue1 = 0xFF;
 volatile uint8_t ledValue2 = 255;
@@ -42,6 +42,27 @@ void I2C_received(uint8_t received_data)
 // The switch function below becomes effective once 2 bytes have been received over I2C
 // pastI2CWord acts as the "write reg" and received_data act as the value being written
 	switch (pastI2CWord) {
+		case (NO_WORD):
+			switch(received_data) {
+				case(GET_PID):
+					// Product ID
+					i2c_return_data = PID;
+					break;
+				case(GET_VID):
+					// Vendor ID
+					i2c_return_data = VID;
+					break;
+				case(GET_FIRM_VER):
+					// Firmware Version
+					i2c_return_data = FIRM_VER;
+					break;
+				default:
+					// This gets called and saves the byte after address into pastI2CWord
+					pastI2CWord = received_data;
+					bytesReceived = 0;
+					break;
+			}
+			
 		case (I2C_PYTHON_PASSTHROUGH):
 			switch (bytesReceived) {
 				case (0):
@@ -122,7 +143,7 @@ void I2C_received(uint8_t received_data)
 			pastI2CWord = NO_WORD; //Idle state
 			break;
 		default:
-			// This gets called and saves the byte after address into pastI2CWord
+			// This portion should no longer get called. This is now handled in the NO_WORD case at the top
 			pastI2CWord = received_data;
 			bytesReceived = 0;
 			break;
@@ -131,7 +152,7 @@ void I2C_received(uint8_t received_data)
 
 void I2C_requested()
 {
-	I2C_transmitByte(data);
+	I2C_transmitByte(i2c_return_data);
 }
 
 void setup_I2C()

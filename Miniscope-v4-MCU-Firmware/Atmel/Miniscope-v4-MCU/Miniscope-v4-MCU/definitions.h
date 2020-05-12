@@ -61,6 +61,14 @@
 #define I2C_PYTHON_PASSTHROUGH		0x05
 #define SET_STATUS_LED_STATE		0x06
 
+#define GET_PID						0xF0
+#define GET_VID						0xF1
+#define GET_FIRM_VER				0xF2
+
+// ======= I2C ID Values ======
+#define PID							0x40 // Product ID (0x40 for original production V4 Miniscope)
+#define VID							0x11 // Vendor ID (0x11 for Aharoni Lab)
+#define FIRM_VER					0x10 // Firmware Version
 // ======= I2C GAIN VALUES ====
 #define GAIN_1			0x01
 #define GAIN_2			0x02
