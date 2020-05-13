@@ -23,7 +23,7 @@
 
 #define I2C_ADDR 0x10
 
-volatile uint8_t pastI2CWord = 0;
+volatile uint8_t pastI2CWord = NO_WORD;
 volatile uint8_t i2c_return_data;
 volatile uint8_t previousLED = 1;
 volatile uint8_t ledValue1 = 0xFF;
@@ -63,6 +63,7 @@ void I2C_received(uint8_t received_data)
 					break;
 			}
 			
+			break;			
 		case (I2C_PYTHON_PASSTHROUGH):
 			switch (bytesReceived) {
 				case (0):

@@ -69,6 +69,7 @@
 #define PID							0x40 // Product ID (0x40 for original production V4 Miniscope)
 #define VID							0x11 // Vendor ID (0x11 for Aharoni Lab)
 #define FIRM_VER					0x10 // Firmware Version
+
 // ======= I2C GAIN VALUES ====
 #define GAIN_1			0x01
 #define GAIN_2			0x02
