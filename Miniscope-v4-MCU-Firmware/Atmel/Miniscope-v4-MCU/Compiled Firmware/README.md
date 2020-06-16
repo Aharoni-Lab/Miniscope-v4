@@ -1,0 +1,1 @@
+This folder holds the compiled .hex file of the MCU source code. It has Vendor ID set to "OTHER". If you need to modify the Vendor ID, Product ID, or FIRMWARE_VERSION you will need to recompile the firmware.

@@ -19,7 +19,6 @@
 *.d
 *.eep
 *.elf
-*.hex
 *.map
 *.srec
 

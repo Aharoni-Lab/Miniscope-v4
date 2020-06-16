@@ -49,6 +49,17 @@
 #define TRIGGER0_PORT	PORTC
 #define TRIGGER0_DDR		DDRC
 #define TRIGGER0_PIN	PC2
+// ==== Firmware Version ====
+#define FIRMWARE_VERSION			0x10
+
+// === Product IDs ===========
+#define PID_V4_MINISCOPE			0x40 // Product ID (0x40 for original production V4 Miniscope)
+
+// ==== Vendor IDs ============
+#define VID_OTHER					0x10
+#define VID_AHARONI_LAB				0x11
+#define VID_OEPS					0x12
+#define VID_LABMAKER				0x13
 
 // ========= I2C COMMANDS ====
 // No 0x00 values
@@ -66,9 +77,9 @@
 #define GET_FIRM_VER				0xF2
 
 // ======= I2C ID Values ======
-#define PID							0x40 // Product ID (0x40 for original production V4 Miniscope)
-#define VID							0x11 // Vendor ID (0x11 for Aharoni Lab)
-#define FIRM_VER					0x10 // Firmware Version
+#define PID							PID_V4_MINISCOPE 
+#define VID							VID_OTHER
+#define FIRM_VER					FIRMWARE_VERSION
 
 // ======= I2C GAIN VALUES ====
 #define GAIN_1			0x01
@@ -79,5 +90,7 @@
 #define MODE_V4_MINISCOPE	0x00
 #define MODE_DEMO_2_COLOR	0x01
 #define MODE_2_COLOR		0x02
+
+
 
 #endif /* DEFINITIONS_H_ */
