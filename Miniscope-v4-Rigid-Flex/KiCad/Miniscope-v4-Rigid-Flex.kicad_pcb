@@ -5785,7 +5785,7 @@
   (gr_arc (start 100.25 98) (end 100.25 99) (angle -90) (layer Eco1.User) (width 0.15))
   (gr_arc (start 107.25 100) (end 106.500001 99.250001) (angle -90) (layer F.SilkS) (width 0.12))
   (gr_arc (start 100.25 100) (end 100.999999 100.749999) (angle -90) (layer F.SilkS) (width 0.12))
-  (gr_text v4.2 (at 104.2378 113.2534) (layer F.SilkS)
+  (gr_text v4.31 (at 104.2378 113.2534) (layer F.SilkS)
     (effects (font (size 1.143 1.143) (thickness 0.1778)))
   )
   (gr_text "Make sure arcs on flex \nare not covered by mask" (at 118.4618 84.9832) (layer Cmts.User)
