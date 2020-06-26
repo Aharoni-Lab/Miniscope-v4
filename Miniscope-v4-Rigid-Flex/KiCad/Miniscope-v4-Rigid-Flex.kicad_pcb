@@ -33,12 +33,12 @@
     (45 Margin user hide)
     (46 B.CrtYd user hide)
     (47 F.CrtYd user hide)
-    (48 B.Fab user hide)
+    (48 B.Fab user)
     (49 F.Fab user hide)
   )
 
   (setup
-    (last_trace_width 0.1524)
+    (last_trace_width 0.1016)
     (user_trace_width 0.1016)
     (user_trace_width 0.127)
     (user_trace_width 0.1524)
@@ -341,7 +341,7 @@
     (fp_text reference R14 (at 0 0) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value DNL (at 0 0) (layer F.Fab)
+    (fp_text value DNL (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_line (start 0 -0.135) (end 0 0.135) (layer F.CrtYd) (width 0.05))
@@ -367,7 +367,7 @@
     (fp_line (start -0.3 0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0) (layer F.Fab)
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (pad 2 smd roundrect (at 0.275 0 180) (size 0.31 0.34) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -389,7 +389,7 @@
     (fp_text reference R13 (at 0 0) (layer B.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
-    (fp_text value DNL (at 0 0) (layer B.Fab)
+    (fp_text value DNL (at 0 0) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_line (start 0 0.135) (end 0 -0.135) (layer B.CrtYd) (width 0.05))
@@ -415,7 +415,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0 180) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
@@ -437,7 +437,7 @@
     (fp_text reference C56 (at 0 0) (layer F.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
-    (fp_text value DNL (at 0 0) (layer F.Fab)
+    (fp_text value DNL (at 0 0) (layer F.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)))
     )
     (fp_line (start 0 -0.135) (end 0 0.135) (layer F.CrtYd) (width 0.05))
@@ -463,7 +463,7 @@
     (fp_line (start -0.3 0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0) (layer F.Fab)
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)))
     )
     (pad 2 smd roundrect (at 0.275 0) (size 0.31 0.34) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -485,7 +485,7 @@
     (fp_text reference C55 (at 0 0) (layer B.Fab)
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
-    (fp_text value DNL (at 0 0) (layer B.Fab)
+    (fp_text value DNL (at 0 0) (layer B.Fab) hide
       (effects (font (size 1.2 1.2) (thickness 0.12)) (justify mirror))
     )
     (fp_line (start 0 0.135) (end 0 -0.135) (layer B.CrtYd) (width 0.05))
@@ -511,7 +511,7 @@
     (fp_line (start -0.3 -0.15) (end -0.3 0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 -0.15) (end -0.3 -0.15) (layer Dwgs.User) (width 0.025))
     (fp_line (start -0.15 0.15) (end -0.15 -0.15) (layer Dwgs.User) (width 0.025))
-    (fp_text user %R (at 0 0) (layer B.Fab)
+    (fp_text user %R (at 0 0) (layer B.Fab) hide
       (effects (font (size 0.1778 0.1778) (thickness 0.0254)) (justify mirror))
     )
     (pad 2 smd roundrect (at 0.275 0) (size 0.31 0.34) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
