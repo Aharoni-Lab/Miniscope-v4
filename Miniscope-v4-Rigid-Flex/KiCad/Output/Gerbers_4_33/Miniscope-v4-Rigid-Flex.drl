@@ -1,7 +1,7 @@
 M48
-; DRILL file {KiCad (5.1.5)-3} date 6/16/2020 6:09:23 PM
+; DRILL file {KiCad (5.1.5)-3} date 6/25/2020 8:17:37 PM
 ; FORMAT={-:-/ absolute / inch / decimal}
-; #@! TF.CreationDate,2020-06-16T18:09:23-07:00
+; #@! TF.CreationDate,2020-06-25T20:17:37-07:00
 ; #@! TF.GenerationSoftware,Kicad,Pcbnew,(5.1.5)-3
 FMAT,2
 INCH
@@ -154,6 +154,7 @@ X4.5413Y-4.444
 X4.5413Y-4.4834
 X4.5413Y-4.5418
 X4.5453Y-4.566
+X4.5499Y-4.5918
 X4.573Y-4.3456
 X4.594Y-4.3456
 X4.6049Y-4.5964
