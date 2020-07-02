@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 6
 Title "Miniscope-V4-Rigid-Flex"
-Date "2020-01-20"
-Rev "4.2"
+Date "2020-06-25"
+Rev "4.33"
 Comp "Aharoni Lab"
 Comment1 ""
 Comment2 ""
@@ -1359,10 +1359,10 @@ Wire Notes Line
 Text Notes 9325 5125 0    50   ~ 0
 Components to attempt to fix \nBNO I2C issues
 $Comp
-L .Device:C_Small C?
+L .Device:C_Small C56
 U 1 1 5EF8ADBF
 P 10350 6000
-F 0 "C?" H 10442 6046 50  0000 L CNN
+F 0 "C56" H 10442 6046 50  0000 L CNN
 F 1 "DNL" H 9960 6170 50  0001 L CNN
 F 2 ".Capacitor:C_0201_0603Metric_L" H 10460 6270 50  0001 C CNN
 F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J106ME15-01.pdf" H 10360 6070 50  0001 C CNN

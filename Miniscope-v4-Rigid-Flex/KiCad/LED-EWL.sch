@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 6
 Title "Miniscope-V4-Rigid-Flex"
-Date "2020-01-20"
-Rev "4.2"
+Date "2020-06-25"
+Rev "4.33"
 Comp "Aharoni Lab"
 Comment1 ""
 Comment2 ""
@@ -310,10 +310,10 @@ L .LED:LXZ1-PR01 D1
 U 1 1 5C198A03
 P 2800 2225
 F 0 "D1" V 2850 2175 50  0000 R CNN
-F 1 "LXZ1-PR01" V 2700 2225 50  0000 R CNN
+F 1 "LXZ1-PB01" V 2700 2225 50  0000 R CNN
 F 2 ".LED:LED_LXZ1_PR01_L" V 2800 2225 50  0001 C CNN
 F 3 "https://www.lumileds.com/uploads/415/DS105-pdf" V 2800 2225 50  0001 C CNN
-F 4 "LED LUXEON Z RYL BLUE 450NM 2SMD" H 0   0   50  0001 C CNN "Note"
+F 4 "LED LUXEON Z BLUE 450NM 2SMD" H 0   0   50  0001 C CNN "Note"
 F 5 "0705" H 0   0   50  0001 C CNN "Size"
 	1    2800 2225
 	0    -1   -1   0   
