@@ -8,7 +8,8 @@
 // ----- USER DEFINED CONFIG (SELECT ONE) ------
 //#define DUAL_LED_MINISCOPE
 //#define DUAL_LED_MINISCOPE_DEMO
-#define V4_MINISCOPE
+//#define V4_MINISCOPE
+#define V4_MINISCOPE_CONST_LED
 // ---------------------------------------------
 #define F_CPU 1000000UL
 
@@ -140,6 +141,9 @@ void I2C_received(uint8_t received_data)
 				case (MODE_DEMO_2_COLOR):
 					ms_mode = MODE_DEMO_2_COLOR;
 					break;
+				case (MODE_V4_MINISCOPE_CONST_LED):
+					ms_mode = MODE_V4_MINISCOPE_CONST_LED;
+					break;
 			}
 			pastI2CWord = NO_WORD; //Idle state
 			break;
@@ -243,11 +247,15 @@ void initExtInt() {
 
 int main(void)
 {
-	#ifdef DUAL_LED_MINISCOPE
+#ifdef DUAL_LED_MINISCOPE
 	ms_mode = MODE_DEMO_2_COLOR;
-	#else
+#endif
+#ifdef V4_MINISCOPE
 	ms_mode = MODE_V4_MINISCOPE;
-	#endif
+#endif
+#ifdef V4_MINISCOPE_CONST_LED
+	ms_mode = MODE_V4_MINISCOPE_CONST_LED;
+#endif
 	
 	double flashDelay = 500;	
 	
@@ -308,11 +316,23 @@ ISR(PCINT1_vect) //Interrupt for PCINT[14:8]. Will be triggered when a pin toggl
 				if (ledValue2 < 0xFF)
 					LED_ENT2_PORT |= (1<<LED_ENT2_PIN);
 			}
+			if (ms_mode == MODE_V4_MINISCOPE_CONST_LED) {
+				// Let's just leave LED's on
+				if (ledValue1 < 0xFF)
+				LED_ENT1_PORT |= (1<<LED_ENT1_PIN);
+				if (ledValue2 < 0xFF)
+				LED_ENT2_PORT |= (1<<LED_ENT2_PIN);
+			}
 		}
 		else {
 			// Monitor0 went low which is end of frame integration. Let's turn off all LEDs during this time
-			LED_ENT1_PORT &= ~(1<<LED_ENT1_PIN);
-			LED_ENT2_PORT &= ~(1<<LED_ENT2_PIN);
+			if (ms_mode == MODE_V4_MINISCOPE) {
+				LED_ENT1_PORT &= ~(1<<LED_ENT1_PIN);
+				LED_ENT2_PORT &= ~(1<<LED_ENT2_PIN);
+			}
+			if (ms_mode == MODE_V4_MINISCOPE_CONST_LED) {
+				// Do not toggle LEDs off
+			}
 		}
 	}
 }
