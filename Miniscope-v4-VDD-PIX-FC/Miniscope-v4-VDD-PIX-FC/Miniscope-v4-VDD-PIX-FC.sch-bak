@@ -1,0 +1,187 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L .Regulator_Linear:MCP1711 U?
+U 1 1 5F63A175
+P 4570 2770
+F 0 "U?" H 4745 2995 50  0000 C CNN
+F 1 "MCP1711" H 4745 2904 50  0000 C CNN
+F 2 ".Package_QFN:UQFN_MCP1711" H 4570 2770 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005415D.pdf" H 4570 2770 50  0001 C CNN
+	1    4570 2770
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4370 2770 4340 2770
+Wire Wire Line
+	4370 2970 4340 2970
+Wire Wire Line
+	4340 2970 4340 2770
+Connection ~ 4340 2770
+Wire Wire Line
+	4870 3170 4870 3195
+Wire Wire Line
+	4870 3195 4970 3195
+Wire Wire Line
+	4970 3195 4970 3170
+Wire Wire Line
+	5120 2770 5185 2770
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F63AEEA
+P 5255 2770
+F 0 "#PWR?" H 5255 2620 50  0001 C CNN
+F 1 "+3.3V" H 5270 2943 50  0000 C CNN
+F 2 "" H 5255 2770 50  0001 C CNN
+F 3 "" H 5255 2770 50  0001 C CNN
+	1    5255 2770
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F63B625
+P 4185 2715
+F 0 "#PWR?" H 4185 2565 50  0001 C CNN
+F 1 "+5V" H 4200 2888 50  0000 C CNN
+F 2 "" H 4185 2715 50  0001 C CNN
+F 3 "" H 4185 2715 50  0001 C CNN
+	1    4185 2715
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F63B9C3
+P 4970 3195
+F 0 "#PWR?" H 4970 2945 50  0001 C CNN
+F 1 "GND" H 4975 3022 50  0000 C CNN
+F 2 "" H 4970 3195 50  0001 C CNN
+F 3 "" H 4970 3195 50  0001 C CNN
+	1    4970 3195
+	1    0    0    -1  
+$EndComp
+Connection ~ 4970 3195
+Wire Wire Line
+	4185 2770 4185 2715
+Wire Wire Line
+	4185 2770 4340 2770
+$Comp
+L .Device:C_Small C?
+U 1 1 5F63CEC2
+P 4185 2870
+F 0 "C?" H 4040 2925 50  0000 L CNN
+F 1 "1uF" H 4020 2805 50  0000 L CNN
+F 2 ".Capacitor:C_0402_1005Metric_L" H 4185 2870 50  0001 C CNN
+F 3 "~" H 4185 2870 50  0001 C CNN
+	1    4185 2870
+	1    0    0    -1  
+$EndComp
+Connection ~ 4185 2770
+$Comp
+L .Device:C_Small C?
+U 1 1 5F63D717
+P 5185 2870
+F 0 "C?" H 5277 2916 50  0000 L CNN
+F 1 "1uF" H 5277 2825 50  0000 L CNN
+F 2 ".Capacitor:C_0402_1005Metric_L" H 5185 2870 50  0001 C CNN
+F 3 "~" H 5185 2870 50  0001 C CNN
+	1    5185 2870
+	1    0    0    -1  
+$EndComp
+Connection ~ 5185 2770
+Wire Wire Line
+	5185 2770 5255 2770
+Wire Wire Line
+	4970 3195 5185 3195
+Wire Wire Line
+	5185 2970 5185 3195
+Connection ~ 4870 3195
+Wire Wire Line
+	4185 2970 4185 3195
+Wire Wire Line
+	4185 3195 4870 3195
+$Comp
+L .Connector:Conn_01x01 J?
+U 1 1 5F63E9E3
+P 6050 2735
+F 0 "J?" H 6130 2777 50  0000 L CNN
+F 1 "Conn_01x01" H 6130 2686 50  0000 L CNN
+F 2 ".Connector:Conn_1x1_700_Circular_Pad" H 6050 2735 50  0001 C CNN
+F 3 "~" H 6050 2735 50  0001 C CNN
+	1    6050 2735
+	1    0    0    -1  
+$EndComp
+$Comp
+L .Connector:Conn_01x01 J?
+U 1 1 5F63F2C6
+P 6050 2845
+F 0 "J?" H 6130 2887 50  0000 L CNN
+F 1 "Conn_01x01" H 6130 2796 50  0000 L CNN
+F 2 ".Connector:Conn_1x1_700_Circular_Pad" H 6050 2845 50  0001 C CNN
+F 3 "~" H 6050 2845 50  0001 C CNN
+	1    6050 2845
+	1    0    0    -1  
+$EndComp
+$Comp
+L .Connector:Conn_01x01 J?
+U 1 1 5F63F817
+P 6050 2955
+F 0 "J?" H 6130 2997 50  0000 L CNN
+F 1 "Conn_01x01" H 6130 2906 50  0000 L CNN
+F 2 ".Connector:Conn_1x1_700_Circular_Pad" H 6050 2955 50  0001 C CNN
+F 3 "~" H 6050 2955 50  0001 C CNN
+	1    6050 2955
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2735 5650 2735
+Wire Wire Line
+	5850 2845 5650 2845
+Wire Wire Line
+	5850 2955 5645 2955
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F640655
+P 5650 2735
+F 0 "#PWR?" H 5650 2585 50  0001 C CNN
+F 1 "+3.3V" H 5665 2908 50  0000 C CNN
+F 2 "" H 5650 2735 50  0001 C CNN
+F 3 "" H 5650 2735 50  0001 C CNN
+	1    5650 2735
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F640B91
+P 5645 2955
+F 0 "#PWR?" H 5645 2705 50  0001 C CNN
+F 1 "GND" H 5650 2782 50  0000 C CNN
+F 2 "" H 5645 2955 50  0001 C CNN
+F 3 "" H 5645 2955 50  0001 C CNN
+	1    5645 2955
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F640F33
+P 5650 2845
+F 0 "#PWR?" H 5650 2695 50  0001 C CNN
+F 1 "+5V" V 5665 2973 50  0000 L CNN
+F 2 "" H 5650 2845 50  0001 C CNN
+F 3 "" H 5650 2845 50  0001 C CNN
+	1    5650 2845
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
