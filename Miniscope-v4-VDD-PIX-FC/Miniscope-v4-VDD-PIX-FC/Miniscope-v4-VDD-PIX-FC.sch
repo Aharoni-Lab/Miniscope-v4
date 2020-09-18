@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "V4-Miniscope-VDD-Pix-FC"
+Date "2020-09-18"
+Rev "v0.1"
+Comp "Aharoni Lab"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -183,10 +183,10 @@ F 3 "" H 4355 1540 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L .Inductor:BLM18PG471SN1D L?
+L .Inductor:BLM18PG471SN1D L1
 U 1 1 5F641E2A
 P 5495 2770
-F 0 "L?" V 5680 2770 50  0000 C CNN
+F 0 "L1" V 5680 2770 50  0000 C CNN
 F 1 "BLM18PG471SN1D" H 5545 2620 50  0001 L CNN
 F 2 ".Inductor:L_0603_1608Metric_L" H 5545 3070 50  0001 C CNN
 F 3 "https://www.murata.com/en-us/products/productdata/8796738650142/ENFA0003.pdf" H 5495 2770 50  0001 C CNN
