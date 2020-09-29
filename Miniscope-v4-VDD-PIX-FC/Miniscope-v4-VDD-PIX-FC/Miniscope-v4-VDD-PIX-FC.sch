@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "V4-Miniscope-VDD-Pix-FC"
-Date "2020-09-18"
-Rev "v0.1"
+Date "2020-09-29"
+Rev "v1.0"
 Comp "Aharoni Lab"
 Comment1 ""
 Comment2 ""
