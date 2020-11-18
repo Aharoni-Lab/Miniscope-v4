@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 6
 Title "Miniscope-V4-Rigid-Flex"
 Date "2020-06-25"
-Rev "4.34"
+Rev "4.40"
 Comp "Aharoni Lab"
 Comment1 ""
 Comment2 ""

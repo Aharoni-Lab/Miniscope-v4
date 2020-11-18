@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 6
 Title "Miniscope-V4-Rigid-Flex"
-Date "2020-06-25"
-Rev "4.33"
+Date "2020-11-17"
+Rev "4.40"
 Comp "Aharoni Lab"
 Comment1 ""
 Comment2 ""
@@ -373,17 +373,6 @@ Connection ~ 6600 2275
 Text Label 5475 2075 0    50   ~ 0
 VDD_PIX
 $Comp
-L power:+3V3 #PWR0137
-U 1 1 5C8A6A3C
-P 4750 2075
-F 0 "#PWR0137" H 4750 1925 50  0001 C CNN
-F 1 "+3V3" H 4765 2248 50  0000 C CNN
-F 2 "" H 4750 2075 50  0001 C CNN
-F 3 "" H 4750 2075 50  0001 C CNN
-	1    4750 2075
-	1    0    0    -1  
-$EndComp
-$Comp
 L .Inductor:BLM18PG471SN1D L2
 U 1 1 5C8A6B09
 P 5250 2075
@@ -399,10 +388,6 @@ $EndComp
 Wire Wire Line
 	5475 2075 5350 2075
 Connection ~ 5475 2075
-Wire Wire Line
-	5150 2075 4750 2075
-Text Notes 4625 2575 0    50   ~ 0
-Consider using a completely seperate VDD_PIX supply
 Wire Wire Line
 	1775 4825 1450 4825
 Wire Wire Line
@@ -689,43 +674,19 @@ F 3 "" H 9875 3000 50  0001 C CNN
 	1    9875 3000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2725 1275 2825 1275
 $Comp
-L Miniscope-v4-Rigid-Flex-rescue:NOIP1SN0480A-.Image_Sensor-Miniscope-v4-PYTHON480-rescue U6
+L .Image_Sensor:NOIP1SN0480A U6
 U 1 1 5C8BAAAC
 P 2725 3275
 AR Path="/5C8BAAAC" Ref="U6"  Part="1" 
 AR Path="/5D79BADA/5C8BAAAC" Ref="U6"  Part="1" 
-F 0 "U6" H 2800 5453 50  0000 C CNN
-F 1 "NOIP1SP0480A" H 2800 5362 50  0000 C CNN
+F 0 "U6" H 1755 5220 50  0000 C CNN
+F 1 "NOIP1SP0480A" H 3940 5240 50  0000 C CNN
 F 2 ".Package_BGA:BGA88CP50_8X11_493X613X75B25" H 2625 5675 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/NOIP1SN0480A-D.PDF" H 2475 5325 50  0001 C CNN
 	1    2725 3275
 	1    0    0    -1  
 $EndComp
-Connection ~ 2725 1275
-Wire Wire Line
-	3375 1275 3275 1275
-Connection ~ 3175 1275
-Connection ~ 3275 1275
-Wire Wire Line
-	3275 1275 3175 1275
-Wire Wire Line
-	2925 1275 2825 1275
-Connection ~ 2825 1275
-Wire Wire Line
-	2475 1275 2375 1275
-Connection ~ 2075 1275
-Connection ~ 2175 1275
-Wire Wire Line
-	2175 1275 2075 1275
-Connection ~ 2275 1275
-Wire Wire Line
-	2275 1275 2175 1275
-Connection ~ 2375 1275
-Wire Wire Line
-	2375 1275 2275 1275
 Wire Wire Line
 	3825 3175 4275 3175
 Wire Wire Line
@@ -778,34 +739,6 @@ Text Label 3900 4375 0    50   ~ 0
 FV
 Text Label 3900 4475 0    50   ~ 0
 LV
-Wire Wire Line
-	3375 5525 3275 5525
-Connection ~ 2625 5525
-Wire Wire Line
-	2625 5525 2525 5525
-Connection ~ 2725 5525
-Wire Wire Line
-	2725 5525 2625 5525
-Connection ~ 2825 5525
-Wire Wire Line
-	2825 5525 2725 5525
-Connection ~ 2975 5525
-Wire Wire Line
-	2975 5525 2825 5525
-Connection ~ 3075 5525
-Wire Wire Line
-	3075 5525 2975 5525
-Connection ~ 3175 5525
-Wire Wire Line
-	3175 5525 3075 5525
-Connection ~ 3275 5525
-Wire Wire Line
-	3275 5525 3175 5525
-Wire Wire Line
-	2375 5525 2275 5525
-Connection ~ 2275 5525
-Wire Wire Line
-	2275 5525 2175 5525
 $Comp
 L power:GND #PWR0149
 U 1 1 5C91B9AB
@@ -817,11 +750,6 @@ F 3 "" H 3375 5525 50  0001 C CNN
 	1    3375 5525
 	1    0    0    -1  
 $EndComp
-Connection ~ 3375 5525
-Wire Wire Line
-	2375 5525 2525 5525
-Connection ~ 2375 5525
-Connection ~ 2525 5525
 Wire Wire Line
 	1325 1925 1775 1925
 Wire Wire Line
@@ -1054,4 +982,168 @@ Wire Notes Line
 	1075 7550 1075 6450
 Text Notes 1125 6525 0    50   ~ 0
 Oscillator
+Wire Wire Line
+	2175 5525 2275 5525
+Connection ~ 3375 5525
+Connection ~ 2275 5525
+Wire Wire Line
+	2275 5525 2375 5525
+Connection ~ 2375 5525
+Wire Wire Line
+	2375 5525 2525 5525
+Connection ~ 2525 5525
+Wire Wire Line
+	2525 5525 2625 5525
+Connection ~ 2625 5525
+Wire Wire Line
+	2625 5525 2725 5525
+Connection ~ 2725 5525
+Wire Wire Line
+	2725 5525 2825 5525
+Connection ~ 2825 5525
+Wire Wire Line
+	2825 5525 2975 5525
+Connection ~ 2975 5525
+Wire Wire Line
+	2975 5525 3075 5525
+Connection ~ 3075 5525
+Wire Wire Line
+	3075 5525 3175 5525
+Connection ~ 3175 5525
+Wire Wire Line
+	3175 5525 3275 5525
+Connection ~ 3275 5525
+Wire Wire Line
+	3275 5525 3375 5525
+Wire Wire Line
+	2475 1275 2375 1275
+Connection ~ 2075 1275
+Connection ~ 2175 1275
+Wire Wire Line
+	2175 1275 2075 1275
+Connection ~ 2275 1275
+Wire Wire Line
+	2275 1275 2175 1275
+Connection ~ 2375 1275
+Wire Wire Line
+	2375 1275 2275 1275
+Wire Wire Line
+	2925 1275 2825 1275
+Connection ~ 2725 1275
+Connection ~ 2825 1275
+Wire Wire Line
+	2825 1275 2725 1275
+Wire Wire Line
+	3375 1275 3275 1275
+Connection ~ 3175 1275
+Connection ~ 3275 1275
+Wire Wire Line
+	3275 1275 3175 1275
+$Comp
+L .Regulator_Linear:MCP1711 U10
+U 1 1 5FB7310C
+P 9230 5180
+F 0 "U10" H 9405 5405 50  0000 C CNN
+F 1 "NCP163AMX330TBG" H 9405 5314 50  0000 C CNN
+F 2 ".Package_QFN:UQFN_MCP1711" H 9230 5180 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005415D.pdf" H 9230 5180 50  0001 C CNN
+	1    9230 5180
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 5FB7382F
+P 8630 5180
+F 0 "#PWR06" H 8630 5030 50  0001 C CNN
+F 1 "+5V" H 8645 5353 50  0000 C CNN
+F 2 "" H 8630 5180 50  0001 C CNN
+F 3 "" H 8630 5180 50  0001 C CNN
+	1    8630 5180
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5FB742C4
+P 9850 5580
+F 0 "#PWR07" H 9850 5330 50  0001 C CNN
+F 1 "GND" H 9855 5407 50  0000 C CNN
+F 2 "" H 9850 5580 50  0001 C CNN
+F 3 "" H 9850 5580 50  0001 C CNN
+	1    9850 5580
+	1    0    0    -1  
+$EndComp
+Text Label 4545 2075 0    50   ~ 0
+VDD_PIX_3V3
+Wire Wire Line
+	4545 2075 5150 2075
+Text Label 10105 5180 0    50   ~ 0
+VDD_PIX_3V3
+Wire Wire Line
+	9780 5180 9850 5180
+Wire Wire Line
+	9030 5180 8930 5180
+Wire Wire Line
+	9030 5380 8930 5380
+Wire Wire Line
+	8930 5380 8930 5180
+Connection ~ 8930 5180
+Wire Wire Line
+	8930 5180 8630 5180
+$Comp
+L .Capacitor:GRM033R61A104ME15D C57
+U 1 1 5FB89C46
+P 8630 5360
+F 0 "C57" H 8722 5406 50  0000 L CNN
+F 1 "GRM033R61A104ME15D" H 8240 5530 50  0001 L CNN
+F 2 ".Capacitor:C_0201_0603Metric_L" H 8690 5630 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM033R61A104ME15-01.pdf" H 8640 5430 50  0001 C CNN
+F 4 "1uF" H 8722 5315 50  0000 L CNN "Note"
+F 5 "0201" H 8740 5180 50  0001 C CNN "Size"
+	1    8630 5360
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8630 5180 8630 5260
+Connection ~ 8630 5180
+Wire Wire Line
+	9630 5580 9530 5580
+Wire Wire Line
+	8630 5580 8630 5460
+Connection ~ 9530 5580
+Wire Wire Line
+	9530 5580 8630 5580
+$Comp
+L .Capacitor:GRM033R61A104ME15D C58
+U 1 1 5FB95F9F
+P 9850 5365
+F 0 "C58" H 9942 5411 50  0000 L CNN
+F 1 "GRM033R61A104ME15D" H 9460 5535 50  0001 L CNN
+F 2 ".Capacitor:C_0201_0603Metric_L" H 9910 5635 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM033R61A104ME15-01.pdf" H 9860 5435 50  0001 C CNN
+F 4 "1uF" H 9942 5320 50  0000 L CNN "Note"
+F 5 "0201" H 9960 5185 50  0001 C CNN "Size"
+	1    9850 5365
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 5265 9850 5180
+Connection ~ 9850 5180
+Wire Wire Line
+	9850 5180 10105 5180
+Wire Wire Line
+	9850 5465 9850 5580
+Wire Wire Line
+	9850 5580 9630 5580
+Connection ~ 9630 5580
+Connection ~ 9850 5580
+Wire Notes Line
+	8395 4860 10860 4860
+Wire Notes Line
+	10860 4860 10860 5905
+Wire Notes Line
+	10860 5905 8410 5905
+Wire Notes Line
+	8410 5905 8405 4855
+Text Notes 8420 4950 0    50   ~ 0
+Isolate VDD_PIX
 $EndSCHEMATC
