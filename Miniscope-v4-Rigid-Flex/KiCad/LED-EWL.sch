@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 6
 Title "Miniscope-V4-Rigid-Flex"
-Date "2020-06-25"
-Rev "4.40"
+Date "2021-01-05"
+Rev "4.41"
 Comp "Aharoni Lab"
 Comment1 ""
 Comment2 ""

@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 6
 Title "Miniscope-V4-Rigid-Flex"
-Date "2020-06-25"
-Rev "4.33"
+Date "2021-01-05"
+Rev "4.41"
 Comp "Aharoni Lab"
 Comment1 ""
 Comment2 ""
@@ -14,12 +14,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Miniscope-v4-Rigid-Flex-rescue:BNO055-BNO055_2-BNO055_08092019-rescue U10
+L .IMU:BNO055 U10
 U 1 1 5D4EA5F1
 P 5550 3550
 AR Path="/5D4EA5F1" Ref="U10"  Part="1" 
-AR Path="/5D826816/5D4EA5F1" Ref="U10"  Part="1" 
-F 0 "U10" H 5550 2683 50  0000 C CNN
+AR Path="/5D826816/5D4EA5F1" Ref="U12"  Part="1" 
+F 0 "U12" H 5550 2683 50  0000 C CNN
 F 1 "BNO055" H 5550 2774 50  0000 C CNN
 F 2 "Package_LGA:LGA-28_5.2x3.8mm_P0.5mm" H 5550 3550 50  0001 L BNN
 F 3 "" H 5550 3550 50  0001 L BNN

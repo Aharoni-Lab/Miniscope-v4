@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 6
 Title "Miniscope-V4-Rigid-Flex"
-Date "2020-06-25"
-Rev "4.33"
+Date "2021-01-05"
+Rev "4.41"
 Comp "Aharoni Lab"
 Comment1 ""
 Comment2 ""
@@ -1089,19 +1089,6 @@ Wire Wire Line
 Connection ~ 8930 5180
 Wire Wire Line
 	8930 5180 8630 5180
-$Comp
-L .Capacitor:GRM033R61A104ME15D C57
-U 1 1 5FB89C46
-P 8630 5360
-F 0 "C57" H 8722 5406 50  0000 L CNN
-F 1 "GRM033R61A104ME15D" H 8240 5530 50  0001 L CNN
-F 2 ".Capacitor:C_0201_0603Metric_L" H 8690 5630 50  0001 C CNN
-F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM033R61A104ME15-01.pdf" H 8640 5430 50  0001 C CNN
-F 4 "1uF" H 8722 5315 50  0000 L CNN "Note"
-F 5 "0201" H 8740 5180 50  0001 C CNN "Size"
-	1    8630 5360
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8630 5180 8630 5260
 Connection ~ 8630 5180
@@ -1112,19 +1099,6 @@ Wire Wire Line
 Connection ~ 9530 5580
 Wire Wire Line
 	9530 5580 8630 5580
-$Comp
-L .Capacitor:GRM033R61A104ME15D C58
-U 1 1 5FB95F9F
-P 9850 5365
-F 0 "C58" H 9942 5411 50  0000 L CNN
-F 1 "GRM033R61A104ME15D" H 9460 5535 50  0001 L CNN
-F 2 ".Capacitor:C_0201_0603Metric_L" H 9910 5635 50  0001 C CNN
-F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM033R61A104ME15-01.pdf" H 9860 5435 50  0001 C CNN
-F 4 "1uF" H 9942 5320 50  0000 L CNN "Note"
-F 5 "0201" H 9960 5185 50  0001 C CNN "Size"
-	1    9850 5365
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9850 5265 9850 5180
 Connection ~ 9850 5180
@@ -1146,4 +1120,30 @@ Wire Notes Line
 	8410 5905 8405 4855
 Text Notes 8420 4950 0    50   ~ 0
 Isolate VDD_PIX
+$Comp
+L .Capacitor:GRM033R61A104ME15D C58
+U 1 1 5FB95F9F
+P 9850 5365
+F 0 "C58" H 9942 5411 50  0000 L CNN
+F 1 "GRM033R61A105ME15D" H 9460 5535 50  0001 L CNN
+F 2 ".Capacitor:C_0201_0603Metric_L" H 9910 5635 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM033R61A104ME15-01.pdf" H 9860 5435 50  0001 C CNN
+F 4 "1uF" H 9942 5320 50  0000 L CNN "Note"
+F 5 "0201" H 9960 5185 50  0001 C CNN "Size"
+	1    9850 5365
+	1    0    0    -1  
+$EndComp
+$Comp
+L .Capacitor:GRM033R61A104ME15D C57
+U 1 1 5FB89C46
+P 8630 5360
+F 0 "C57" H 8722 5406 50  0000 L CNN
+F 1 "GRM033R61A105ME15D" H 8240 5530 50  0001 L CNN
+F 2 ".Capacitor:C_0201_0603Metric_L" H 8690 5630 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM033R61A104ME15-01.pdf" H 8640 5430 50  0001 C CNN
+F 4 "1uF" H 8722 5315 50  0000 L CNN "Note"
+F 5 "0201" H 8740 5180 50  0001 C CNN "Size"
+	1    8630 5360
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
