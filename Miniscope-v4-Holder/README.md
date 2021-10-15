@@ -8,8 +8,8 @@ This repository holds the design files and information to assemble a holder for 
 
 | Item  | Description | Link |
 | ------------- | ------------- | ------------- | 
-| 1  | Content Cell  | [GitHub Pages](https://pages.github.com/) |
-| 2  | Content Cell  | [GitHub Pages](https://pages.github.com/) |
-| 3  | Content Cell  | [GitHub Pages](https://pages.github.com/) |
-| 4  | Content Cell  | [GitHub Pages](https://pages.github.com/) |
-| 5  | Content Cell  | [GitHub Pages](https://pages.github.com/) |
+| 1  | Thumb Screws Two-Arm, 10-24 Thread, 1" Long  | [GitHub Pages](https://www.mcmaster.com/91185A899/) |
+| 2  | Articulated 1/4''-20 Mini Ball Head  | [Amazon](https://www.amazon.com/gp/product/B07LCBVQF8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) |
+| 3  |  Ø1/2" Optical Post  | [Thorlabs](https://www.thorlabs.com/thorproduct.cfm?partnumber=TR1) |
+| 4  | 8-32 Stainless Steel Cap Screws, 5/16" Long  | [Thorlabs](https://www.thorlabs.com/thorproduct.cfm?partnumber=SH8S031) |
+| 5  | 3D Printed part  | This repo |
