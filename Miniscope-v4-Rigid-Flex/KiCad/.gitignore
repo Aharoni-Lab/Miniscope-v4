@@ -1,18 +1,22 @@
-# For PCBs designed using KiCad: http://www.kicad-pcb.org/
-# Format documentation: http://kicad-pcb.org/help/file-formats/
+# For PCBs designed using KiCad: https://www.kicad.org/
+# Format documentation: https://kicad.org/help/file-formats/
 
 # Temporary files
 *.000
 *.bak
 *.bck
+*.kicad_pro-bak
 *.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
 *~
 _autosave-*
 *.tmp
-*-cache.lib
-*-rescue.lib
 *-save.pro
 *-save.kicad_pcb
+fp-info-cache
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -23,3 +27,6 @@ _autosave-*
 
 # Exported BOM files
 *.xml
+
+# Production output
+kibot
